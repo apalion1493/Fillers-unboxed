@@ -9,15 +9,37 @@
   </head>
   <body class="bg-gray-50">
     <main>
-      <header>
+      @@include('components/Header.html')
+      
+      <section class="py-10">
+        @@include('components/button-arrow.html', {
+          'title': 'Button',
+          'url': '#',
+          'style': ' test'
+        })
 
-      </header>
-      <section class="">
+        <br>
+
         @@include('components/button.html', {
           'title': 'Button',
           'url': '#',
           'style': ' test'
         })
+
+        <br>
+
+        @@include('components/button-heart.html', {
+          'title': 'Button',
+          'url': '#',
+          'style': ' test'
+        })
+
+        <br>
+        @@include('components/pagination-btn.html', {
+          'url': '#',
+          'style': ' rotate-180 '
+        })
+
         
       </section>
     </main>

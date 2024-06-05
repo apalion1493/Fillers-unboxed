@@ -19,6 +19,15 @@ module.exports = {
   content: ["./src/**/*.{html,js,php}"],
   darkMode: "class",
   theme: {
+    fontSize: {
+      sm: ['8px', '11px'],
+    },
+    colors: {
+      'primary': '#C19476',
+      'white': '#ffffff',
+      'black-1': '#333333',
+      'dark-green': '#1E3B41',
+    },
     extend: {},
   },
   plugins: plugins,
