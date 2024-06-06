@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Gulp with TailwindCSS v3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
   </head>
-  <body class="bg-gray-50">
-    <main>
+  <body class="">
+    <main class="flex flex-col justify-between min-h-screen">
       @@include('components/Header.html')
-      
+
       <section class="py-10">
         @@include('components/button-arrow.html', {
           'title': 'Button',
@@ -42,7 +45,122 @@
 
         
       </section>
+      <section class="pt-20 pb-16">
+        <div class="container">
+          <div>
+            <div class="mb-12 flex justify-between items-center">
+              <h2 class="text-h3 font-semibold">Explore Our <span class="italic text-primary font-normal">Categories</span></h2>
+              @@include('components/button-arrow.html', {
+                'title': 'See More',
+                'url': '#',
+                'style': ' test'
+              })
+            </div>
+            <div class="grid grid-cols-4 gap-8">
+              <div>
+                @@include('components/category-card.html', {
+                  'img': 'img/Img-1.jpg',
+                  'title': 'Botulinum',
+                  'icon': 'botulinum-icon'
+                })
+              </div>
+              <div>
+                @@include('components/category-card.html', {
+                  'img': 'img/Img-2.jpg',
+                  'title': 'Mesotherapy',
+                  'icon': 'mesotherapy-icon'
+                })
+              </div>
+              <div>
+                @@include('components/category-card.html', {
+                  'img': 'img/Img-3.jpg',
+                  'title': 'Dermal Fillers',
+                  'icon': 'botulinum-icon'
+                })
+              </div>
+              <div>
+                @@include('components/category-card.html', {
+                  'img': 'img/Img-4.jpg',
+                  'title': 'Ginecology',
+                  'icon': 'botulinum-icon'
+                })
+              </div>
+            </div>
+          </div>
+          <div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-secondary py-16">
+        <div class="container">
+          <div class="flex items-center gap-10">
+            <div class="flex-1">
+              <img src="img/Img-5.jpg" alt="Who we are?">
+            </div>
+            <div class="flex-1 flex flex-col gap-6">
+              <h3 class="text-h3 italic"><span class="text-primary not-italic font-semibold">Who</span> we are?</h3>
+              <p class="text-h8">We are a licensed facility located in Europe and ship the products from countries with government regulated prices, so we are able to offer more affordable prices both for small and large businesses.</p>
+              <p class="text-h8">With Unboxed Fillers you take advantage of 100% authentic products, fast delivery, professional customer support and unbeatable prices.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      @@include('components/Footer.html')
     </main>
+
+    <script>
+      // JavaScript to toggle the mega menu
+      const toggles = document.querySelectorAll('button[data-menu-target]');
+      let currentMenu = null;
+      let currentButton = null;
+
+      toggles.forEach(toggle => {
+          toggle.addEventListener('click', function(event) {
+              event.stopPropagation();
+              const targetId = toggle.getAttribute('data-menu-target');
+              const targetMenu = document.getElementById(targetId);
+
+              if (currentMenu && currentMenu !== targetMenu) {
+                  currentMenu.classList.add('hidden');
+                  currentButton.classList.remove('active');
+              }
+
+              if (targetMenu.classList.contains('hidden')) {
+                  targetMenu.classList.remove('hidden');
+                  toggle.classList.add('active');
+                  currentMenu = targetMenu;
+                  currentButton = toggle;
+              } else {
+                  targetMenu.classList.add('hidden');
+                  toggle.classList.remove('active');
+                  currentMenu = null;
+                  currentButton = null;
+              }
+          });
+      });
+
+      // Close the mega menu if clicking outside of it
+      document.addEventListener('click', function(event) {
+          if (currentMenu && !currentMenu.contains(event.target)) {
+              currentMenu.classList.add('hidden');
+              if (currentButton) {
+                  currentButton.classList.remove('active');
+              }
+              currentMenu = null;
+              currentButton = null;
+          }
+      });
+
+      // Prevent menu closing when clicking inside the mega menu
+      document.querySelectorAll('.mega-menu').forEach(menu => {
+          menu.addEventListener('click', function(event) {
+              event.stopPropagation();
+          });
+      });
+  </script>
 
     <script src="./js/scripts.js"></script>
   </body>

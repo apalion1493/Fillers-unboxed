@@ -10,3 +10,34 @@
     @apply -m-0.5;
   }
 }
+
+@layer components {
+  .container {
+    @apply minsm:max-w-[640px] minmd:max-w-[768px] minlg:max-w-[1024px] minxl:max-w-[1280px] min2xl:max-w-[1312px];
+  }
+}
+
+.clock-icon {
+  background: url(../img/clock.svg);
+  @apply block bg-100-auto bg-no-repeat bg-center w-[22px] h-[22px]
+}
+
+.phone-small {
+  background: url(../img/call-small.svg);
+  @apply block bg-100-auto bg-no-repeat bg-center w-[20px] h-[20px]
+}
+
+.mail-icon {
+  background: url(../img/mail.svg);
+  @apply block bg-100-auto bg-no-repeat bg-center w-[22px] h-[17px]
+}
+
+.botulinum-icon {
+  background: url(../img/Botulinum.svg);
+  @apply block bg-100-auto bg-no-repeat bg-center w-[30px] h-[30px]
+}
+
+.mesotherapy-icon {
+  background: url(../img/Mesotherapy.svg) no-repeat center;
+  @apply block bg-100-auto bg-no-repeat bg-center w-[30px] h-[30px]
+}
