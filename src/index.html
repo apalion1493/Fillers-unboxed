@@ -1,167 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Gulp with TailwindCSS v3</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
-  </head>
-  <body class="">
-    <main class="flex flex-col justify-between min-h-screen">
-      @@include('components/Header.html')
 
-      <section class="py-10">
-        @@include('components/button-arrow.html', {
-          'title': 'Button',
-          'url': '#',
-          'style': ' test'
-        })
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Gulp with TailwindCSS v3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
 
-        <br>
+<body class="">
+  <main class="flex flex-col justify-between min-h-screen">
+    @@include('components/Header.html')
 
-        @@include('components/button.html', {
-          'title': 'Button',
-          'url': '#',
-          'style': ' test'
-        })
+    <section class="py-10">
+      @@include('components/button-arrow.html', {
+      'title': 'Button',
+      'url': '#',
+      'style': ' test'
+      })
 
-        <br>
+      <br>
 
-        @@include('components/button-heart.html', {
-          'title': 'Button',
-          'url': '#',
-          'style': ' test'
-        })
+      @@include('components/button.html', {
+      'title': 'Button',
+      'url': '#',
+      'style': ' test'
+      })
 
-        <br>
-        @@include('components/pagination-btn.html', {
-          'url': '#',
-          'style': ' rotate-180 '
-        })
+      <br>
 
-        
-      </section>
-      <section class="pt-20 pb-16">
-        <div class="container">
-          <div>
-            <div class="mb-12 flex justify-between items-center">
-              <h2 class="text-h3 font-semibold">Explore Our <span class="italic text-primary font-normal">Categories</span></h2>
-              @@include('components/button-arrow.html', {
-                'title': 'See More',
-                'url': '#',
-                'style': ' test'
+      @@include('components/button-heart.html', {
+      'title': 'Button',
+      'url': '#',
+      'style': ' test'
+      })
+
+      <br>
+      @@include('components/pagination-btn.html', {
+      'url': '#',
+      'style': ' rotate-180 '
+      })
+
+      <br>
+
+      <div class="w-full max-w-md p-4 bg-white rounded-lg shadow-lg">
+        <form id="searchForm" class="flex items-center">
+          <input id="searchInput" type="text" placeholder="Введите запрос..."
+            class="w-full p-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+          <button type="submit"
+            class="bg-blue-500 text-white p-2 rounded-r-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            Найти
+          </button>
+        </form>
+        <p id="searchResult" class="mt-4 text-gray-700"></p>
+      </div>
+
+      <br>
+
+
+    </section>
+    <section class="pt-20 pb-16">
+      <div class="container">
+        <div>
+          <div class="mb-12 flex justify-between items-center">
+            <h2 class="text-h3 font-semibold">Explore Our <span
+                class="italic text-primary font-normal">Categories</span></h2>
+            @@include('components/button-arrow.html', {
+            'title': 'See More',
+            'url': '#',
+            'style': ' test'
+            })
+          </div>
+          <div class="grid grid-cols-4 gap-8">
+            <div>
+              @@include('components/category-card.html', {
+              'img': 'img/Img-1.jpg',
+              'title': 'Botulinum',
+              'icon': 'botulinum-icon'
               })
             </div>
-            <div class="grid grid-cols-4 gap-8">
-              <div>
-                @@include('components/category-card.html', {
-                  'img': 'img/Img-1.jpg',
-                  'title': 'Botulinum',
-                  'icon': 'botulinum-icon'
-                })
-              </div>
-              <div>
-                @@include('components/category-card.html', {
-                  'img': 'img/Img-2.jpg',
-                  'title': 'Mesotherapy',
-                  'icon': 'mesotherapy-icon'
-                })
-              </div>
-              <div>
-                @@include('components/category-card.html', {
-                  'img': 'img/Img-3.jpg',
-                  'title': 'Dermal Fillers',
-                  'icon': 'botulinum-icon'
-                })
-              </div>
-              <div>
-                @@include('components/category-card.html', {
-                  'img': 'img/Img-4.jpg',
-                  'title': 'Ginecology',
-                  'icon': 'botulinum-icon'
-                })
-              </div>
+            <div>
+              @@include('components/category-card.html', {
+              'img': 'img/Img-2.jpg',
+              'title': 'Mesotherapy',
+              'icon': 'mesotherapy-icon'
+              })
             </div>
-          </div>
-          <div>
-
-          </div>
-        </div>
-      </section>
-
-      <section class="bg-secondary py-16">
-        <div class="container">
-          <div class="flex items-center gap-10">
-            <div class="flex-1">
-              <img src="img/Img-5.jpg" alt="Who we are?">
+            <div>
+              @@include('components/category-card.html', {
+              'img': 'img/Img-3.jpg',
+              'title': 'Dermal Fillers',
+              'icon': 'botulinum-icon'
+              })
             </div>
-            <div class="flex-1 flex flex-col gap-6">
-              <h3 class="text-h3 italic"><span class="text-primary not-italic font-semibold">Who</span> we are?</h3>
-              <p class="text-h8">We are a licensed facility located in Europe and ship the products from countries with government regulated prices, so we are able to offer more affordable prices both for small and large businesses.</p>
-              <p class="text-h8">With Unboxed Fillers you take advantage of 100% authentic products, fast delivery, professional customer support and unbeatable prices.</p>
+            <div>
+              @@include('components/category-card.html', {
+              'img': 'img/Img-4.jpg',
+              'title': 'Ginecology',
+              'icon': 'botulinum-icon'
+              })
             </div>
           </div>
         </div>
-      </section>
+        <div>
 
-      @@include('components/Footer.html')
-    </main>
+        </div>
+      </div>
+    </section>
 
-    <script>
-      // JavaScript to toggle the mega menu
-      const toggles = document.querySelectorAll('button[data-menu-target]');
-      let currentMenu = null;
-      let currentButton = null;
+    <section class="bg-secondary py-16">
+      <div class="container">
+        <div class="flex items-center gap-10">
+          <div class="flex-1">
+            <img src="img/Img-5.jpg" alt="Who we are?">
+          </div>
+          <div class="flex-1 flex flex-col gap-6">
+            <h3 class="text-h3 italic"><span class="text-primary not-italic font-semibold">Who</span> we are?</h3>
+            <p class="text-h8">We are a licensed facility located in Europe and ship the products from countries with
+              government regulated prices, so we are able to offer more affordable prices both for small and large
+              businesses.</p>
+            <p class="text-h8">With Unboxed Fillers you take advantage of 100% authentic products, fast delivery,
+              professional customer support and unbeatable prices.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      toggles.forEach(toggle => {
-          toggle.addEventListener('click', function(event) {
-              event.stopPropagation();
-              const targetId = toggle.getAttribute('data-menu-target');
-              const targetMenu = document.getElementById(targetId);
+    @@include('components/Footer.html')
+  </main>
 
-              if (currentMenu && currentMenu !== targetMenu) {
-                  currentMenu.classList.add('hidden');
-                  currentButton.classList.remove('active');
-              }
+  <script>
+    // JavaScript to toggle the mega menu
+    const toggles = document.querySelectorAll('button[data-menu-target]')
+    let currentMenu = null
+    let currentButton = null
 
-              if (targetMenu.classList.contains('hidden')) {
-                  targetMenu.classList.remove('hidden');
-                  toggle.classList.add('active');
-                  currentMenu = targetMenu;
-                  currentButton = toggle;
-              } else {
-                  targetMenu.classList.add('hidden');
-                  toggle.classList.remove('active');
-                  currentMenu = null;
-                  currentButton = null;
-              }
-          });
-      });
+    toggles.forEach(toggle => {
+      toggle.addEventListener('click', function (event) {
+        event.stopPropagation()
+        const targetId = toggle.getAttribute('data-menu-target')
+        const targetMenu = document.getElementById(targetId)
 
-      // Close the mega menu if clicking outside of it
-      document.addEventListener('click', function(event) {
-          if (currentMenu && !currentMenu.contains(event.target)) {
-              currentMenu.classList.add('hidden');
-              if (currentButton) {
-                  currentButton.classList.remove('active');
-              }
-              currentMenu = null;
-              currentButton = null;
-          }
-      });
+        if (currentMenu && currentMenu !== targetMenu) {
+          currentMenu.classList.add('hidden')
+          currentButton.classList.remove('active')
+        }
 
-      // Prevent menu closing when clicking inside the mega menu
-      document.querySelectorAll('.mega-menu').forEach(menu => {
-          menu.addEventListener('click', function(event) {
-              event.stopPropagation();
-          });
-      });
+        if (targetMenu.classList.contains('hidden')) {
+          targetMenu.classList.remove('hidden')
+          toggle.classList.add('active')
+          currentMenu = targetMenu
+          currentButton = toggle
+        } else {
+          targetMenu.classList.add('hidden')
+          toggle.classList.remove('active')
+          currentMenu = null
+          currentButton = null
+        }
+      })
+    })
+
+    // Close the mega menu if clicking outside of it
+    document.addEventListener('click', function (event) {
+      if (currentMenu && !currentMenu.contains(event.target)) {
+        currentMenu.classList.add('hidden')
+        if (currentButton) {
+          currentButton.classList.remove('active')
+        }
+        currentMenu = null
+        currentButton = null
+      }
+    })
+
+    // Prevent menu closing when clicking inside the mega menu
+    document.querySelectorAll('.mega-menu').forEach(menu => {
+      menu.addEventListener('click', function (event) {
+        event.stopPropagation()
+      })
+    })
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const searchForm = document.getElementById('searchForm')
+      const searchInput = document.getElementById('searchInput')
+      const searchResult = document.getElementById('searchResult')
+
+      searchForm.addEventListener('submit', function (event) {
+        event.preventDefault() // Предотвращаем перезагрузку страницы
+
+        const query = searchInput.value.trim()
+
+        if (query) {
+          searchResult.textContent = `Вы искали: "${query}"`
+        } else {
+          searchResult.textContent = 'Пожалуйста, введите запрос.'
+        }
+      })
+    });
+
   </script>
 
-    <script src="./js/scripts.js"></script>
-  </body>
+  <script src="./js/scripts.js"></script>
+</body>
+
 </html>
