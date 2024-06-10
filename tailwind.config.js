@@ -43,7 +43,7 @@ module.exports = {
 
     },
     screens: {
-      '2xl': { max: '1311px' },
+      '2xl': { max: '1319px' },
       xl: { max: '1279px' },
       lg: { max: '1023px' },
       md: { max: '767px' },
@@ -53,7 +53,7 @@ module.exports = {
       minmd: { min: '768px' },
       minlg: { min: '1024px' },
       minxl: { min: '1280px' },
-      min2xl: { min: '1312px' },
+      min2xl: { min: '1318px' },
     },
     container: {
       center: true,
@@ -64,23 +64,29 @@ module.exports = {
         '2xl': '6rem',
       },
     },
-    colors: {
-      transparent: 'transparent',
-      'primary': '#C19476',
-      'secondary': '#F9F4F1',
-      'white': '#ffffff',
-      'black-1': '#333333',
-      'dark-green': '#1E3B41',
-      'purple': '#3f3cbb',
-      'midnight': '#121063',
-      'metal': '#565584',
-      'tahiti': '#3ab7bf',
-      'silver': '#ecebff',
-      'bubble-gum': '#ff77e9',
-      'bermuda': '#78dcca',
-      'border-color-1': 'rgba(193, 148, 118, 0.30)'
+    extend: {
+      boxShadow: {
+        '3xl': '0 35px 60px -15px rgba(193, 148, 118, 0.15)',
+      },
+      colors: {
+        transparent: 'transparent',
+        'primary': '#C19476',
+        'secondary': '#F9F4F1',
+        'white': '#ffffff',
+        'black-1': '#333333',
+        'dark-green': '#1E3B41',
+        'purple': '#3f3cbb',
+        'midnight': '#121063',
+        'metal': '#565584',
+        'tahiti': '#3ab7bf',
+        'silver': '#ecebff',
+        'bubble-gum': '#ff77e9',
+        'bermuda': '#78dcca',
+        'border-color-1': 'rgba(193, 148, 118, 0.30)',
+        'border-color-2': 'rgba(193, 148, 118, 0.80)',
+        'white-2': 'rgba(255, 255, 255, 0.50)',
+      },
     },
-    extend: {},
   },
   plugins: plugins,
 };

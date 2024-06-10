@@ -2,30 +2,27 @@
     <div class="bg-primary py-4">
         <div class="container flex items-center">
             <div>
-                <div class="items-center hidden gap-x-2 lg:flex">
+                <div class="items-center gap-x-2 lg:flex">
                     <div class="relative flex w-full gap-2 md:w-max">
-                      <div class="relative h-10 w-full  min-w-[288px]">
-                        <input type="search" placeholder="Search"
-                          class="peer h-full w-full rounded-[7px] border border-blue-gray-200 border-t-transparent !border-t-blue-gray-300 bg-transparent px-3 py-2.5 pl-9 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder:text-blue-gray-300 placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2  focus:!border-blue-gray-300 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50" />
-                        <label
-                          class="before:content[' '] after:content[' '] pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none !overflow-visible truncate text-[11px] font-normal leading-tight text-gray-500 transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5 before:rounded-tl-md before:border-t before:border-l before:border-blue-gray-200 before:transition-all before:content-none after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block after:h-1.5 after:w-2.5 after:flex-grow after:rounded-tr-md after:border-t after:border-r after:border-blue-gray-200 after:transition-all after:content-none peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-blue-gray-500 peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-focus:text-gray-900 peer-focus:before:border-t-2 peer-focus:before:border-l-2 peer-focus:before:!border-gray-900 peer-focus:after:border-t-2 peer-focus:after:border-r-2 peer-focus:after:!border-gray-900 peer-disabled:text-transparent peer-disabled:before:border-transparent peer-disabled:after:border-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500"></label>
-                      </div>
-                      <div class="!absolute left-3 top-[13px]">
-                        <svg width="13" height="14" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path
-                            d="M9.97811 7.95252C10.2126 7.38634 10.3333 6.7795 10.3333 6.16667C10.3333 4.92899 9.84167 3.742 8.9665 2.86683C8.09133 1.99167 6.90434 1.5 5.66667 1.5C4.42899 1.5 3.242 1.99167 2.36683 2.86683C1.49167 3.742 1 4.92899 1 6.16667C1 6.7795 1.12071 7.38634 1.35523 7.95252C1.58975 8.51871 1.93349 9.03316 2.36683 9.4665C2.80018 9.89984 3.31462 10.2436 3.88081 10.4781C4.447 10.7126 5.05383 10.8333 5.66667 10.8333C6.2795 10.8333 6.88634 10.7126 7.45252 10.4781C8.01871 10.2436 8.53316 9.89984 8.9665 9.4665C9.39984 9.03316 9.74358 8.51871 9.97811 7.95252Z"
-                            fill="#CFD8DC"></path>
-                          <path
-                            d="M13 13.5L9 9.5M10.3333 6.16667C10.3333 6.7795 10.2126 7.38634 9.97811 7.95252C9.74358 8.51871 9.39984 9.03316 8.9665 9.4665C8.53316 9.89984 8.01871 10.2436 7.45252 10.4781C6.88634 10.7126 6.2795 10.8333 5.66667 10.8333C5.05383 10.8333 4.447 10.7126 3.88081 10.4781C3.31462 10.2436 2.80018 9.89984 2.36683 9.4665C1.93349 9.03316 1.58975 8.51871 1.35523 7.95252C1.12071 7.38634 1 6.7795 1 6.16667C1 4.92899 1.49167 3.742 2.36683 2.86683C3.242 1.99167 4.42899 1.5 5.66667 1.5C6.90434 1.5 8.09133 1.99167 8.9665 2.86683C9.84167 3.742 10.3333 4.92899 10.3333 6.16667Z"
-                            stroke="#CFD8DC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                      </div>
+                        <div class="w-full max-w-md relative">
+    <form id="searchForm" class="flex items-center relative">
+      <input id="searchInput" type="text" placeholder="Search..."
+        class="searchInput bg-white-2 relative w-full rounded-lg border-0 py-2 pl-14 pr-16 min-h-[56px] focus:outline-none focus:ring-inherit focus:border-transparent focus:shadow-none">
+        <svg class="absolute left-3 top-3 block" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 13.9072C3 7.88334 7.88334 3 13.9072 3C19.931 3 24.8144 7.88334 24.8144 13.9072C24.8144 19.931 19.931 24.8144 13.9072 24.8144C7.88334 24.8144 3 19.931 3 13.9072ZM13.9072 4.76873C8.86018 4.76873 4.76873 8.86018 4.76873 13.9072C4.76873 18.9542 8.86018 23.0456 13.9072 23.0456C18.9542 23.0456 23.0456 18.9542 23.0456 13.9072C23.0456 8.86018 18.9542 4.76873 13.9072 4.76873Z" fill="#333333"/>
+            <path d="M20.4875 20.4875C20.8329 20.1422 21.3929 20.1422 21.7382 20.4875L26.741 25.4903C27.0863 25.8357 27.0863 26.3956 26.741 26.741C26.3956 27.0863 25.8357 27.0863 25.4903 26.741L20.4875 21.7382C20.1422 21.3929 20.1422 20.8329 20.4875 20.4875Z" fill="#333333"/>
+        </svg>            
+        <button class="button absolute right-3 top-2 w-10 h-10 rounded-xl border border-primary transition group hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-white text-white hover:text-primary">
+            <svg class="fill-white group-hover:fill-primary" xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 22 10" fill="none">
+                <path d="M21.4541 5.44982C21.5058 5.3908 21.5469 5.32069 21.5749 5.24351C21.603 5.16632 21.6174 5.08357 21.6174 5C21.6174 4.91644 21.603 4.83369 21.5749 4.7565C21.5469 4.67931 21.5058 4.6092 21.4541 4.55019L17.9166 0.506922C17.8122 0.387624 17.6707 0.320602 17.523 0.320602C17.3754 0.320602 17.2339 0.387624 17.1295 0.506922C17.0251 0.626221 16.9665 0.788025 16.9665 0.956739C16.9665 1.12545 17.0251 1.28726 17.1295 1.40656L20.2745 5L17.1295 8.59345C17.0251 8.71275 16.9665 8.87455 16.9665 9.04327C16.9665 9.21198 17.0251 9.37379 17.1295 9.49308C17.2339 9.61238 17.3754 9.67941 17.523 9.67941C17.6707 9.67941 17.8122 9.61238 17.9166 9.49308L21.4541 5.44982ZM0.382629 5.63534H21.0605V4.36467H0.382629V5.63534Z" />
+            </svg>
+        </button>
+    </form>
+    <div class="searchResultBlock bg-white rounded-lg border border-primary p-5 flex-col items-start">
+        <p id="searchResultText" class="text-gray-700"></p>
+    </div>
+  </div>
                     </div>
-                    <button
-                      class="select-none rounded-lg bg-gray-900 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                      type="button">
-                      Search
-                    </button>
                 </div>
                 <button
                     class="relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle font-sans text-xs font-medium uppercase text-inherit transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden"
@@ -56,16 +53,16 @@
     <div class="flex mt-10 mb-12 container">
         <img class="mx-auto" src="../img/Main-Logo.svg" alt="Unboxed Fillers">
     </div>
-    <div class="mb-10 bg-gray-100 container">
-        <nav class="bg-blue-600 py-4">
+    <div class="mb-10 container">
+        <nav class="py-4">
             <div class="container mx-auto flex justify-between items-center w-full flex-wrap text-h8">
-                <button class="inline-flex items-center hover:bg-blue-700 py-2" data-menu-target="menu1">Brands <span class="check-icon ml-2"></span></button>
-                <button class="inline-flex items-center hover:bg-blue-700 py-2" data-menu-target="menu2">Manufacturer <span class="check-icon ml-2"></span></button>
-                <button class="inline-flex items-center hover:bg-blue-700 py-2" data-menu-target="menu3">All Categories <span class="check-icon ml-2"></span></button>
-                <a href="#" class="hover:bg-blue-700 py-2">Botulinum</a>
-                <a href="#" class="hover:bg-blue-700 py-2">Dermal fillers</a>
-                <a href="#" class="hover:bg-blue-700 py-2">About Us</a>
-                <a href="#" class="hover:bg-blue-700 py-2">Contact Us</a>
+                <button class="inline-flex items-center py-2" data-menu-target="menu1">Brands <span class="check-icon ml-2"></span></button>
+                <button class="inline-flex items-center py-2" data-menu-target="menu2">Manufacturer <span class="check-icon ml-2"></span></button>
+                <button class="inline-flex items-center py-2" data-menu-target="menu3">All Categories <span class="check-icon ml-2"></span></button>
+                <a href="#" class="py-2">Botulinum</a>
+                <a href="#" class="py-2">Dermal fillers</a>
+                <a href="#" class="py-2">About Us</a>
+                <a href="#" class="py-2">Contact Us</a>
             </div>
         </nav>
     

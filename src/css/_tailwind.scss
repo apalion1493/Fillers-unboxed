@@ -13,7 +13,7 @@
 
 @layer components {
   .container {
-    @apply minsm:max-w-[640px] minmd:max-w-[768px] minlg:max-w-[1024px] minxl:max-w-[1280px] min2xl:max-w-[1312px];
+    @apply minsm:max-w-[640px] minmd:max-w-[768px] minlg:max-w-[1024px] minxl:max-w-[1280px] min2xl:max-w-[1312px] px-2;
   }
 }
 
@@ -38,6 +38,14 @@
 }
 
 .mesotherapy-icon {
-  background: url(../img/Mesotherapy.svg) no-repeat center;
+  background: url(../img/Mesotherapy.svg);
   @apply block bg-100-auto bg-no-repeat bg-center w-[30px] h-[30px]
+}
+
+.searchResultBlock {
+  @apply hidden absolute w-full left-0 top-16 z-10 overflow-hidden
+}
+
+.searchResultBlock.show {
+  @apply flex
 }

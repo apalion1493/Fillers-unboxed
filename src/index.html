@@ -47,22 +47,6 @@
       'style': ' rotate-180 '
       })
 
-      <br>
-
-      <div class="w-full max-w-md p-4 bg-white rounded-lg shadow-lg">
-        <form id="searchForm" class="flex items-center">
-          <input id="searchInput" type="text" placeholder="Введите запрос..."
-            class="w-full p-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-400">
-          <button type="submit"
-            class="bg-blue-500 text-white p-2 rounded-r-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
-            Найти
-          </button>
-        </form>
-        <p id="searchResult" class="mt-4 text-gray-700"></p>
-      </div>
-
-      <br>
-
 
     </section>
     <section class="pt-20 pb-16">
@@ -132,6 +116,8 @@
       </div>
     </section>
 
+    @@include('components/product-card.html')
+
     @@include('components/Footer.html')
   </main>
 
@@ -189,17 +175,20 @@
     document.addEventListener("DOMContentLoaded", function () {
       const searchForm = document.getElementById('searchForm')
       const searchInput = document.getElementById('searchInput')
-      const searchResult = document.getElementById('searchResult')
+      const searchResultBlock = document.querySelector('.searchResultBlock')
+      const searchResultText = document.getElementById('searchResultText')
 
       searchForm.addEventListener('submit', function (event) {
-        event.preventDefault() // Предотвращаем перезагрузку страницы
+        event.preventDefault()
 
         const query = searchInput.value.trim()
 
-        if (query) {
-          searchResult.textContent = `Вы искали: "${query}"`
+        if (query && query !== '') {
+          searchResultBlock.classList.add("show");
+          searchResultText.innerHTML = `Вы искали: <span class='text-primary font-semibold'>"${query}"</span>`
         } else {
-          searchResult.textContent = 'Пожалуйста, введите запрос.'
+          searchResultBlock.classList.remove("show");
+          searchResultText.innerHTML = ''
         }
       })
     });
