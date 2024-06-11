@@ -1,18 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Gulp with TailwindCSS v3</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="./css/style.css" />
-</head>
+@@include('components/head.html', {
+    'title': 'Categories'
+})
 
 <body class="">
   <main class="flex flex-col justify-between min-h-screen">
@@ -104,7 +94,7 @@
                     <br>
 
 
-                    
+
                     <br>
                     <br>
                     <div class="flex justify-between items-center mb-8">
@@ -169,81 +159,7 @@
     @@include('components/Footer.html')
   </main>
 
-  <script>
-    // JavaScript to toggle the mega menu
-    const toggles = document.querySelectorAll('button[data-menu-target]')
-    let currentMenu = null
-    let currentButton = null
-
-    toggles.forEach(toggle => {
-      toggle.addEventListener('click', function (event) {
-        event.stopPropagation()
-        const targetId = toggle.getAttribute('data-menu-target')
-        const targetMenu = document.getElementById(targetId)
-
-        if (currentMenu && currentMenu !== targetMenu) {
-          currentMenu.classList.add('hidden')
-          currentButton.classList.remove('active')
-        }
-
-        if (targetMenu.classList.contains('hidden')) {
-          targetMenu.classList.remove('hidden')
-          toggle.classList.add('active')
-          currentMenu = targetMenu
-          currentButton = toggle
-        } else {
-          targetMenu.classList.add('hidden')
-          toggle.classList.remove('active')
-          currentMenu = null
-          currentButton = null
-        }
-      })
-    })
-
-    // Close the mega menu if clicking outside of it
-    document.addEventListener('click', function (event) {
-      if (currentMenu && !currentMenu.contains(event.target)) {
-        currentMenu.classList.add('hidden')
-        if (currentButton) {
-          currentButton.classList.remove('active')
-        }
-        currentMenu = null
-        currentButton = null
-      }
-    })
-
-    // Prevent menu closing when clicking inside the mega menu
-    document.querySelectorAll('.mega-menu').forEach(menu => {
-      menu.addEventListener('click', function (event) {
-        event.stopPropagation()
-      })
-    })
-
-
-    document.addEventListener("DOMContentLoaded", function () {
-      const searchForm = document.getElementById('searchForm')
-      const searchInput = document.getElementById('searchInput')
-      const searchResultBlock = document.querySelector('.searchResultBlock')
-      const searchResultText = document.getElementById('searchResultText')
-
-      searchForm.addEventListener('submit', function (event) {
-        event.preventDefault()
-
-        const query = searchInput.value.trim()
-
-        if (query && query !== '') {
-          searchResultBlock.classList.add("show");
-          searchResultText.innerHTML = `Вы искали: <span class='text-primary font-semibold'>"${query}"</span>`
-        } else {
-          searchResultBlock.classList.remove("show");
-          searchResultText.innerHTML = ''
-        }
-      })
-    });
-
-  </script>
-
-  <script src="./js/scripts.js"></script>
+  @@include('components/script.html')
 </body>
 
 </html>
