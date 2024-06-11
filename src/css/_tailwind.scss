@@ -49,3 +49,30 @@
 .searchResultBlock.show {
   @apply flex
 }
+
+
+.custom-checkbox {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  display: flex;
+}
+
+.custom-checkbox .checkmark {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  color: #3b82f6; /* Цвет иконки, можно заменить */
+}
