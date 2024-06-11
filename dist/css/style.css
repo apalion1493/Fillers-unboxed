@@ -838,6 +838,9 @@ select {
 .max-h-\[40px\] {
   max-height: 40px;
 }
+.max-h-\[134px\] {
+  max-height: 134px;
+}
 .min-h-\[56px\] {
   min-height: 56px;
 }
@@ -910,6 +913,9 @@ select {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+.resize-none {
+  resize: none;
 }
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
