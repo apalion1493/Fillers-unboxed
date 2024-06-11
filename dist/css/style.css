@@ -653,6 +653,12 @@ select{
 .col-span-7{
   grid-column: span 7 / span 7;
 }
+.col-span-6{
+  grid-column: span 6 / span 6;
+}
+.col-span-4{
+  grid-column: span 4 / span 4;
+}
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -716,6 +722,9 @@ select{
 }
 .mt-auto{
   margin-top: auto;
+}
+.mb-14{
+  margin-bottom: 3.5rem;
 }
 .block{
   display: block;
@@ -1153,6 +1162,9 @@ select{
 .uppercase{
   text-transform: uppercase;
 }
+.normal-case{
+  text-transform: none;
+}
 .italic{
   font-style: italic;
 }
@@ -1496,6 +1508,9 @@ select{
   .lg\:col-span-12{
     grid-column: span 12 / span 12;
   }
+  .lg\:col-span-6{
+    grid-column: span 6 / span 6;
+  }
   .lg\:flex{
     display: flex;
   }
@@ -1520,5 +1535,11 @@ select{
   }
   .md\:grid-cols-1{
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 639px){
+  .sm\:col-span-12{
+    grid-column: span 12 / span 12;
   }
 }
