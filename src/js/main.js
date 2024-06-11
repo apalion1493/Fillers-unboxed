@@ -2,6 +2,40 @@ window.addEventListener("DOMContentLoaded", () => {
   console.log("Loaded Scripts");
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const headers = document.querySelectorAll('.accordion-header');
+
+    headers.forEach(header => {
+      header.addEventListener('click', function() {
+        const content = header.nextElementSibling;
+        const icon = header.querySelector('.accordion-icon');
+
+        if (content.classList.contains('show')) {
+
+          content.style.maxHeight = content.scrollHeight + 'px'; 
+          setTimeout(() => {
+            content.style.maxHeight = '0';
+          }, 10);
+          content.classList.remove('show');
+          icon.classList.remove('active');
+        } else {
+
+          document.querySelectorAll('.accordion-content').forEach(item => {
+            if (item !== content) {
+              item.style.maxHeight = '0';
+              item.classList.remove('show');
+              item.previousElementSibling.querySelector('.accordion-icon').classList.remove('active');
+            }
+          });
+
+          content.classList.add('show');
+          content.style.maxHeight = content.scrollHeight + 'px';
+          icon.classList.add('active');
+        }
+      });
+    });
+  });
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const customSelect = document.querySelector(".custom-select");

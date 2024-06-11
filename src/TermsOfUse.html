@@ -10,7 +10,10 @@
  
     <section class="pt-16 pb-[72px]">
         <div class="container gap-6 flex flex-col">
-            <h3 class="text-h3 not-italic font-semibold">Terms of <span class="text-primary  italic font-normal">Use</span></h3>
+            @@include('components/title.html', {
+                'text': 'Terms of ',
+                'colorText': 'Use'
+            })
             <div class="flex flex-col">
                 <h4 class="text-primary text-md uppercase mb-3">ORDERS</h4>
                 <p class="text-h8 text-black-1">Customers may place orders via phone during our business hours or at any time via email and we will process the order as quickly as possible and usually within 24 working hours from receipt of the order. Concerning products which are in back order the dispatch will be 3-6 working days later unless otherwise informed.</p>

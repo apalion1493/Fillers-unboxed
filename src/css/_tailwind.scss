@@ -59,11 +59,11 @@
 }
 
 .custom-checkbox input[type="checkbox"] {
-  display: none;
+  @apply hidden
 }
 
 .custom-checkbox input[type="checkbox"]:checked + .checkmark {
-  display: flex;
+  @apply flex
 }
 
 .custom-checkbox .checkmark {
@@ -74,5 +74,42 @@
   align-items: center;
   justify-content: center;
   pointer-events: none;
-  color: #3b82f6; /* Цвет иконки, можно заменить */
+}
+
+.accordion-content {
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+  max-height: 0;
+  padding: 0 1rem;
+}
+.accordion-content.show {
+  max-height: 1000px; /* Достаточно большое значение, чтобы показать весь контент */
+}
+
+.accordion-icon {
+  @apply relative border border-primary min-w-[2rem] w-8 h-8 rounded overflow-hidden ml-2
+}
+
+.accordion-icon:not(.active) {
+  @apply bg-primary
+}
+
+.accordion-icon__elem {
+  @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+}
+
+.accordion-icon__minus {
+  display: block;
+}
+
+.accordion-icon:not(.active) .accordion-icon__minus {
+  display: none;
+}
+
+.accordion-icon__plus {
+  display: none;
+}
+
+.accordion-icon:not(.active) .accordion-icon__plus {
+  display: block;
 }
