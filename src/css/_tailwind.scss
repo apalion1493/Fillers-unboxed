@@ -113,3 +113,31 @@
 .accordion-icon:not(.active) .accordion-icon__plus {
   display: block;
 }
+
+.no-arrow {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Устанавливаем transition для плавного переворота */
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+// .select-arrow {
+//   @apply pointer-events-none
+// }
+
+.small-select {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}

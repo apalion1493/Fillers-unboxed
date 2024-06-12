@@ -3,6 +3,34 @@ window.addEventListener("DOMContentLoaded", () => {
   console.log("Loaded Scripts");
 });
 
+window.addEventListener("DOMContentLoaded", () => {
+    // Получаем элементы select и иконки
+const selectElement = document.getElementById('custom-select');
+const arrowIcon = document.getElementById('select-arrow');
+
+// Обработчик события для переворачивания иконки
+selectElement.addEventListener('change', () => {
+    // Убираем классы "rotate-180" при изменении выбора (если было)
+    arrowIcon.classList.remove('rotate-180');
+});
+
+selectElement.addEventListener('click', () => {
+    // Переключаем класс "rotate-180" при клике
+    arrowIcon.classList.toggle('rotate-180');
+});
+
+// Обработчик события фокуса для IE и Safari
+selectElement.addEventListener('focus', () => {
+    arrowIcon.classList.add('rotate-180');
+});
+
+// Обработчик события расфокуса
+selectElement.addEventListener('blur', () => {
+    arrowIcon.classList.remove('rotate-180');
+});
+});
+  
+
 document.addEventListener("DOMContentLoaded", function() {
     const headers = document.querySelectorAll('.accordion-header');
 
