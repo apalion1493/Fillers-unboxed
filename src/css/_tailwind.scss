@@ -27,6 +27,11 @@
   @apply block bg-100-auto bg-no-repeat bg-center w-[20px] h-[20px]
 }
 
+.phone-icon {
+  background: url(../img/calling.svg);
+  @apply block bg-100-auto bg-no-repeat bg-center w-[30px] h-[30px]
+}
+
 .mail-icon {
   background: url(../img/mail.svg);
   @apply block bg-100-auto bg-no-repeat bg-center w-[22px] h-[17px]
@@ -40,6 +45,11 @@
 .mesotherapy-icon {
   background: url(../img/Mesotherapy.svg);
   @apply block bg-100-auto bg-no-repeat bg-center w-[30px] h-[30px]
+}
+
+.heart-white-icon {
+  background: url(../img/Heart-white.svg);
+  @apply block bg-100-auto bg-no-repeat bg-center w-[24px] h-[24px]
 }
 
 .searchResultBlock {
@@ -140,4 +150,24 @@
 
 select::-ms-expand {
   display: none;
+}
+
+.i-percents {
+  background: url(../img/i-percents-100.svg);
+  @apply block bg-100-auto bg-no-repeat bg-center w-[70px] h-[70px]
+}
+
+.i-delivery {
+  background: url(../img/i-delivery.svg);
+  @apply block bg-100-auto bg-no-repeat bg-center w-[70px] h-[70px]
+}
+
+.i-customer {
+  background: url(../img/i-customer.svg);
+  @apply block bg-100-auto bg-no-repeat bg-center w-[70px] h-[70px]
+}
+
+.i-offer {
+  background: url(../img/i-offer.svg);
+  @apply block bg-100-auto bg-no-repeat bg-center w-[70px] h-[70px]
 }

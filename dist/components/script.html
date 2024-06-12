@@ -54,6 +54,7 @@
       const searchInput = document.getElementById('searchInput')
       const searchResultBlock = document.querySelector('.searchResultBlock')
       const searchResultText = document.getElementById('searchResultText')
+      const searchContainer = document.getElementById('searchContainer');
 
       searchForm.addEventListener('submit', function (event) {
         event.preventDefault()
@@ -68,7 +69,16 @@
           searchResultText.innerHTML = ''
         }
       })
+
+      document.addEventListener('click', function(event) {
+        if (!searchContainer.contains(event.target)) {
+          searchResultBlock.classList.remove("show");
+          searchResultBlock.classList.add('hidden');
+        }
+      });
     });
+
+    
 
   </script>
 
