@@ -45,10 +45,13 @@
     "tailwindcss",
     "sass"
   ],
-  "author": "Manjunath G",
+  "author": "Petrovich A",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/manjumjn/gulp-with-tailwindcss/issues"
   },
-  "homepage": "https://github.com/manjumjn/gulp-with-tailwindcss#readme"
+  "homepage": "https://github.com/manjumjn/gulp-with-tailwindcss#readme",
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4"
+  }
 }

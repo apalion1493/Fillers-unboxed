@@ -1,35 +1,45 @@
 window.addEventListener("DOMContentLoaded", () => {
   console.log("Loaded Scripts");
+
+  if (document.querySelector('.splide')) {
+    new Splide( '.splide', {
+        perPage: 4,
+        focus  : 0,
+        omitEnd: true,
+        gap: 20, 
+        perMove: 1,
+        arrows: true,
+        pagination: true,
+        classes: {
+            pagination: 'splide__pagination your-class-pagination',
+            page      : 'splide__pagination__page your-class-page',
+      },
+    } ).mount();
+}
 });
 
 window.addEventListener("DOMContentLoaded", () => {
-    // Получаем элементы select и иконки
-const selectElement = document.getElementById('custom-select');
-const arrowIcon = document.getElementById('select-arrow');
+    const selectElement = document.querySelector('.small-select');
 
-// Обработчик события для переворачивания иконки
-selectElement.addEventListener('change', () => {
-    // Убираем классы "rotate-180" при изменении выбора (если было)
-    arrowIcon.classList.remove('rotate-180');
+    selectElement.addEventListener('mousedown', () => {
+        selectElement.classList.add('open');
+    });
+
+    selectElement.addEventListener('blur', () => {
+        selectElement.classList.remove('open');
+    });
+
+    selectElement.addEventListener('change', () => {
+        selectElement.classList.remove('open');
+    });
 });
 
-selectElement.addEventListener('click', () => {
-    // Переключаем класс "rotate-180" при клике
-    arrowIcon.classList.toggle('rotate-180');
-});
-
-// Обработчик события фокуса для IE и Safari
-selectElement.addEventListener('focus', () => {
-    arrowIcon.classList.add('rotate-180');
-});
-
-// Обработчик события расфокуса
-selectElement.addEventListener('blur', () => {
-    arrowIcon.classList.remove('rotate-180');
-});
+document.addEventListener('click', (event) => {
+    if (!selectElement.contains(event.target)) {
+        selectElement.classList.remove('open');
+    }
 });
   
-
 document.addEventListener("DOMContentLoaded", function() {
     const headers = document.querySelectorAll('.accordion-header');
 
@@ -62,8 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
     });
-  });
-
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   const customSelect = document.querySelector(".custom-select");

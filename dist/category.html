@@ -15,12 +15,13 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
 </head>
 
 <body class="">
   <main class="flex flex-col justify-between min-h-screen">
-    <header class="flex flex-col">
+    <header class="flex flex-col @@commonStyle">
     <div class="bg-primary py-4">
         <div class="container flex items-center justify-between">
             <div>
@@ -234,8 +235,8 @@
                     <h2>Botulinum</h2>
                     <br>
                     <div class="form-group flex flex-col items-start @@common-style">
-    <label class="text-base text-dark-green mb-2 " for="testId">Name</label>
-    <input class="rounded text-black-1 border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 " type="text" id="testId" placeholder="Your Name">
+    <label class="text-base text-dark-green leading-[130%] mb-2 " for="testId">Name</label>
+    <input class="rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 " type="text" id="testId" placeholder="Your Name">
     <small class="self-end text-h11 text-danger mt-2 hidden">text error</small>
 </div>
                     <br>
@@ -487,7 +488,7 @@
                             <div class="min-w-[24px] mr-3 flex justify-center items-center">
                                 <i class="mail-icon"></i>
                             </div>
-                            <a href="mal:info@medfillersupply.com">info@medfillersupply.com</a>
+                            <a class="text-h11" href="mal:info@medfillersupply.com">info@medfillersupply.com</a>
                         </li>
                     </ul>
                 </div>
@@ -589,7 +590,8 @@
 
   </script>
 
-  <script src="./js/scripts.js"></script>
+<script type="text/html" src="./js/libs/splide.min.js"></script>
+<script type="module" src="./js/scripts.js"></script>
 </body>
 
 </html>

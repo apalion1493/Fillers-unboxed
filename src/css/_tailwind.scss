@@ -135,9 +135,9 @@
   transform: rotate(180deg);
 }
 
-// .select-arrow {
-//   @apply pointer-events-none
-// }
+.select-arrow {
+  @apply pointer-events-none
+}
 
 .small-select {
   text-overflow: ellipsis;
@@ -146,10 +146,27 @@
   -moz-appearance: none;
   -o-appearance: none;
   appearance: none;
+  background-image: url(../img/select-icon-bottom.svg);
+  background-size: 16px 27px;
 }
 
-select::-ms-expand {
+.small-select option {
+  color: black;
+}
+
+.small-select:required:invalid {
+  color: gray;
+}
+.small-select option[value=""][disabled] {
   display: none;
+}
+
+.small-select::-ms-expand {
+  display: none;
+}
+
+.small-select.open {
+  background-image: url(../img/select-icon-top.svg);
 }
 
 .i-percents {
@@ -171,3 +188,86 @@ select::-ms-expand {
   background: url(../img/i-offer.svg);
   @apply block bg-100-auto bg-no-repeat bg-center w-[70px] h-[70px]
 }
+
+.line-icon {
+  background: url(../img/line-1.svg);
+  @apply block bg-100-auto bg-no-repeat bg-center w-[182px] h-[27px]
+}
+
+.test-arrow-block {
+  position: relative;
+}
+
+.test-arrow-block:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  top: -35px;
+  right: -40%;
+  background: url(../img/line-1.svg);
+  @apply block bg-100-auto bg-no-repeat bg-center w-[182px] h-[27px]
+}
+
+@media (max-width: 1279.98px) { 
+  .test-arrow-block:not(:last-child)::before {
+    right: -52%;
+  }
+ }
+
+ @media (max-width: 1023.98px) {
+  .test-arrow-block::before {
+    display: none;
+  }
+
+  .test-arrow-block:not(:last-child)::before {
+    display: none;
+  }
+
+  .test-arrow-block:nth-child(2n+1)::before {
+    display: block;
+    right: -115px;
+    top: -20px;
+  }
+ }
+
+ @media (max-width: 639.98px) {
+  .test-arrow-block::before {
+    display: none !important;
+  }
+ }
+
+ .your-class-page {
+  @apply bg-primary
+ }
+
+ .your-class-page.is-active {
+  width: 46px;
+  transform: scale(1);
+  border-radius: 50px;
+  @apply bg-primary
+ }
+
+ .your-class-pagination {
+  gap: 20px;
+  bottom: 10px;
+ }
+
+ .splide__pagination__page  {
+  margin: 0;
+ }
+
+ .splide__arrow {
+  bottom: 0;
+  top: auto;
+ }
+
+ .splide__arrow--prev {
+  left: 0;
+ }
+
+ .splide__arrow--next {
+  right: 0;
+ }
+
+ .splide__arrow:disabled {
+  @apply bg-white
+ }
