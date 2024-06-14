@@ -683,6 +683,12 @@ select{
 .z-50{
   z-index: 50;
 }
+.z-0{
+  z-index: 0;
+}
+.z-\[1\]{
+  z-index: 1;
+}
 .col-span-3{
   grid-column: span 3 / span 3;
 }
@@ -697,6 +703,15 @@ select{
 }
 .col-span-7{
   grid-column: span 7 / span 7;
+}
+.col-span-1{
+  grid-column: span 1 / span 1;
+}
+.col-span-2{
+  grid-column: span 2 / span 2;
+}
+.col-span-12{
+  grid-column: span 12 / span 12;
 }
 .mx-auto{
   margin-left: auto;
@@ -776,6 +791,9 @@ select{
 }
 .mt-auto{
   margin-top: auto;
+}
+.mt-8{
+  margin-top: 2rem;
 }
 .block{
   display: block;
@@ -876,6 +894,9 @@ select{
 .w-full{
   width: 100%;
 }
+.w-\[345px\]{
+  width: 345px;
+}
 .min-w-\[24px\]{
   min-width: 24px;
 }
@@ -893,6 +914,9 @@ select{
 }
 .max-w-\[510px\]{
   max-width: 510px;
+}
+.max-w-\[500px\]{
+  max-width: 500px;
 }
 .flex-1{
   flex: 1 1 0%;
@@ -1018,6 +1042,16 @@ select{
 }
 .gap-y-14{
   row-gap: 3.5rem;
+}
+.gap-y-10{
+  row-gap: 2.5rem;
+}
+.gap-y-6{
+  row-gap: 1.5rem;
+}
+.gap-x-5{
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
 }
 .self-end{
   align-self: flex-end;
@@ -1240,6 +1274,9 @@ select{
 }
 .pb-5{
   padding-bottom: 1.25rem;
+}
+.pt-11{
+  padding-top: 2.75rem;
 }
 .text-center{
   text-align: center;
@@ -1861,6 +1898,12 @@ select{
   .lg\:grid-cols-7{
     grid-template-columns: repeat(7, minmax(0, 1fr));
   }
+  .lg\:gap-y-8{
+    row-gap: 2rem;
+  }
+  .lg\:gap-y-10{
+    row-gap: 2.5rem;
+  }
   .lg\:pl-0{
     padding-left: 0px;
   }
@@ -1882,5 +1925,38 @@ select{
   }
   .sm\:flex-col{
     flex-direction: column;
+  }
+  .sm\:gap-y-8{
+    row-gap: 2rem;
+  }
+  .sm\:text-h11{
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 768px){
+  .minmd\:col-span-4{
+    grid-column: span 4 / span 4;
+  }
+}
+
+@media (min-width: 1024px){
+  .minlg\:col-span-6{
+    grid-column: span 6 / span 6;
+  }
+  .minlg\:col-span-4{
+    grid-column: span 4 / span 4;
+  }
+  .minlg\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+}
+
+@media (min-width: 1280px){
+  .minxl\:col-span-5{
+    grid-column: span 5 / span 5;
+  }
+  .minxl\:block{
+    display: block;
   }
 }
