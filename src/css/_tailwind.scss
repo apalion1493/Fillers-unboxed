@@ -271,3 +271,14 @@
  .splide__arrow:disabled {
   @apply bg-white
  }
+
+ .mobile-menu {
+  width: 100%;
+  min-height: 100vh;
+  transition: 0.3s;
+  @apply fixed top-[88px] -left-full bg-secondary z-[1000]
+ }
+
+ .mobile-menu.active {
+  left: 0;
+ }

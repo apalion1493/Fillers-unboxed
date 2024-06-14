@@ -7,7 +7,9 @@
 
 <body class="">
   <main class="flex flex-col justify-between min-h-screen">
-    @@include('components/Header.html')
+    @@include('components/Header.html', {
+      'commonStyle': 'bg-secondary'
+    })
 
     <!-- <section class="py-10">
       @@include('components/button-arrow.html', {
@@ -40,7 +42,7 @@
 
 
     </section> -->
-    <section class="bg-secondary overflow-hidden mb-12">
+    <section class="bg-secondary overflow-hidden">
       <div class="container">
         <div class="grid grid-cols-12 gap-5">
           <div class="col-span-6 sm:col-span-12 pt-9 pb-5 min-h-[458px] relative z-30">
@@ -76,7 +78,7 @@
       <div class="container">
         <div>
           <div class="mb-12 flex justify-between items-center">
-            <h2 class="text-h3 font-semibold">Explore Our <span
+            <h2 class="text-h3 font-semibold leading-[120%]">Explore Our <span
                 class="italic text-primary font-normal">Categories</span></h2>
             @@include('components/button-arrow.html', {
             'title': 'See More',
@@ -84,7 +86,7 @@
             'style': ' test'
             })
           </div>
-          <div class="grid grid-cols-12 gap-8">
+          <div class="grid grid-cols-12 gap-5">
             <div class="col-span-3 lg:col-span-6 sm:col-span-12">
               @@include('components/category-card.html', {
               'img': 'img/Img-1.jpg',

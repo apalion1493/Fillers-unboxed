@@ -24,6 +24,11 @@
     <header class="flex flex-col @@commonStyle">
     <div class="bg-primary py-4">
         <div class="container flex items-center justify-between">
+            <button id="burger-button" class="minlg:hidden flex items-center justify-center p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
             <div>
                 <div class="items-center gap-x-2 lg:flex">
                     <div class="relative flex w-full gap-2 md:w-max">
@@ -56,7 +61,7 @@
                     <span>Support</span>
                     <a class="hover:underline font-semibold" href="tel:9298104787">(929) 810 4787</a>
                 </div>
-                <button class="relative ml-8">
+                <button id="wishlist-open" class="relative ml-8">
                     <i class="heart-white-icon"></i>
                     <span class="rounded-full bg-dark-green text-white absolute -top-1.5 -right-1.5 flex justify-center content-center align-middle w-3.5 h-3.5">
                         <span class="text-sm absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">1</span>
@@ -64,11 +69,10 @@
                 </button>
             </div>
         </div>
-        
     </div>
     <div class="flex mt-10 mb-12 container">
         <a class="mx-auto" href="#">
-            <img class="" src="../img/Main-Logo.svg" alt="Unboxed Fillers">
+            <img class="" src="img/Main-Logo.svg" alt="Unboxed Fillers">
         </a>
     </div>
     <div class="mb-10 container">
@@ -90,70 +94,21 @@
                 <div class="grid grid-cols-7 gap-x-9 gap-y-14">
                     <div class="flex flex-col">
                         <h3 class="text-2xl font-semibold mb-2.5">A</h3>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
+                        <ul class="flex flex-col gap-y-1">
+                            <li>
+                                <a href="#" class="text-black-1 text-base leading-[130%] transition-colors hover:text-primary">Product name</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-black-1 text-base leading-[130%] transition-colors hover:text-primary">Product name</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-black-1 text-base leading-[130%] transition-colors hover:text-primary">Product name</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-black-1 text-base leading-[130%] transition-colors hover:text-primary">Product name</a>
+                            </li>
+                        </ul>
                     </div>
-
-                    <div class="flex flex-col">
-                        <h3 class="text-2xl font-semibold mb-2.5">A</h3>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                    </div>
-
-                    <div class="flex flex-col">
-                        <h3 class="text-2xl font-semibold mb-2.5">A</h3>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                    </div>
-
-                    <div class="flex flex-col">
-                        <h3 class="text-2xl font-semibold mb-2.5">A</h3>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                    </div>
-
-                    <div class="flex flex-col">
-                        <h3 class="text-2xl font-semibold mb-2.5">A</h3>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                    </div>
-
-                    <div class="flex flex-col">
-                        <h3 class="text-2xl font-semibold mb-2.5">A</h3>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                    </div>
-
-                    <div class="flex flex-col">
-                        <h3 class="text-2xl font-semibold mb-2.5">A</h3>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                    </div>
-
-                    <div class="flex flex-col">
-                        <h3 class="text-2xl font-semibold mb-2.5">A</h3>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                        <a href="#" class="text-black-1 text-base">Product name</a>
-                    </div>
-
-
-
                 </div>
                 <a href="#" class="text-primary mt-12 flex items-center uppercase font-semibold">
                     SEE ALL 
@@ -182,12 +137,152 @@
             </div>
         </div>
     </div>
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="flex flex-col container py-6">
+            <div class="items-center gap-x-2 lg:flex">
+                <div class="relative flex w-full gap-2 md:w-max">
+                    <div class="w-full max-w-md relative" id="searchContainer">
+    <form id="searchForm" class="flex items-center relative">
+      <input id="searchInput" type="text" placeholder="Search..."
+        class="searchInput bg-white-2 relative w-full rounded-lg border-0 py-2 pl-14 pr-16 min-h-[56px] focus:outline-none focus:ring-inherit focus:border-transparent focus:shadow-none">
+        <svg class="absolute left-3 top-3 block" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 13.9072C3 7.88334 7.88334 3 13.9072 3C19.931 3 24.8144 7.88334 24.8144 13.9072C24.8144 19.931 19.931 24.8144 13.9072 24.8144C7.88334 24.8144 3 19.931 3 13.9072ZM13.9072 4.76873C8.86018 4.76873 4.76873 8.86018 4.76873 13.9072C4.76873 18.9542 8.86018 23.0456 13.9072 23.0456C18.9542 23.0456 23.0456 18.9542 23.0456 13.9072C23.0456 8.86018 18.9542 4.76873 13.9072 4.76873Z" fill="#333333"/>
+            <path d="M20.4875 20.4875C20.8329 20.1422 21.3929 20.1422 21.7382 20.4875L26.741 25.4903C27.0863 25.8357 27.0863 26.3956 26.741 26.741C26.3956 27.0863 25.8357 27.0863 25.4903 26.741L20.4875 21.7382C20.1422 21.3929 20.1422 20.8329 20.4875 20.4875Z" fill="#333333"/>
+        </svg>            
+        <button class="button absolute right-3 top-2 w-10 h-10 rounded-xl border border-primary transition group hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-white text-white hover:text-primary">
+            <svg class="fill-white group-hover:fill-primary" xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 22 10" fill="none">
+                <path d="M21.4541 5.44982C21.5058 5.3908 21.5469 5.32069 21.5749 5.24351C21.603 5.16632 21.6174 5.08357 21.6174 5C21.6174 4.91644 21.603 4.83369 21.5749 4.7565C21.5469 4.67931 21.5058 4.6092 21.4541 4.55019L17.9166 0.506922C17.8122 0.387624 17.6707 0.320602 17.523 0.320602C17.3754 0.320602 17.2339 0.387624 17.1295 0.506922C17.0251 0.626221 16.9665 0.788025 16.9665 0.956739C16.9665 1.12545 17.0251 1.28726 17.1295 1.40656L20.2745 5L17.1295 8.59345C17.0251 8.71275 16.9665 8.87455 16.9665 9.04327C16.9665 9.21198 17.0251 9.37379 17.1295 9.49308C17.2339 9.61238 17.3754 9.67941 17.523 9.67941C17.6707 9.67941 17.8122 9.61238 17.9166 9.49308L21.4541 5.44982ZM0.382629 5.63534H21.0605V4.36467H0.382629V5.63534Z" />
+            </svg>
+        </button>
+    </form>
+    <div class="searchResultBlock bg-white rounded-lg border border-primary p-5 flex-col items-start">
+        <p id="searchResultText" class="text-gray-700"></p>
+    </div>
+  </div>
+                </div>
+            </div>
+            <nav class="bg-white shadow-md p-4 w-64">
+                <ul class="space-y-2">
+                    <!-- Основной пункт меню -->
+                    <li>
+                        <button class="menu-btn w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-200 focus:outline-none">
+                            Menu 1
+                        </button>
+                        <!-- Подменю -->
+                        <ul class="hidden space-y-1">
+                            <li class="flex flex-col">
+                                <h3 class="text-2xl font-semibold mb-2.5">A</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#" class="text-black-1 text-base">Product name</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-black-1 text-base">Product name</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-black-1 text-base">Product name</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="text-black-1 text-base">Product name</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="flex flex-col">
+                                <h3 class="text-2xl font-semibold mb-2.5">A</h3>
+                                <a href="#" class="text-black-1 text-base">Product name</a>
+                                <a href="#" class="text-black-1 text-base">Product name</a>
+                                <a href="#" class="text-black-1 text-base">Product name</a>
+                                <a href="#" class="text-black-1 text-base">Product name</a>
+                            </li>
+                            <li class="flex flex-col">
+                                <h3 class="text-2xl font-semibold mb-2.5">A</h3>
+                                <a href="#" class="text-black-1 text-base">Product name</a>
+                                <a href="#" class="text-black-1 text-base">Product name</a>
+                                <a href="#" class="text-black-1 text-base">Product name</a>
+                                <a href="#" class="text-black-1 text-base">Product name</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Другие пункты меню -->
+                    <li>
+                        <button class="menu-btn w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-200 focus:outline-none">
+                            Menu 2
+                        </button>
+                        <ul class="hidden pl-6 space-y-1">
+                            <li class="px-4 py-2 bg-gray-50 border-l-2 border-gray-300 hover:bg-gray-200">Submenu 1</li>
+                            <li class="px-4 py-2 bg-gray-50 border-l-2 border-gray-300 hover:bg-gray-200">Submenu 2</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="menu-btn w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-200 focus:outline-none">
+                            Menu 3
+                        </button>
+                        <ul class="hidden pl-6 space-y-1">
+                            <li class="px-4 py-2 bg-gray-50 border-l-2 border-gray-300 hover:bg-gray-200">Submenu 1</li>
+                            <li class="px-4 py-2 bg-gray-50 border-l-2 border-gray-300 hover:bg-gray-200">Submenu 2</li>
+                            <li class="px-4 py-2 bg-gray-50 border-l-2 border-gray-300 hover:bg-gray-200">Submenu 3</li>
+                            <li class="px-4 py-2 bg-gray-50 border-l-2 border-gray-300 hover:bg-gray-200">Submenu 4</li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="wishlist" class="w-[400px] z-[99] overflow-y-scroll bg-white fixed top-0 right-0 bottom-0 py-6 px-8 flex flex-col">
+        <div class="flex justify-between">
+            <span>Your Wishlist</span>
+            <button id="wishlist-close" class="">
+                <svg class="cursor" xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                    <path d="M19.2233 1.94942C19.6139 2.33994 19.6139 2.97311 19.2233 3.36363L12.1739 10.413L19.2929 17.532C19.6834 17.9225 19.6834 18.5557 19.2929 18.9462L18.4462 19.7929C18.0557 20.1834 17.4225 20.1834 17.032 19.7929L9.91304 12.6739L2.89841 19.6885C2.50788 20.0791 1.87472 20.0791 1.4842 19.6885L0.811454 19.0158C0.420929 18.6253 0.420929 17.9921 0.811453 17.6016L7.82609 10.587L0.707107 3.46798C0.316583 3.07745 0.316583 2.44429 0.707107 2.05376L1.55376 1.20711C1.94429 0.816583 2.57745 0.816583 2.96798 1.20711L10.087 8.32609L17.1364 1.27667C17.5269 0.886148 18.1601 0.886149 18.5506 1.27667L19.2233 1.94942Z" fill="#C19476"/>
+                </svg>
+            </button>
+        </div>
+        <div class="flex flex-col py-6 my-6 border-t border-primary">
+            <div class="mb-6">
+                <p class="inline">You have</p>
+                <a class="text-primary underline font-semibold" href="#">1 ITEMS</a>
+            </div>
+            <div class="flex flex-col gap-6">
+                <div class="flex gap-8">
+                    <div class="overflow-hidden flex items-center justify-center rounded-xl border border-primary min-w-[120px] w-[120px] h-[120px]">
+                        <img class="max-w-full" src="" alt="">
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-semibold block text-dark-green leading-[130%] mb-2">Hyacorp body Counturing MLF1</span>
+                        <div class="flex flex-col mb-5">
+                            <span class="text-h10 text-primary leading-[150%] font-semibold">FORMAT:</span>
+                            <p class="text-h10 text-black-1 leading-[150%]">1 x 10ml</p>
+                        </div>
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="text-h11 leading-7 line-through">$ 80.30 USD</span>
+                            <span class="font-semibold text-primary leading-[130%]">$ 50.00 USD</span>
+                        </div>
+                        <div class="px-4 py-3 border border-primary rounded-lg flex justify-between items-center w-[108px]">
+                            <button class="w-[20px] h-[20px] bg-white flex rounded justify-center items-center border border-primary">
+
+                            </button>
+                            <span class="text-h8">1</span>
+                            <button class="w-[20px] h-[20px] bg-primary rounded flex justify-center items-center border border-primary">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-primary flex justify-center pt-6 mt-auto">
+            <a class="button test2 px-6 py-3 rounded-xl border transition group border-white hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-transparent text-white hover:text-primary @@style" href="@@url">
+    <span class="font-medium">Make a Request</span>
+    <svg class="fill-white group-hover:fill-primary ml-3" xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 22 10" fill="none">
+        <path d="M21.4541 5.44982C21.5058 5.3908 21.5469 5.32069 21.5749 5.24351C21.603 5.16632 21.6174 5.08357 21.6174 5C21.6174 4.91644 21.603 4.83369 21.5749 4.7565C21.5469 4.67931 21.5058 4.6092 21.4541 4.55019L17.9166 0.506922C17.8122 0.387624 17.6707 0.320602 17.523 0.320602C17.3754 0.320602 17.2339 0.387624 17.1295 0.506922C17.0251 0.626221 16.9665 0.788025 16.9665 0.956739C16.9665 1.12545 17.0251 1.28726 17.1295 1.40656L20.2745 5L17.1295 8.59345C17.0251 8.71275 16.9665 8.87455 16.9665 9.04327C16.9665 9.21198 17.0251 9.37379 17.1295 9.49308C17.2339 9.61238 17.3754 9.67941 17.523 9.67941C17.6707 9.67941 17.8122 9.61238 17.9166 9.49308L21.4541 5.44982ZM0.382629 5.63534H21.0605V4.36467H0.382629V5.63534Z" />
+    </svg>
+</a>
+        </div>
+    </div>
 </header>
  
     <section class="pt-10 pb-20">
         <div class="container grid grid-cols-12 gap-5">
              <div class="col-span-5 lg:col-span-12">
-                <h3 class="text-h3 not-italic font-semibold mb-6">FAQ<span class="text-primary italic font-normal">s</span></h3>
+                <h3 class="text-h3 not-italic leading-[120%] font-semibold mb-6">FAQ<span class="text-primary italic font-normal">s</span></h3>
                 
                 <p class="text-black-1 mb-4 lg:max-w-full max-w-[490px]">We are a licensed facility located in Europe and ship the products from countries with government regulated prices, so we are able to offer more affordable prices both for small and large businesses.
                     <br>
@@ -441,6 +536,43 @@
         }
       });
     });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const burgerButton = document.getElementById('burger-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        burgerButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            document.body.classList.toggle('overflow-hidden');
+        });
+    });
+
+
+    document.querySelectorAll('.menu-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const submenu = button.nextElementSibling;
+
+                // Переключаем видимость подменю
+                submenu.classList.toggle('hidden');
+
+                // Закрываем другие подменю, если они открыты
+                document.querySelectorAll('.submenu').forEach(menu => {
+                    if (menu !== submenu) {
+                        menu.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        // Закрываем подменю при клике вне меню
+        document.addEventListener('click', (event) => {
+            const isClickInsideMenu = event.target.closest('nav');
+            if (!isClickInsideMenu) {
+                document.querySelectorAll('.submenu').forEach(submenu => {
+                    submenu.classList.add('hidden');
+                });
+            }
+        });
 
     
 
