@@ -27,7 +27,7 @@ module.exports = {
       '100-auto': '100% auto',
     },
     fontFamily: {
-      'body': ['Poppins'],
+      'sans': ['Poppins', 'sans-serif'],
     },
     fontSize: {
       sm: ['8px', '11px'], 
@@ -40,8 +40,6 @@ module.exports = {
       'h5': '2rem',
       'h3': '2.75rem',
       'h1': '3.625rem',
-      
-
     },
     screens: {
       '2xl': { max: '1319px' },
@@ -88,6 +86,8 @@ module.exports = {
         'border-color-2': 'rgba(193, 148, 118, 0.80)',
         'border-color-3': 'rgba(193, 148, 118, 0.50)',
         'white-2': 'rgba(255, 255, 255, 0.50)',
+        'bg-color-1': 'rgba(51, 51, 51, 0.20)',
+        'gray-2': 'rgba(51, 51, 51, 0.30)',
       },
     },
   },

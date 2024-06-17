@@ -17,6 +17,12 @@
   }
 }
 
+@layer base {
+  html {
+    font-family: "Poppins", system-ui, sans-serif;
+  }
+}
+
 .clock-icon {
   background: url(../img/clock.svg);
   @apply block bg-100-auto bg-no-repeat bg-center w-[22px] h-[22px]
@@ -42,9 +48,55 @@
   @apply block bg-100-auto bg-no-repeat bg-center w-[30px] h-[30px]
 }
 
+.dermal-fillers-icon {
+  background: url(../img/Dermal-Fillers.svg);
+  @apply block bg-100-auto bg-no-repeat bg-center w-[30px] h-[30px]
+}
+
+.ginecology-icon {
+  background: url(../img/Ginecology.svg);
+  @apply block bg-100-auto bg-no-repeat bg-center w-[30px] h-[30px]
+}
+
+.lipolitics-icon {
+  background: url(../img/Lipolitics.svg);
+  @apply block bg-100-auto bg-no-repeat bg-center w-[30px] h-[30px]
+}
+
+.creams-serum-icon {
+  background: url(../img/Creams&Serum.svg);
+  @apply block bg-100-auto bg-no-repeat bg-center w-[30px] h-[30px]
+}
+
+.placental-extract-icon {
+  background: url(../img/Placental-Extract.svg);
+  @apply block bg-100-auto bg-no-repeat bg-center w-[30px] h-[30px]
+}
+
+.ortophedics-icon {
+  background: url(../img/Ortophedics.svg);
+  @apply block bg-100-auto bg-no-repeat bg-center w-[30px] h-[30px]
+}
+
+.Rheumatology-icon {
+  background: url(../img/Rheumatology.svg);
+  @apply block bg-100-auto bg-no-repeat bg-center w-[30px] h-[30px]
+}
+
+
 .mesotherapy-icon {
   background: url(../img/Mesotherapy.svg);
   @apply block bg-100-auto bg-no-repeat bg-center w-[30px] h-[30px]
+}
+
+.heart-filled-icon {
+  background: url(../img/Heart-filled.svg);
+  @apply block bg-100-auto bg-no-repeat bg-center w-[24px] h-[24px]
+}
+
+.heart-icon {
+  background: url(../img/Heart.svg);
+  @apply block bg-100-auto bg-no-repeat bg-center w-[24px] h-[24px]
 }
 
 .heart-white-icon {
@@ -229,6 +281,10 @@
   }
  }
 
+ @media (max-width: 767.98px) {
+  
+ }
+
  @media (max-width: 639.98px) {
   .test-arrow-block::before {
     display: none !important;
@@ -276,9 +332,36 @@
   width: 100%;
   min-height: 100vh;
   transition: 0.3s;
-  @apply fixed top-[88px] -left-full bg-secondary z-[1000]
+  @apply fixed top-[88px] -left-full bg-secondary z-[97] minmd:hidden
  }
 
  .mobile-menu.active {
   left: 0;
+ }
+
+
+ .wishlist {
+  transition: 0.3s;
+ }
+
+ .wishlist.active {
+  right: 0;
+ }
+
+ .product-card--favorites {
+  @apply w-12 h-12 border border-primary 
+  flex justify-center items-center absolute top-4 right-4 
+  rounded-full bg-white overflow-hidden 
+ }
+
+ .product-card--icon-heart {
+  @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
+ }
+
+ .product-card--favorites .heart-filled-icon {
+  opacity: 0;
+ }
+
+ .product-card--favorites.active .heart-filled-icon {
+  opacity: 1;
  }

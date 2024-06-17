@@ -31,27 +31,34 @@ window.addEventListener("DOMContentLoaded", () => {
 }
 });
 
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
     const selectElement = document.querySelector('.small-select');
 
-    selectElement.addEventListener('mousedown', () => {
-        selectElement.classList.add('open');
-    });
+    if (selectElement) {
+        selectElement.addEventListener('mousedown', () => {
+            selectElement.classList.add('open');
+        });
 
-    selectElement.addEventListener('blur', () => {
-        selectElement.classList.remove('open');
-    });
+        selectElement.addEventListener('blur', () => {
+            selectElement.classList.remove('open');
+        });
 
-    selectElement.addEventListener('change', () => {
-        selectElement.classList.remove('open');
-    });
-});
+        selectElement.addEventListener('change', () => {
+            selectElement.classList.remove('open');
+        });
 
-document.addEventListener('click', (event) => {
-    if (!selectElement.contains(event.target)) {
-        selectElement.classList.remove('open');
+        document.addEventListener('click', (event) => {
+            if (!selectElement.contains(event.target)) {
+                selectElement.classList.remove('open');
+            }
+        });
+    } else {
+        console.warn("Элемент с классом .small-select не найден в DOM.");
     }
 });
+
+
+
   
 document.addEventListener("DOMContentLoaded", function() {
     const headers = document.querySelectorAll('.accordion-header');
