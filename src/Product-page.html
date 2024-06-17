@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('components/head.html', {
+    'title': 'Product Page'
+})
+
+<body class="">
+  <main class="flex flex-col justify-between min-h-screen">
+    @@include('components/Header.html')
+ 
+    <section class="py-10">
+        <div class="container">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="col-span-6">
+
+                </div>
+                <div class="col-span-6">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-10">
+        <div class="container">
+            <div class="grid grid-cols-12 gap-5">
+                <div class="col-span-12">
+                    <div>
+
+                        <p>Explore our curated selection of top products.</p>
+                    </div>
+                </div>
+                <div class="col-span-3">
+                        @@include('components/product-card.html', {
+                            'style': 'mb-2',
+                            'img': 'https://dummyimage.com/420x260',
+                            'alt': 'title',
+                            'name': 'Product name',
+                            'title': 'title img',
+                            'link': '#',
+                            'ID': 'test1'
+                        })
+                </div>
+                <div class="col-span-3">
+                    @@include('components/product-card.html', {
+                        'style': 'mb-2',
+                        'img': 'https://dummyimage.com/420x260',
+                        'alt': 'title',
+                        'name': 'Product name',
+                        'title': 'title img',
+                        'link': '#',
+                        'ID': 'test2'
+                    })
+                </div>
+                <div class="col-span-3">
+                    @@include('components/product-card.html', {
+                        'style': 'mb-2',
+                        'img': 'https://dummyimage.com/420x260',
+                        'alt': 'title',
+                        'name': 'Product name',
+                        'title': 'title img',
+                        'link': '#',
+                        'ID': 'test3'
+                    })
+                </div>
+                <div class="col-span-3">
+                    @@include('components/product-card.html', {
+                        'style': 'mb-2',
+                        'img': 'https://dummyimage.com/420x260',
+                        'alt': 'title',
+                        'name': 'Product name',
+                        'title': 'title img',
+                        'link': '#',
+                        'ID': 'test4'
+                    })
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('components/Footer.html')
+  </main>
+
+    @@include('components/wishlistBlock.html')
+    @@include('components/script.html')
+</body>
+
+</html>
