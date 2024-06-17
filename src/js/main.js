@@ -156,4 +156,24 @@ document.addEventListener("DOMContentLoaded", () => {
           selectBtn.setAttribute("aria-expanded", "false");
       }
   });
+
+
+  document.querySelectorAll('.product-card--favorites').forEach(icon => {
+    icon.addEventListener('click', function(event) {
+        event.preventDefault(); // Предотвращаем переход по ссылке
+        event.stopPropagation(); // Предотвращаем всплытие события клика к ссылке
+
+        const productId = this.getAttribute('data-product-id');
+        const productElement = document.getElementById(productId);
+        
+        // Добавляем или удаляем класс 'favorited' у продукта
+        if (productElement.classList.contains('active')) {
+            productElement.classList.remove('active');
+            this.classList.remove('active');
+        } else {
+            productElement.classList.add('active');
+            this.classList.add('active');
+        }
+    });
+});
 });
