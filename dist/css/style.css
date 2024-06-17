@@ -748,9 +748,6 @@ html {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
-.mb-1{
-  margin-bottom: 0.25rem;
-}
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -799,9 +796,6 @@ html {
 .mr-4{
   margin-right: 1rem;
 }
-.mt-1{
-  margin-top: 0.25rem;
-}
 .mt-10{
   margin-top: 2.5rem;
 }
@@ -822,6 +816,12 @@ html {
 }
 .mt-auto{
   margin-top: auto;
+}
+.mb-1{
+  margin-bottom: 0.25rem;
+}
+.mt-1{
+  margin-top: 0.25rem;
 }
 .block{
   display: block;
@@ -862,9 +862,6 @@ html {
 .h-4{
   height: 1rem;
 }
-.h-48{
-  height: 12rem;
-}
 .h-6{
   height: 1.5rem;
 }
@@ -882,6 +879,9 @@ html {
 }
 .h-screen{
   height: 100vh;
+}
+.h-48{
+  height: 12rem;
 }
 .max-h-52{
   max-height: 13rem;
@@ -1138,9 +1138,6 @@ html {
 .border-border-color-1{
   border-color: rgba(193, 148, 118, 0.30);
 }
-.border-border-color-2{
-  border-color: rgba(193, 148, 118, 0.80);
-}
 .border-border-color-3{
   border-color: rgba(193, 148, 118, 0.50);
 }
@@ -1155,6 +1152,9 @@ html {
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+.border-border-color-2{
+  border-color: rgba(193, 148, 118, 0.80);
 }
 .border-t-border-color-1{
   border-top-color: rgba(193, 148, 118, 0.30);
