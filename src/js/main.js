@@ -10,6 +10,18 @@ window.addEventListener("DOMContentLoaded", () => {
         perMove: 1,
         arrows: true,
         pagination: true,
+        breakpoints: {
+            1024: {
+                perPage: 3,
+            },
+            768: {
+                perPage: 2,
+            },
+            640: {
+                perPage: 1,
+                pagination: false,
+            },
+          },
         classes: {
             pagination: 'splide__pagination your-class-pagination',
             page      : 'splide__pagination__page your-class-page',
