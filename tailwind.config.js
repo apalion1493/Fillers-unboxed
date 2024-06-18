@@ -30,16 +30,16 @@ module.exports = {
       'sans': ['Poppins', 'sans-serif'],
     },
     fontSize: {
-      sm: ['8px', '11px'], 
-      'h11': '0.75rem',
-      'h10': '0.875rem',
-      base: '1rem',
-      'h8': '1.125rem',
-      md: '1.25rem',
-      'h6': '1.5rem',
-      'h5': '2rem',
-      'h3': '2.75rem',
-      'h1': '3.625rem',
+      sm: ['8px', '11px'], //8px
+      'h11': '0.75rem', //12px
+      'h10': '0.875rem', //14px
+      base: '1rem', //16px
+      'h8': '1.125rem', //18px
+      md: '1.25rem', //20px
+      'h6': '1.5rem', //24px
+      'h5': '2rem', //32px
+      'h3': '2.75rem', //44px
+      'h1': '3.625rem',//58px
     },
     screens: {
       '2xl': { max: '1319px' },
@@ -64,6 +64,9 @@ module.exports = {
       },
     },
     extend: {
+      listStyleImage: {
+        checkmark: 'url("/img/Ellipse-list.svg")',
+      },
       boxShadow: {
         '3xl': '0 35px 60px -15px rgba(193, 148, 118, 0.15)',
       },

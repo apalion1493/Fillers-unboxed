@@ -31,6 +31,135 @@ window.addEventListener("DOMContentLoaded", () => {
 }
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    const wishlistButtonOpen = document.querySelector('#wishlist-open');
+    const wishlistBlock = document.querySelector('#wishlist');
+    const wishlistCloseBtn = document.querySelector('#wishlist-close');
+    const wishlistBg = document.querySelector('#wishlist-bg');
+    
+    wishlistButtonOpen.addEventListener('click', () => {
+      wishlistBlock.classList.add('active');
+      wishlistBg.classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+    });
+
+    wishlistCloseBtn.addEventListener('click', () => {
+      wishlistBlock.classList.remove('active');
+      wishlistBg.classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+    })
+
+    wishlistBg.addEventListener('click', () => {
+      wishlistBlock.classList.remove('active');
+      wishlistBg.classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+    })
+});
+
+
+// JavaScript to toggle the mega menu
+const toggles = document.querySelectorAll('button[data-menu-target]')
+let currentMenu = null
+let currentButton = null
+
+toggles.forEach(toggle => {
+  toggle.addEventListener('click', function (event) {
+    event.stopPropagation()
+    const targetId = toggle.getAttribute('data-menu-target')
+    const targetMenu = document.getElementById(targetId)
+
+    if (currentMenu && currentMenu !== targetMenu) {
+      currentMenu.classList.add('hidden')
+      currentButton.classList.remove('active')
+    }
+
+    if (targetMenu.classList.contains('hidden')) {
+      targetMenu.classList.remove('hidden')
+      toggle.classList.add('active')
+      currentMenu = targetMenu
+      currentButton = toggle
+    } else {
+      targetMenu.classList.add('hidden')
+      toggle.classList.remove('active')
+      currentMenu = null
+      currentButton = null
+    }
+  })
+})
+
+// Close the mega menu if clicking outside of it
+document.addEventListener('click', function (event) {
+  if (currentMenu && !currentMenu.contains(event.target)) {
+    currentMenu.classList.add('hidden')
+    if (currentButton) {
+      currentButton.classList.remove('active')
+    }
+    currentMenu = null
+    currentButton = null
+  }
+})
+
+// Prevent menu closing when clicking inside the mega menu
+document.querySelectorAll('.mega-menu').forEach(menu => {
+  menu.addEventListener('click', function (event) {
+    event.stopPropagation()
+  })
+})
+
+document.addEventListener('DOMContentLoaded', function () {
+    const burgerButton = document.getElementById('burger-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+        
+    burgerButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('active');
+        document.body.classList.toggle('overflow-hidden');
+    });
+});
+
+    document.querySelectorAll('.menu-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const submenu = button.nextElementSibling;
+
+                // Переключаем видимость подменю
+                submenu.classList.toggle('hidden');
+
+                // Закрываем другие подменю, если они открыты
+                document.querySelectorAll('.submenu').forEach(menu => {
+                    if (menu !== submenu) {
+                        menu.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        // Закрываем подменю при клике вне меню
+        document.addEventListener('click', (event) => {
+            const isClickInsideMenu = event.target.closest('nav');
+            if (!isClickInsideMenu) {
+                document.querySelectorAll('.submenu').forEach(submenu => {
+                    submenu.classList.add('hidden');
+                });
+            }
+        });
+
+document.querySelectorAll('.product-card--favorites').forEach(icon => {
+    icon.addEventListener('click', function(event) {
+        event.preventDefault(); // Предотвращаем переход по ссылке
+        event.stopPropagation(); // Предотвращаем всплытие события клика к ссылке
+
+        const productId = this.getAttribute('data-product-id');
+        const productElement = document.getElementById(productId);
+        
+        if (productElement.classList.contains('active')) {
+            productElement.classList.remove('active');
+            this.classList.remove('active');
+        } else {
+            productElement.classList.add('active');
+            this.classList.add('active');
+        }
+    });
+});
+
 window.addEventListener("load", () => {
     const selectElement = document.querySelector('.small-select');
 
@@ -56,9 +185,6 @@ window.addEventListener("load", () => {
         console.warn("Элемент с классом .small-select не найден в DOM.");
     }
 });
-
-
-
   
 document.addEventListener("DOMContentLoaded", function() {
     const headers = document.querySelectorAll('.accordion-header');
@@ -107,28 +233,29 @@ document.addEventListener("DOMContentLoaded", () => {
       optionsList[0].querySelector("input").checked = true;
   }
 
+  if(selectBtn) {
+    selectBtn.addEventListener("click", () => {
 
-  selectBtn.addEventListener("click", () => {
-
-      customSelect.classList.toggle("active");
-
-      selectBtn.setAttribute(
-          "aria-expanded",
-          selectBtn.getAttribute("aria-expanded") === "true" ? "false" : "true"
-      );
-
-
-      const dropdown = customSelect.querySelector(".select-dropdown");
-      if (customSelect.classList.contains("active")) {
-          dropdown.classList.remove("scale-y-0", "opacity-0", "invisible");
-          dropdown.classList.add("scale-y-100", "opacity-100", "visible");
-          selectBtn.querySelector(".arrow").classList.add("rotate-180");
-      } else {
-          dropdown.classList.remove("scale-y-100", "opacity-100", "visible");
-          dropdown.classList.add("scale-y-0", "opacity-0", "invisible");
-          selectBtn.querySelector(".arrow").classList.remove("rotate-180");
-      }
-  });
+        customSelect.classList.toggle("active");
+  
+        selectBtn.setAttribute(
+            "aria-expanded",
+            selectBtn.getAttribute("aria-expanded") === "true" ? "false" : "true"
+        );
+  
+  
+        const dropdown = customSelect.querySelector(".select-dropdown");
+        if (customSelect.classList.contains("active")) {
+            dropdown.classList.remove("scale-y-0", "opacity-0", "invisible");
+            dropdown.classList.add("scale-y-100", "opacity-100", "visible");
+            selectBtn.querySelector(".arrow").classList.add("rotate-180");
+        } else {
+            dropdown.classList.remove("scale-y-100", "opacity-100", "visible");
+            dropdown.classList.add("scale-y-0", "opacity-0", "invisible");
+            selectBtn.querySelector(".arrow").classList.remove("rotate-180");
+        }
+    });
+  }
 
   optionsList.forEach((option) => {
       function handler(e) {
@@ -158,7 +285,6 @@ document.addEventListener("DOMContentLoaded", () => {
       option.addEventListener("click", handler);
   });
 
-
   document.addEventListener("click", (event) => {
       if (!customSelect.contains(event.target) && customSelect.classList.contains("active")) {
           customSelect.classList.remove("active");
@@ -170,23 +296,4 @@ document.addEventListener("DOMContentLoaded", () => {
       }
   });
 
-
-  document.querySelectorAll('.product-card--favorites').forEach(icon => {
-    icon.addEventListener('click', function(event) {
-        event.preventDefault(); // Предотвращаем переход по ссылке
-        event.stopPropagation(); // Предотвращаем всплытие события клика к ссылке
-
-        const productId = this.getAttribute('data-product-id');
-        const productElement = document.getElementById(productId);
-        
-        // Добавляем или удаляем класс 'favorited' у продукта
-        if (productElement.classList.contains('active')) {
-            productElement.classList.remove('active');
-            this.classList.remove('active');
-        } else {
-            productElement.classList.add('active');
-            this.classList.add('active');
-        }
-    });
-});
 });

@@ -205,17 +205,17 @@
     <section class="py-10">
         <div class="container">
             <div class="grid grid-cols-12 gap-5">
-                <div class="col-span-6">
-                    <div class="w-full relative border border-primary rounded-lg flex justify-center items-center min-h-[600px]">
+                <div class="col-span-6 lg:col-span-12">
+                    <div class="w-full relative overflow-hidden border border-primary rounded-lg flex justify-center items-center max-w-[600px] lg:max-w-full min-h-[100px]">
                         <span class="absolute top-4 right-4 bg-primary text-center text-white px-3 py-2 rounded-lg">In Stock</span>
+                        <img class="" src="img/TestProduct.png" alt="Product">
                     </div>
-                    <img src="" alt="">
                 </div>
-                <div class="col-span-6">
+                <div class="col-span-6 lg:col-span-12">
                     <div class="flex flex-col gap-y-8">
                         <div class="flex flex-col gap-6">
                             <nav class="flex" aria-label="Breadcrumb">
-                                <ol class="inline-flex items-center space-x-2 md:space-x-2 rtl:space-x-reverse">
+                                <ol class="inline-flex items-center flex-wrap space-x-2 md:space-x-2 rtl:space-x-reverse">
                                     <li class="inline-flex items-center">
                                         <a href="#" class="inline-flex items-center text-h10 font-medium text-gray-3 hover:text-primary dark:text-gray-400 dark:hover:text-white">
                                             Home
@@ -241,16 +241,16 @@
                             </nav>
                             <h3 class="text-h5 font-semibold text-dark-green">Hyacorp body Counturing MLF1</h3>
                             <div class="inline-flex items-center gap-x-6">
-                                <span>$ 80.30 USD</span>
-                                <span>$ 50.00 USD</span>
+                                <span class="line-through">$ 80.30 USD</span>
+                                <span class="text-primary font-semibold">$ 50.00 USD</span>
                             </div>
                             <div class="inline-flex items-center gap-x-2">
                                 <p class="font-semibold text-dark-green">Manufacturer:</p>
                                 <span class="font-semibold text-primary">BIOSCIENCE</span>
                             </div>
-                            <div>
+                            <div class="flex flex-col">
                                 <h4 class="text-h8 font-semibold leading-[120%] mb-2 text-dark-green">Use for:</h4>
-                                <ul class="flex flex-col gap-2 pl-5">
+                                <ul class="flex flex-col gap-2 pl-5 list-image-checkmark">
                                     <li>
                                         <p class="leading-[130%] text-black-1">Restore lost body volume</p>
                                     </li>
@@ -270,7 +270,7 @@
                                 <h4 class="text-h8 font-semibold leading-[120%] mb-2 text-dark-green">Note:</h4>
                                 <p class="leading-[130%] text-black-1">The results can last 6 to 8 months or longer</p>
                             </div>
-                            <div class="flex items-center gap-4">
+                            <div class="flex items-center gap-4 sm:flex-col">
                                 <div class="px-3 py-4 border border-primary rounded-lg flex justify-between items-center w-[161px]">
                                     <button class="w-[24px] h-[24px] bg-white flex rounded justify-center items-center border border-primary" control-id="ControlID-6">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="4" viewBox="0 0 11 4" fill="none">
@@ -306,7 +306,7 @@
                             </div>
                             <div class="flex flex-col">
                                 <h5 class="text-h8 font-semibold leading-[120%] mb-2 text-dark-green">Use for:</h5>
-                                <ul class="flex flex-col gap-2 pl-5">
+                                <ul class="flex flex-col gap-2 pl-5 list-image-checkmark">
                                     <li>
                                         <p class="leading-[130%] text-black-1">1 x 10ml syringe</p>
                                     </li>
@@ -341,7 +341,7 @@
                         <p>Explore our curated selection of top products.</p>
                     </div>
                 </div>
-                <div class="col-span-3">
+                <div class="col-span-3 lg:col-span-6 sm:col-span-12">
                     <a href="#" id="test1" class="product-card border border-border-color-2 block rounded-lg overflow-hidden hover:border-primary hover:shadow-3xl mb-2 bg-secondary">
     <div class="block relative h-48 rounded overflow-hidden bg-white">
       <div class="product-card--favorites" data-product-id="test1">
@@ -351,7 +351,7 @@
       <img alt="title img" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260">
     </div>
     <div class="py-6 px-4 border-t border-t-border-color-1">
-      <h3 class="text-gray-500 text-h6 tracking-widest title-font mb-1">Product name</h3>
+      <h3 class="text-dark-green text-h6 tracking-widest title-font mb-1">Product name</h3>
       <div class="flex justify-between items-center">
         <p class="mt-1 line-through">$ 80.30 USD</p>
         <p class="text-primary font-semibold">$ 50.00 USD</p>
@@ -359,7 +359,7 @@
     </div>
 </a>
                 </div>
-                <div class="col-span-3">
+                <div class="col-span-3 lg:col-span-6 sm:col-span-12">
                     <a href="#" id="test2" class="product-card border border-border-color-2 block rounded-lg overflow-hidden hover:border-primary hover:shadow-3xl mb-2 bg-secondary">
     <div class="block relative h-48 rounded overflow-hidden bg-white">
       <div class="product-card--favorites" data-product-id="test2">
@@ -369,7 +369,7 @@
       <img alt="title img" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260">
     </div>
     <div class="py-6 px-4 border-t border-t-border-color-1">
-      <h3 class="text-gray-500 text-h6 tracking-widest title-font mb-1">Product name</h3>
+      <h3 class="text-dark-green text-h6 tracking-widest title-font mb-1">Product name</h3>
       <div class="flex justify-between items-center">
         <p class="mt-1 line-through">$ 80.30 USD</p>
         <p class="text-primary font-semibold">$ 50.00 USD</p>
@@ -377,7 +377,7 @@
     </div>
 </a>
                 </div>
-                <div class="col-span-3">
+                <div class="col-span-3 lg:col-span-6 sm:col-span-12">
                     <a href="#" id="test3" class="product-card border border-border-color-2 block rounded-lg overflow-hidden hover:border-primary hover:shadow-3xl mb-2 bg-secondary">
     <div class="block relative h-48 rounded overflow-hidden bg-white">
       <div class="product-card--favorites" data-product-id="test3">
@@ -387,7 +387,7 @@
       <img alt="title img" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260">
     </div>
     <div class="py-6 px-4 border-t border-t-border-color-1">
-      <h3 class="text-gray-500 text-h6 tracking-widest title-font mb-1">Product name</h3>
+      <h3 class="text-dark-green text-h6 tracking-widest title-font mb-1">Product name</h3>
       <div class="flex justify-between items-center">
         <p class="mt-1 line-through">$ 80.30 USD</p>
         <p class="text-primary font-semibold">$ 50.00 USD</p>
@@ -395,7 +395,7 @@
     </div>
 </a>
                 </div>
-                <div class="col-span-3">
+                <div class="col-span-3 lg:col-span-6 sm:col-span-12">
                     <a href="#" id="test4" class="product-card border border-border-color-2 block rounded-lg overflow-hidden hover:border-primary hover:shadow-3xl mb-2 bg-secondary">
     <div class="block relative h-48 rounded overflow-hidden bg-white">
       <div class="product-card--favorites" data-product-id="test4">
@@ -405,7 +405,7 @@
       <img alt="title img" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260">
     </div>
     <div class="py-6 px-4 border-t border-t-border-color-1">
-      <h3 class="text-gray-500 text-h6 tracking-widest title-font mb-1">Product name</h3>
+      <h3 class="text-dark-green text-h6 tracking-widest title-font mb-1">Product name</h3>
       <div class="flex justify-between items-center">
         <p class="mt-1 line-through">$ 80.30 USD</p>
         <p class="text-primary font-semibold">$ 50.00 USD</p>
@@ -575,81 +575,6 @@
 </div>
 <div id="wishlist-bg" class="fixed w-screen h-screen top-0 left-0 z-[98] bg-bg-color-1 hidden"></div>
     <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const wishlistButtonOpen = document.querySelector('#wishlist-open');
-        const wishlistBlock = document.querySelector('#wishlist');
-        const wishlistCloseBtn = document.querySelector('#wishlist-close');
-        const wishlistBg = document.querySelector('#wishlist-bg');
-        
-        wishlistButtonOpen.addEventListener('click', () => {
-          wishlistBlock.classList.add('active');
-          wishlistBg.classList.remove('hidden');
-          document.body.classList.add('overflow-hidden');
-        });
-
-        wishlistCloseBtn.addEventListener('click', () => {
-          wishlistBlock.classList.remove('active');
-          wishlistBg.classList.add('hidden');
-          document.body.classList.remove('overflow-hidden');
-        })
-
-        wishlistBg.addEventListener('click', () => {
-          wishlistBlock.classList.remove('active');
-          wishlistBg.classList.add('hidden');
-          document.body.classList.remove('overflow-hidden');
-        })
-    });
-
-
-    // JavaScript to toggle the mega menu
-    const toggles = document.querySelectorAll('button[data-menu-target]')
-    let currentMenu = null
-    let currentButton = null
-
-    toggles.forEach(toggle => {
-      toggle.addEventListener('click', function (event) {
-        event.stopPropagation()
-        const targetId = toggle.getAttribute('data-menu-target')
-        const targetMenu = document.getElementById(targetId)
-
-        if (currentMenu && currentMenu !== targetMenu) {
-          currentMenu.classList.add('hidden')
-          currentButton.classList.remove('active')
-        }
-
-        if (targetMenu.classList.contains('hidden')) {
-          targetMenu.classList.remove('hidden')
-          toggle.classList.add('active')
-          currentMenu = targetMenu
-          currentButton = toggle
-        } else {
-          targetMenu.classList.add('hidden')
-          toggle.classList.remove('active')
-          currentMenu = null
-          currentButton = null
-        }
-      })
-    })
-
-    // Close the mega menu if clicking outside of it
-    document.addEventListener('click', function (event) {
-      if (currentMenu && !currentMenu.contains(event.target)) {
-        currentMenu.classList.add('hidden')
-        if (currentButton) {
-          currentButton.classList.remove('active')
-        }
-        currentMenu = null
-        currentButton = null
-      }
-    })
-
-    // Prevent menu closing when clicking inside the mega menu
-    document.querySelectorAll('.mega-menu').forEach(menu => {
-      menu.addEventListener('click', function (event) {
-        event.stopPropagation()
-      })
-    })
-
 
     // document.addEventListener("DOMContentLoaded", function () {
     //   // Выбираем все формы поиска на странице
@@ -693,48 +618,6 @@
     //     }
     //   });
     // });
-
-
-
-
-    document.addEventListener('DOMContentLoaded', function () {
-        const burgerButton = document.getElementById('burger-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        burgerButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('active');
-            document.body.classList.toggle('overflow-hidden');
-        });
-    });
-
-    document.querySelectorAll('.menu-btn').forEach(button => {
-            button.addEventListener('click', () => {
-                const submenu = button.nextElementSibling;
-
-                // Переключаем видимость подменю
-                submenu.classList.toggle('hidden');
-
-                // Закрываем другие подменю, если они открыты
-                document.querySelectorAll('.submenu').forEach(menu => {
-                    if (menu !== submenu) {
-                        menu.classList.add('hidden');
-                    }
-                });
-            });
-        });
-
-        // Закрываем подменю при клике вне меню
-        document.addEventListener('click', (event) => {
-            const isClickInsideMenu = event.target.closest('nav');
-            if (!isClickInsideMenu) {
-                document.querySelectorAll('.submenu').forEach(submenu => {
-                    submenu.classList.add('hidden');
-                });
-            }
-        });
-
-    
-
   </script>
 
 <script type="text/html" src="./js/libs/splide.min.js"></script>
