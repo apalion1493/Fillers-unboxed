@@ -332,7 +332,7 @@
   width: 100%;
   min-height: 100vh;
   transition: 0.3s;
-  @apply fixed top-[88px] -left-full bg-secondary z-[97] minmd:hidden
+  @apply fixed top-[80px] -left-full bg-secondary z-[97] minmd:hidden
  }
 
  .mobile-menu.active {

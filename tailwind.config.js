@@ -65,7 +65,7 @@ module.exports = {
     },
     extend: {
       listStyleImage: {
-        checkmark: 'url("/img/Ellipse-list.svg")',
+        checkmark: 'url("img/Ellipse-list.svg")',
       },
       boxShadow: {
         '3xl': '0 35px 60px -15px rgba(193, 148, 118, 0.15)',
