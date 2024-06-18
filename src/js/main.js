@@ -18,6 +18,36 @@ window.addEventListener("DOMContentLoaded", () => {
 }
 });
 
+const modal = document.getElementById('modal');
+    const openModalBtn = document.getElementById('openModal');
+    const closeModalElements = document.querySelectorAll('.close-modal');
+
+    if(modal && openModalBtn && closeModalElements) {
+        const openModal = () => {
+            modal.classList.remove('hidden');
+        };
+    
+        const closeModal = () => {
+            modal.classList.add('hidden');
+        };
+    
+        openModalBtn.addEventListener('click', openModal);
+    
+        closeModalElements.forEach(el => {
+            el.addEventListener('click', closeModal);
+        });
+    
+        window.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+    } else {
+        console.log('test');
+    }
+
+    
+
 document.addEventListener('DOMContentLoaded', function () {
     const wishlistButtonOpen = document.querySelector('#wishlist-open');
     const wishlistBlock = document.querySelector('#wishlist');
@@ -148,30 +178,36 @@ document.querySelectorAll('.product-card--favorites').forEach(icon => {
 });
 
 window.addEventListener("load", () => {
-    const selectElement = document.querySelector('.small-select');
+    const selectElements = document.querySelectorAll('.small-select');
 
-    if (selectElement) {
-        selectElement.addEventListener('mousedown', () => {
-            selectElement.classList.add('open');
-        });
+    if (selectElements.length > 0) {
+    
+        selectElements.forEach(selectElement => {
+            selectElement.addEventListener('mousedown', (event) => {
+                event.stopPropagation();
+                selectElement.classList.add('open');
+            });
 
-        selectElement.addEventListener('blur', () => {
-            selectElement.classList.remove('open');
-        });
-
-        selectElement.addEventListener('change', () => {
-            selectElement.classList.remove('open');
-        });
-
-        document.addEventListener('click', (event) => {
-            if (!selectElement.contains(event.target)) {
+            selectElement.addEventListener('blur', () => {
                 selectElement.classList.remove('open');
-            }
+            });
+
+            selectElement.addEventListener('change', () => {
+                selectElement.classList.remove('open');
+            });
+        });
+
+        document.addEventListener('click', () => {
+            selectElements.forEach(selectElement => {
+                selectElement.classList.remove('open');
+            });
         });
     } else {
-        console.warn("Элемент с классом .small-select не найден в DOM.");
+        console.warn("Элементы с классом .small-select не найдены в DOM.");
     }
 });
+
+
   
 document.addEventListener("DOMContentLoaded", function() {
     const headers = document.querySelectorAll('.accordion-header');
@@ -273,14 +309,16 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.addEventListener("click", (event) => {
-      if (!customSelect.contains(event.target) && customSelect.classList.contains("active")) {
-          customSelect.classList.remove("active");
-          const dropdown = customSelect.querySelector(".select-dropdown");
-          dropdown.classList.remove("scale-y-100", "opacity-100", "visible");
-          dropdown.classList.add("scale-y-0", "opacity-0", "invisible");
-          selectBtn.querySelector(".arrow").classList.remove("rotate-180");
-          selectBtn.setAttribute("aria-expanded", "false");
-      }
+    if(customSelect) {
+        if (!customSelect.contains(event.target) && customSelect.classList.contains("active")) {
+            customSelect.classList.remove("active");
+            const dropdown = customSelect.querySelector(".select-dropdown");
+            dropdown.classList.remove("scale-y-100", "opacity-100", "visible");
+            dropdown.classList.add("scale-y-0", "opacity-0", "invisible");
+            selectBtn.querySelector(".arrow").classList.remove("rotate-180");
+            selectBtn.setAttribute("aria-expanded", "false");
+        }
+    }
   });
 
 });

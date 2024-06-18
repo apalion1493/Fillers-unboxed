@@ -24,7 +24,7 @@
     <header class="flex flex-col @@commonStyle">
     <div class="bg-primary py-4">
         <div class="container flex items-center justify-between">
-            <button id="burger-button" class="minmd:hidden flex items-center justify-center p-2">
+            <button id="burger-button" class="minmd:hidden flex items-center justify-center p-2" aria-label="Mobile Burger Button">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                 </svg>
@@ -70,7 +70,7 @@
             </div>
         </div>
     </div>
-    <div class="flex mt-10 mb-12 container">
+    <div class="flex mt-10 mb-12 container md:mb-5">
         <a class="mx-auto" href="index.html">
             <img class="md:max-w-[150px]" src="img/Main-Logo.svg" alt="Unboxed Fillers">
         </a>
@@ -416,10 +416,91 @@
 </footer>
   </main>
 
+    <div id="modal" class="fixed inset-0 z-[10000] bg-gray-800 bg-opacity-50 flex items-center justify-center hidden">
+    <div class="bg-white rounded-lg shadow-lg p-8 w-full max-w-[672px] max-h-screen md:overflow-y-scroll relative">
+        <div class="flex justify-between items-center mb-5">
+            <h3 class="text-h3 not-italic leading-[120%] font-semibold text-h5">Make a <span class="text-primary italic font-normal">Request</span></h3>
+            <button class="close-modal text-gray-500 hover:text-gray-700 focus:outline-none text-2xl transition">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M18.9089 1.44942C19.2994 1.83994 19.2994 2.47311 18.9089 2.86363L11.8595 9.91304L18.9784 17.032C19.369 17.4225 19.369 18.0557 18.9784 18.4462L18.1318 19.2929C17.7413 19.6834 17.1081 19.6834 16.7176 19.2929L9.59859 12.1739L2.58396 19.1885C2.19343 19.5791 1.56027 19.5791 1.16974 19.1885L0.497001 18.5158C0.106476 18.1253 0.106476 17.4921 0.497 17.1016L7.51163 10.087L0.392654 2.96798C0.00212985 2.57745 0.00212947 1.94429 0.392654 1.55376L1.23931 0.707107C1.62983 0.316583 2.263 0.316583 2.65352 0.707107L9.7725 7.82609L16.8219 0.776672C17.2124 0.386148 17.8456 0.386149 18.2361 0.776673L18.9089 1.44942Z" fill="#1E3B41"/>
+              </svg>
+            </button>
+        </div>
+        <div class="flex flex-col">
+          <p class="mb-2 text-black-1 leading-[130%]">Should you have any other inquiries, please fill in the form and one of our managers will contact you within 24 hours.</p>
+          <p class="text-primary leading-[130%] font-semibold">PLEASE NOTE: we only sell to the certified doctors and companies.</p>
+          <form class="flex flex-col gap-6 mt-8">
+            <div class="flex gap-6 flex-row sm:flex-col">
+                <div class="form-group flex flex-col items-start flex-1">
+    <label class="text-base text-dark-green leading-[130%] mb-2 " for="NameId">Name</label>
+    <input class="rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 " type="text" id="NameId" placeholder="">
+    <small class="self-end text-h11 text-danger mt-2 hidden">text error</small>
+</div>
+                <div class="form-group flex flex-col items-start flex-1">
+    <label class="text-base text-dark-green leading-[130%] mb-2 " for="PhoneId">Phone</label>
+    <input class="rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 " type="text" id="PhoneId" placeholder="">
+    <small class="self-end text-h11 text-danger mt-2 hidden">text error</small>
+</div>
+            </div>
+            <div class="flex gap-6 flex-row sm:flex-col">
+                <div class="form-group flex flex-col items-start flex-1">
+    <label class="text-base text-dark-green leading-[130%] mb-2 " for="MailId">Email</label>
+    <input class="rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 " type="text" id="MailId" placeholder="">
+    <small class="self-end text-h11 text-danger mt-2 hidden">text error</small>
+</div>
+
+                <div class="relative inline-block w-64 flex-1">
+    <label class="text-base block text-dark-green mb-2 leading-[130%] " for="small-select">State</label>
+    <!-- Сам элемент select без дефолтной стрелки -->
+    <select id="small-select" placeholder="123" class="small-select no-arrow rounded leading-[150%] text-black-1 border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3">
+        <option value="" disabled selected hidden>Choose your state</option>
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+    </select>
+    <!-- Иконка-галочка -->
+    <!-- <svg id="select-arrow" class="select-arrow absolute top-1/2 right-3 -translate-y-1/2 fill-current text-gray-600 w-4 h-4 transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+        <path d="M7 10l5 5 5-5H7z"/>
+    </svg> -->
+</div>
+            </div>
+
+            <div class="form-group flex flex-col items-start flex-1">
+    <label class="text-base text-dark-green mb-2 " for="MessageId">Message</label>
+    <textarea class="rounded resize-none text-black-1 border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 max-h-[134px]" id="MessageId" placeholder="Type your message..." rows="5"></textarea>
+</div>
+
+            <div class="flex flex-col">
+    <label class="custom-checkbox">
+        <span class="custom-checkbox__block">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M18 1.25H6V2.75H18V1.25ZM1.25 6V18H2.75V6H1.25ZM6 22.75H18V21.25H6V22.75ZM22.75 18V6H21.25V18H22.75ZM18 22.75C20.6234 22.75 22.75 20.6234 22.75 18H21.25C21.25 19.7949 19.7949 21.25 18 21.25V22.75ZM1.25 18C1.25 20.6234 3.37665 22.75 6 22.75V21.25C4.20507 21.25 2.75 19.7949 2.75 18H1.25ZM6 1.25C3.37665 1.25 1.25 3.37665 1.25 6H2.75C2.75 4.20507 4.20507 2.75 6 2.75V1.25ZM18 2.75C19.7949 2.75 21.25 4.20507 21.25 6H22.75C22.75 3.37665 20.6234 1.25 18 1.25V2.75Z" fill="#C19476"/>
+            </svg>
+        </span>
+        <input type="checkbox">
+        <span class="checkmark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <path d="M8.50172 11.9425C8.19384 11.6654 7.71962 11.6904 7.44253 11.9983C7.16544 12.3062 7.19039 12.7804 7.49828 13.0575L8.50172 11.9425ZM16.592 9.96046C16.8463 9.63349 16.7874 9.16229 16.4605 8.90799C16.1335 8.65368 15.6623 8.71258 15.408 9.03954L16.592 9.96046ZM18 1.75H6V3.25H18V1.75ZM1.25 6.5V18.5H2.75V6.5H1.25ZM6 23.25H18V21.75H6V23.25ZM22.75 18.5V6.5H21.25V18.5H22.75ZM18 23.25C20.6234 23.25 22.75 21.1234 22.75 18.5H21.25C21.25 20.2949 19.7949 21.75 18 21.75V23.25ZM1.25 18.5C1.25 21.1234 3.37665 23.25 6 23.25V21.75C4.20507 21.75 2.75 20.2949 2.75 18.5H1.25ZM6 1.75C3.37665 1.75 1.25 3.87665 1.25 6.5H2.75C2.75 4.70507 4.20507 3.25 6 3.25V1.75ZM18 3.25C19.7949 3.25 21.25 4.70507 21.25 6.5H22.75C22.75 3.87665 20.6234 1.75 18 1.75V3.25ZM7.49828 13.0575L10.033 15.3387L11.0364 14.2237L8.50172 11.9425L7.49828 13.0575ZM12.585 15.1123L16.592 9.96046L15.408 9.03954L11.401 14.1914L12.585 15.1123ZM10.033 15.3387C10.7881 16.0183 11.9613 15.9142 12.585 15.1123L11.401 14.1914C11.3119 14.306 11.1443 14.3208 11.0364 14.2237L10.033 15.3387Z" fill="#C19476"/>
+            </svg>
+        </span>
+        <span class="ml-3 text-black-1 text-h10 ">I have read and agree to the <a class="underline" href="#">Terms</a></span>
+    </label>
+    <small class="text-h11 text-danger mt-3 hidden">Please confirm that you agree</small>
+</div>
+
+            <button type="submit" class="button px-6 py-3 text-h8 md:text-h10 rounded-xl border transition group border-white hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-transparent text-white hover:text-primary">
+              <span class="font-medium">Send</span>
+              <svg class="fill-white group-hover:fill-primary ml-3" xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 22 10" fill="none">
+                  <path d="M21.4541 5.44982C21.5058 5.3908 21.5469 5.32069 21.5749 5.24351C21.603 5.16632 21.6174 5.08357 21.6174 5C21.6174 4.91644 21.603 4.83369 21.5749 4.7565C21.5469 4.67931 21.5058 4.6092 21.4541 4.55019L17.9166 0.506922C17.8122 0.387624 17.6707 0.320602 17.523 0.320602C17.3754 0.320602 17.2339 0.387624 17.1295 0.506922C17.0251 0.626221 16.9665 0.788025 16.9665 0.956739C16.9665 1.12545 17.0251 1.28726 17.1295 1.40656L20.2745 5L17.1295 8.59345C17.0251 8.71275 16.9665 8.87455 16.9665 9.04327C16.9665 9.21198 17.0251 9.37379 17.1295 9.49308C17.2339 9.61238 17.3754 9.67941 17.523 9.67941C17.6707 9.67941 17.8122 9.61238 17.9166 9.49308L21.4541 5.44982ZM0.382629 5.63534H21.0605V4.36467H0.382629V5.63534Z" />
+              </svg>
+          </form>
+        </div>
+    </div>
+  </div>
     <div id="wishlist" class="wishlist w-full minsm:w-[400px] z-[99] overflow-y-scroll bg-white fixed top-0 -right-full minsm:-right-[400px] bottom-0 py-6 px-8">
     <div class="flex justify-between">
         <span>Your Wishlist</span>
-        <button id="wishlist-close" class="">
+        <button id="wishlist-close" class="" aria-label="Button close wishlist container">
             <svg class="cursor" xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
                 <path d="M19.2233 1.94942C19.6139 2.33994 19.6139 2.97311 19.2233 3.36363L12.1739 10.413L19.2929 17.532C19.6834 17.9225 19.6834 18.5557 19.2929 18.9462L18.4462 19.7929C18.0557 20.1834 17.4225 20.1834 17.032 19.7929L9.91304 12.6739L2.89841 19.6885C2.50788 20.0791 1.87472 20.0791 1.4842 19.6885L0.811454 19.0158C0.420929 18.6253 0.420929 17.9921 0.811453 17.6016L7.82609 10.587L0.707107 3.46798C0.316583 3.07745 0.316583 2.44429 0.707107 2.05376L1.55376 1.20711C1.94429 0.816583 2.57745 0.816583 2.96798 1.20711L10.087 8.32609L17.1364 1.27667C17.5269 0.886148 18.1601 0.886149 18.5506 1.27667L19.2233 1.94942Z" fill="#C19476"/>
             </svg>
@@ -431,28 +512,28 @@
             <a class="text-primary underline font-semibold" href="#">1 ITEMS</a>
         </div>
         <div class="flex flex-col gap-6">
-            <div class="flex gap-8 md:flex-col">
-                <div class="overflow-hidden flex items-center justify-center rounded-xl border border-primary min-w-[120px] w-[120px] h-[120px]">
-                    <img class="max-w-full" src="" alt="">
-                </div>
+            <div class="flex gap-6 md:flex-col">
+                <a href="#" class="overflow-hidden flex items-center justify-center rounded-xl border border-primary min-w-[120px] w-[120px] h-[120px]">
+                    <img class="max-w-full" src="img/Product-img-small.png" alt="Product Image">
+                </a>
                 <div class="flex flex-col">
-                    <span class="font-semibold block text-dark-green leading-[130%] mb-2">Hyacorp body Counturing MLF1</span>
+                    <a href="#" class="font-semibold block text-dark-green hover:text-primary leading-[130%] mb-2">Hyacorp body Counturing MLF1</a>
                     <div class="flex flex-col mb-5">
                         <span class="text-h10 text-primary leading-[150%] font-semibold">FORMAT:</span>
                         <p class="text-h10 text-black-1 leading-[150%]">1 x 10ml</p>
                     </div>
-                    <div class="flex items-center gap-2 mb-4">
+                    <div class="flex items-center gap-2 mb-4 flex-wrap">
                         <span class="text-h11 leading-7 line-through">$ 80.30 USD</span>
-                        <span class="font-semibold text-primary leading-[130%]">$ 50.00 USD</span>
+                        <span class="font-semibold text-primary leading-[130%]">$ 500.00 USD</span>
                     </div>
-                    <div class="px-4 py-3 border border-primary rounded-lg flex justify-between items-center w-[108px]">
-                        <button class="w-[20px] h-[20px] bg-white flex rounded justify-center items-center border border-primary">
+                    <div class="px-3 py-[10px] border border-primary rounded-lg flex justify-between items-center w-[108px]">
+                        <button class="w-[20px] h-[20px] bg-white flex rounded justify-center items-center border border-primary" aria-label="Button minus">
                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="4" viewBox="0 0 11 4" fill="none">
                                 <path d="M9.15145 0.861816C9.78769 0.861816 10.3035 1.37758 10.3035 2.01382C10.3035 2.65005 9.78769 3.16582 9.15145 3.16582H1.59145C0.95522 3.16582 0.439453 2.65005 0.439453 2.01382C0.439453 1.37758 0.955221 0.861816 1.59145 0.861816H9.15145Z" fill="#C19476"/>
                             </svg>
                         </button>
-                        <span class="text-h8">1</span>
-                        <button class="w-[20px] h-[20px] bg-primary rounded flex justify-center items-center border border-primary">
+                        <span class="text-h8 leading-[100%]">1</span>
+                        <button class="w-[20px] h-[20px] bg-primary rounded flex justify-center items-center border border-primary" aria-label="Button plus">
                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
                                 <path d="M10.4715 6.01382C10.4715 6.54401 10.0417 6.97382 9.51149 6.97382H6.43149V10.0538C6.43149 10.6392 5.95691 11.1138 5.37148 11.1138C4.78606 11.1138 4.31148 10.6392 4.31148 10.0538V6.97382H1.23148C0.701291 6.97382 0.271484 6.54401 0.271484 6.01382C0.271484 5.48363 0.701291 5.05382 1.23148 5.05382H4.31148V1.97382C4.31148 1.3884 4.78606 0.913818 5.37148 0.913818C5.95691 0.913818 6.43149 1.3884 6.43149 1.97382V5.05382H9.51149C10.0417 5.05382 10.4715 5.48363 10.4715 6.01382Z" fill="white"/>
                             </svg>
@@ -463,12 +544,12 @@
         </div>
     </div>
     <div class="border-t border-primary flex justify-center pt-6 mt-auto">
-        <a class="button px-6 py-3 text-h8 md:text-h10 rounded-xl border transition group border-white hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-transparent text-white hover:text-primary @@style" href="@@url">
-    <span class="font-medium">Make a Request</span>
-    <svg class="fill-white group-hover:fill-primary ml-3" xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 22 10" fill="none">
-        <path d="M21.4541 5.44982C21.5058 5.3908 21.5469 5.32069 21.5749 5.24351C21.603 5.16632 21.6174 5.08357 21.6174 5C21.6174 4.91644 21.603 4.83369 21.5749 4.7565C21.5469 4.67931 21.5058 4.6092 21.4541 4.55019L17.9166 0.506922C17.8122 0.387624 17.6707 0.320602 17.523 0.320602C17.3754 0.320602 17.2339 0.387624 17.1295 0.506922C17.0251 0.626221 16.9665 0.788025 16.9665 0.956739C16.9665 1.12545 17.0251 1.28726 17.1295 1.40656L20.2745 5L17.1295 8.59345C17.0251 8.71275 16.9665 8.87455 16.9665 9.04327C16.9665 9.21198 17.0251 9.37379 17.1295 9.49308C17.2339 9.61238 17.3754 9.67941 17.523 9.67941C17.6707 9.67941 17.8122 9.61238 17.9166 9.49308L21.4541 5.44982ZM0.382629 5.63534H21.0605V4.36467H0.382629V5.63534Z" />
-    </svg>
-</a>
+        <button type="button" id="openModal" class="button px-6 py-3 text-h8 md:text-h10 rounded-xl border transition group border-white hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-transparent text-white hover:text-primary">
+            <span class="font-medium">Make a Request</span>
+            <svg class="fill-white group-hover:fill-primary ml-3" xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 22 10" fill="none">
+                <path d="M21.4541 5.44982C21.5058 5.3908 21.5469 5.32069 21.5749 5.24351C21.603 5.16632 21.6174 5.08357 21.6174 5C21.6174 4.91644 21.603 4.83369 21.5749 4.7565C21.5469 4.67931 21.5058 4.6092 21.4541 4.55019L17.9166 0.506922C17.8122 0.387624 17.6707 0.320602 17.523 0.320602C17.3754 0.320602 17.2339 0.387624 17.1295 0.506922C17.0251 0.626221 16.9665 0.788025 16.9665 0.956739C16.9665 1.12545 17.0251 1.28726 17.1295 1.40656L20.2745 5L17.1295 8.59345C17.0251 8.71275 16.9665 8.87455 16.9665 9.04327C16.9665 9.21198 17.0251 9.37379 17.1295 9.49308C17.2339 9.61238 17.3754 9.67941 17.523 9.67941C17.6707 9.67941 17.8122 9.61238 17.9166 9.49308L21.4541 5.44982ZM0.382629 5.63534H21.0605V4.36467H0.382629V5.63534Z"></path>
+            </svg>
+        </button>
     </div>
 </div>
 <div id="wishlist-bg" class="fixed w-screen h-screen top-0 left-0 z-[98] bg-bg-color-1 hidden"></div>
