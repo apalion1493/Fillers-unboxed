@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        .loaded {
-          opacity: 1
-        }
-    </style>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Product Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <style>
+    .loaded {
+      opacity: 1
+    }
+  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Product Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
 </head>
 
 <body class="">
-  <main class="flex flex-col justify-between min-h-screen">
-    <header class="flex flex-col @@commonStyle">
+    <main class="flex flex-col justify-between min-h-screen">
+        <header class="flex flex-col @@commonStyle">
     <div class="bg-primary py-4">
         <div class="container flex items-center justify-between">
-            <button id="burger-button" class="minmd:hidden flex items-center justify-center p-2" aria-label="Mobile Burger Button">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            <button id="burger-button" class="minmd:hidden flex items-center justify-center p-2"
+                aria-label="Mobile Burger Button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
             </button>
             <div class="md:hidden">
@@ -34,28 +36,39 @@
                     <div class="relative flex w-full gap-2 md:w-max">
                         <div class="searchContainer w-full max-w-md relative">
     <form class="searchForm flex items-center relative">
-      <input type="text" placeholder="Search..."
-        class="searchInput bg-white-2 relative w-full rounded-lg border-0 py-2 pl-14 pr-16 min-h-[56px] focus:outline-none focus:ring-inherit focus:border-transparent focus:shadow-none">
-        <svg class="absolute left-3 top-3 block" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 13.9072C3 7.88334 7.88334 3 13.9072 3C19.931 3 24.8144 7.88334 24.8144 13.9072C24.8144 19.931 19.931 24.8144 13.9072 24.8144C7.88334 24.8144 3 19.931 3 13.9072ZM13.9072 4.76873C8.86018 4.76873 4.76873 8.86018 4.76873 13.9072C4.76873 18.9542 8.86018 23.0456 13.9072 23.0456C18.9542 23.0456 23.0456 18.9542 23.0456 13.9072C23.0456 8.86018 18.9542 4.76873 13.9072 4.76873Z" fill="#333333"/>
-            <path d="M20.4875 20.4875C20.8329 20.1422 21.3929 20.1422 21.7382 20.4875L26.741 25.4903C27.0863 25.8357 27.0863 26.3956 26.741 26.741C26.3956 27.0863 25.8357 27.0863 25.4903 26.741L20.4875 21.7382C20.1422 21.3929 20.1422 20.8329 20.4875 20.4875Z" fill="#333333"/>
-        </svg>            
-        <button class="button absolute right-3 top-2 w-10 h-10 rounded-xl border border-primary transition group hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-white text-white hover:text-primary">
-            <svg class="fill-white group-hover:fill-primary" xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 22 10" fill="none">
-                <path d="M21.4541 5.44982C21.5058 5.3908 21.5469 5.32069 21.5749 5.24351C21.603 5.16632 21.6174 5.08357 21.6174 5C21.6174 4.91644 21.603 4.83369 21.5749 4.7565C21.5469 4.67931 21.5058 4.6092 21.4541 4.55019L17.9166 0.506922C17.8122 0.387624 17.6707 0.320602 17.523 0.320602C17.3754 0.320602 17.2339 0.387624 17.1295 0.506922C17.0251 0.626221 16.9665 0.788025 16.9665 0.956739C16.9665 1.12545 17.0251 1.28726 17.1295 1.40656L20.2745 5L17.1295 8.59345C17.0251 8.71275 16.9665 8.87455 16.9665 9.04327C16.9665 9.21198 17.0251 9.37379 17.1295 9.49308C17.2339 9.61238 17.3754 9.67941 17.523 9.67941C17.6707 9.67941 17.8122 9.61238 17.9166 9.49308L21.4541 5.44982ZM0.382629 5.63534H21.0605V4.36467H0.382629V5.63534Z" />
+        <input type="text" placeholder="Search..."
+            class="searchInput bg-white-2 relative w-full rounded-lg border-0 py-2 pl-14 pr-16 min-h-[56px] focus:outline-none focus:ring-inherit focus:border-transparent focus:shadow-none">
+        <svg class="absolute left-3 top-3 block" width="30" height="30" viewBox="0 0 30 30" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M3 13.9072C3 7.88334 7.88334 3 13.9072 3C19.931 3 24.8144 7.88334 24.8144 13.9072C24.8144 19.931 19.931 24.8144 13.9072 24.8144C7.88334 24.8144 3 19.931 3 13.9072ZM13.9072 4.76873C8.86018 4.76873 4.76873 8.86018 4.76873 13.9072C4.76873 18.9542 8.86018 23.0456 13.9072 23.0456C18.9542 23.0456 23.0456 18.9542 23.0456 13.9072C23.0456 8.86018 18.9542 4.76873 13.9072 4.76873Z"
+                fill="#333333" />
+            <path
+                d="M20.4875 20.4875C20.8329 20.1422 21.3929 20.1422 21.7382 20.4875L26.741 25.4903C27.0863 25.8357 27.0863 26.3956 26.741 26.741C26.3956 27.0863 25.8357 27.0863 25.4903 26.741L20.4875 21.7382C20.1422 21.3929 20.1422 20.8329 20.4875 20.4875Z"
+                fill="#333333" />
+        </svg>
+        <button
+            class="button absolute right-3 top-2 w-10 h-10 rounded-xl border border-primary transition group hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-white text-white hover:text-primary">
+            <svg class="fill-white group-hover:fill-primary" xmlns="http://www.w3.org/2000/svg" width="22" height="10"
+                viewBox="0 0 22 10" fill="none">
+                <path
+                    d="M21.4541 5.44982C21.5058 5.3908 21.5469 5.32069 21.5749 5.24351C21.603 5.16632 21.6174 5.08357 21.6174 5C21.6174 4.91644 21.603 4.83369 21.5749 4.7565C21.5469 4.67931 21.5058 4.6092 21.4541 4.55019L17.9166 0.506922C17.8122 0.387624 17.6707 0.320602 17.523 0.320602C17.3754 0.320602 17.2339 0.387624 17.1295 0.506922C17.0251 0.626221 16.9665 0.788025 16.9665 0.956739C16.9665 1.12545 17.0251 1.28726 17.1295 1.40656L20.2745 5L17.1295 8.59345C17.0251 8.71275 16.9665 8.87455 16.9665 9.04327C16.9665 9.21198 17.0251 9.37379 17.1295 9.49308C17.2339 9.61238 17.3754 9.67941 17.523 9.67941C17.6707 9.67941 17.8122 9.61238 17.9166 9.49308L21.4541 5.44982ZM0.382629 5.63534H21.0605V4.36467H0.382629V5.63534Z" />
             </svg>
         </button>
     </form>
     <div class="searchResultBlock bg-white rounded-lg border border-primary p-5 flex-col items-start">
         <p class="searchResultText text-gray-700"></p>
     </div>
-  </div>
+</div>
                     </div>
                 </div>
             </div>
             <div class="flex items-center">
-                <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                    <path d="M18.3077 19.7436L18.0965 20.7995C18.5728 20.8949 19.0538 20.6595 19.2709 20.2252L18.3077 19.7436ZM8.25641 9.69231L7.7748 8.72908C7.34042 8.94626 7.10517 9.4273 7.20039 9.90351L8.25641 9.69231ZM20.1026 12.5641C20.1026 13.1589 20.5847 13.641 21.1795 13.641C21.7742 13.641 22.2564 13.1589 22.2564 12.5641H20.1026ZM15.4359 5.74359C14.8411 5.74359 14.359 6.22575 14.359 6.82051C14.359 7.41528 14.8411 7.89744 15.4359 7.89744V5.74359ZM25.8462 12.5641C25.8462 13.1589 26.3283 13.641 26.9231 13.641C27.5178 13.641 28 13.1589 28 12.5641H25.8462ZM15.4359 0C14.8411 0 14.359 0.48216 14.359 1.07692C14.359 1.67169 14.8411 2.15385 15.4359 2.15385V0ZM25.8462 21.6879V24.0513H28V21.6879H25.8462ZM3.94872 2.15385H6.3121V0H3.94872V2.15385ZM18.3077 19.7436C18.5189 18.6876 18.5192 18.6876 18.5195 18.6876C18.5162 18.6869 18.5087 18.6855 18.4988 18.6832C18.479 18.6789 18.4465 18.6714 18.4023 18.6608C18.314 18.6392 18.179 18.6043 18.0059 18.5534C17.659 18.4513 17.1613 18.2857 16.578 18.0357C15.4066 17.5337 13.9194 16.7042 12.6076 15.3924L11.0847 16.9153C12.6447 18.4753 14.3883 19.4406 15.7297 20.0155C16.4028 20.304 16.9821 20.4974 17.3981 20.6196C17.6063 20.6809 17.7743 20.7246 17.8933 20.7536C17.9529 20.7681 18.0003 20.7789 18.0344 20.7865C18.0517 20.7902 18.0655 20.7931 18.0758 20.7954C18.081 20.7964 18.0853 20.7974 18.0887 20.798C18.0904 20.7984 18.092 20.7987 18.0933 20.799C18.0939 20.7991 18.0945 20.7993 18.095 20.7993C18.0953 20.7994 18.0963 20.7995 18.0965 20.7995C18.0969 20.7997 18.0965 20.7995 18.3077 19.7436ZM12.6076 15.3924C11.2958 14.0806 10.4663 12.5934 9.96421 11.422C9.71423 10.8387 9.54866 10.3411 9.44663 9.99421C9.39568 9.82099 9.36079 9.68606 9.33928 9.59762C9.32854 9.55344 9.32114 9.52093 9.31678 9.50115C9.3146 9.49127 9.31316 9.48456 9.31246 9.48117C9.3121 9.47948 9.31192 9.47862 9.31191 9.4786C9.31182 9.47819 9.31191 9.47859 9.31191 9.4786C9.31192 9.47862 9.3121 9.47948 9.31246 9.48117C9.31244 9.48109 9.31248 9.48133 9.31246 9.48117C9.31251 9.48146 9.31243 9.4811 8.25641 9.69231C7.20039 9.90351 7.20032 9.90317 7.20039 9.90351C7.20042 9.90364 7.20064 9.90468 7.2007 9.90495C7.2008 9.90548 7.20091 9.90607 7.20104 9.90672C7.20131 9.90801 7.20161 9.90952 7.20197 9.91124C7.20268 9.9147 7.20357 9.91902 7.20466 9.92421C7.20684 9.93459 7.2098 9.94839 7.21358 9.9655C7.22113 9.9997 7.23197 10.0471 7.24646 10.1067C7.27543 10.2258 7.31907 10.3938 7.3803 10.6019C7.50262 11.0179 7.69602 11.5972 7.98451 12.2703C8.55937 13.6117 9.52467 15.3553 11.0847 16.9153L12.6076 15.3924ZM8.73802 10.6555L9.24636 10.4014L8.28313 8.47491L7.7748 8.72908L8.73802 10.6555ZM11.1467 5.40301L9.97841 2.48221L7.97861 3.28212L9.14693 6.20293L11.1467 5.40301ZM25.5178 18.0217L22.597 16.8533L21.7971 18.853L24.7178 20.0214L25.5178 18.0217ZM17.5986 18.7537L17.3445 19.262L19.2709 20.2252L19.525 19.7169L17.5986 18.7537ZM22.597 16.8533C20.6901 16.0905 18.517 16.9167 17.5986 18.7537L19.525 19.7169C19.9426 18.8819 20.9304 18.5064 21.7971 18.853L22.597 16.8533ZM9.24636 10.4014C11.0832 9.48294 11.9095 7.30981 11.1467 5.40301L9.14693 6.20293C9.49362 7.06966 9.11806 8.05744 8.28313 8.47491L9.24636 10.4014ZM6.3121 2.15385C7.04603 2.15385 7.70603 2.60068 7.97861 3.28212L9.97841 2.48221C9.37874 0.983044 7.92676 0 6.3121 0V2.15385ZM28 21.6879C28 20.0733 27.017 18.6213 25.5178 18.0217L24.7178 20.0214C25.3993 20.294 25.8462 20.9539 25.8462 21.6879H28ZM24.0513 25.8462C11.9577 25.8462 2.15385 16.0423 2.15385 3.94872H0C0 17.2319 10.7681 28 24.0513 28V25.8462ZM24.0513 28C26.2321 28 28 26.2321 28 24.0513H25.8462C25.8462 25.0426 25.0426 25.8462 24.0513 25.8462V28ZM2.15385 3.94872C2.15385 2.95743 2.95743 2.15385 3.94872 2.15385V0C1.76791 0 0 1.76791 0 3.94872H2.15385ZM22.2564 12.5641C22.2564 11.6684 22.0799 10.7815 21.7372 9.954L19.7473 10.7782C19.9818 11.3445 20.1026 11.9513 20.1026 12.5641H22.2564ZM21.7372 9.954C21.3944 9.12651 20.892 8.37461 20.2588 7.74127L18.7357 9.26427C19.1691 9.69761 19.5128 10.2121 19.7473 10.7782L21.7372 9.954ZM20.2588 7.74127C19.6254 7.10792 18.8734 6.60553 18.0459 6.26277L17.2217 8.25266C17.7879 8.48719 18.3024 8.83093 18.7357 9.26427L20.2588 7.74127ZM18.0459 6.26277C17.2186 5.92 16.3316 5.74359 15.4359 5.74359V7.89744C16.0487 7.89744 16.6555 8.01814 17.2217 8.25266L18.0459 6.26277ZM28 12.5641C28 10.9142 27.6751 9.28038 27.0436 7.75603L25.0537 8.58026C25.5769 9.84331 25.8462 11.197 25.8462 12.5641H28ZM27.0436 7.75603C26.4122 6.23168 25.4867 4.84663 24.3201 3.67995L22.797 5.20295C23.7637 6.16962 24.5306 7.31723 25.0537 8.58026L27.0436 7.75603ZM24.3201 3.67995C23.1534 2.51325 21.7683 1.58779 20.244 0.956379L19.4198 2.94627C20.6828 3.46944 21.8304 4.23626 22.797 5.20295L24.3201 3.67995ZM20.244 0.956379C18.7197 0.324987 17.0859 0 15.4359 0V2.15385C16.803 2.15385 18.1566 2.42312 19.4198 2.94627L20.244 0.956379Z" fill="white"/>
+                <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+                    fill="none">
+                    <path
+                        d="M18.3077 19.7436L18.0965 20.7995C18.5728 20.8949 19.0538 20.6595 19.2709 20.2252L18.3077 19.7436ZM8.25641 9.69231L7.7748 8.72908C7.34042 8.94626 7.10517 9.4273 7.20039 9.90351L8.25641 9.69231ZM20.1026 12.5641C20.1026 13.1589 20.5847 13.641 21.1795 13.641C21.7742 13.641 22.2564 13.1589 22.2564 12.5641H20.1026ZM15.4359 5.74359C14.8411 5.74359 14.359 6.22575 14.359 6.82051C14.359 7.41528 14.8411 7.89744 15.4359 7.89744V5.74359ZM25.8462 12.5641C25.8462 13.1589 26.3283 13.641 26.9231 13.641C27.5178 13.641 28 13.1589 28 12.5641H25.8462ZM15.4359 0C14.8411 0 14.359 0.48216 14.359 1.07692C14.359 1.67169 14.8411 2.15385 15.4359 2.15385V0ZM25.8462 21.6879V24.0513H28V21.6879H25.8462ZM3.94872 2.15385H6.3121V0H3.94872V2.15385ZM18.3077 19.7436C18.5189 18.6876 18.5192 18.6876 18.5195 18.6876C18.5162 18.6869 18.5087 18.6855 18.4988 18.6832C18.479 18.6789 18.4465 18.6714 18.4023 18.6608C18.314 18.6392 18.179 18.6043 18.0059 18.5534C17.659 18.4513 17.1613 18.2857 16.578 18.0357C15.4066 17.5337 13.9194 16.7042 12.6076 15.3924L11.0847 16.9153C12.6447 18.4753 14.3883 19.4406 15.7297 20.0155C16.4028 20.304 16.9821 20.4974 17.3981 20.6196C17.6063 20.6809 17.7743 20.7246 17.8933 20.7536C17.9529 20.7681 18.0003 20.7789 18.0344 20.7865C18.0517 20.7902 18.0655 20.7931 18.0758 20.7954C18.081 20.7964 18.0853 20.7974 18.0887 20.798C18.0904 20.7984 18.092 20.7987 18.0933 20.799C18.0939 20.7991 18.0945 20.7993 18.095 20.7993C18.0953 20.7994 18.0963 20.7995 18.0965 20.7995C18.0969 20.7997 18.0965 20.7995 18.3077 19.7436ZM12.6076 15.3924C11.2958 14.0806 10.4663 12.5934 9.96421 11.422C9.71423 10.8387 9.54866 10.3411 9.44663 9.99421C9.39568 9.82099 9.36079 9.68606 9.33928 9.59762C9.32854 9.55344 9.32114 9.52093 9.31678 9.50115C9.3146 9.49127 9.31316 9.48456 9.31246 9.48117C9.3121 9.47948 9.31192 9.47862 9.31191 9.4786C9.31182 9.47819 9.31191 9.47859 9.31191 9.4786C9.31192 9.47862 9.3121 9.47948 9.31246 9.48117C9.31244 9.48109 9.31248 9.48133 9.31246 9.48117C9.31251 9.48146 9.31243 9.4811 8.25641 9.69231C7.20039 9.90351 7.20032 9.90317 7.20039 9.90351C7.20042 9.90364 7.20064 9.90468 7.2007 9.90495C7.2008 9.90548 7.20091 9.90607 7.20104 9.90672C7.20131 9.90801 7.20161 9.90952 7.20197 9.91124C7.20268 9.9147 7.20357 9.91902 7.20466 9.92421C7.20684 9.93459 7.2098 9.94839 7.21358 9.9655C7.22113 9.9997 7.23197 10.0471 7.24646 10.1067C7.27543 10.2258 7.31907 10.3938 7.3803 10.6019C7.50262 11.0179 7.69602 11.5972 7.98451 12.2703C8.55937 13.6117 9.52467 15.3553 11.0847 16.9153L12.6076 15.3924ZM8.73802 10.6555L9.24636 10.4014L8.28313 8.47491L7.7748 8.72908L8.73802 10.6555ZM11.1467 5.40301L9.97841 2.48221L7.97861 3.28212L9.14693 6.20293L11.1467 5.40301ZM25.5178 18.0217L22.597 16.8533L21.7971 18.853L24.7178 20.0214L25.5178 18.0217ZM17.5986 18.7537L17.3445 19.262L19.2709 20.2252L19.525 19.7169L17.5986 18.7537ZM22.597 16.8533C20.6901 16.0905 18.517 16.9167 17.5986 18.7537L19.525 19.7169C19.9426 18.8819 20.9304 18.5064 21.7971 18.853L22.597 16.8533ZM9.24636 10.4014C11.0832 9.48294 11.9095 7.30981 11.1467 5.40301L9.14693 6.20293C9.49362 7.06966 9.11806 8.05744 8.28313 8.47491L9.24636 10.4014ZM6.3121 2.15385C7.04603 2.15385 7.70603 2.60068 7.97861 3.28212L9.97841 2.48221C9.37874 0.983044 7.92676 0 6.3121 0V2.15385ZM28 21.6879C28 20.0733 27.017 18.6213 25.5178 18.0217L24.7178 20.0214C25.3993 20.294 25.8462 20.9539 25.8462 21.6879H28ZM24.0513 25.8462C11.9577 25.8462 2.15385 16.0423 2.15385 3.94872H0C0 17.2319 10.7681 28 24.0513 28V25.8462ZM24.0513 28C26.2321 28 28 26.2321 28 24.0513H25.8462C25.8462 25.0426 25.0426 25.8462 24.0513 25.8462V28ZM2.15385 3.94872C2.15385 2.95743 2.95743 2.15385 3.94872 2.15385V0C1.76791 0 0 1.76791 0 3.94872H2.15385ZM22.2564 12.5641C22.2564 11.6684 22.0799 10.7815 21.7372 9.954L19.7473 10.7782C19.9818 11.3445 20.1026 11.9513 20.1026 12.5641H22.2564ZM21.7372 9.954C21.3944 9.12651 20.892 8.37461 20.2588 7.74127L18.7357 9.26427C19.1691 9.69761 19.5128 10.2121 19.7473 10.7782L21.7372 9.954ZM20.2588 7.74127C19.6254 7.10792 18.8734 6.60553 18.0459 6.26277L17.2217 8.25266C17.7879 8.48719 18.3024 8.83093 18.7357 9.26427L20.2588 7.74127ZM18.0459 6.26277C17.2186 5.92 16.3316 5.74359 15.4359 5.74359V7.89744C16.0487 7.89744 16.6555 8.01814 17.2217 8.25266L18.0459 6.26277ZM28 12.5641C28 10.9142 27.6751 9.28038 27.0436 7.75603L25.0537 8.58026C25.5769 9.84331 25.8462 11.197 25.8462 12.5641H28ZM27.0436 7.75603C26.4122 6.23168 25.4867 4.84663 24.3201 3.67995L22.797 5.20295C23.7637 6.16962 24.5306 7.31723 25.0537 8.58026L27.0436 7.75603ZM24.3201 3.67995C23.1534 2.51325 21.7683 1.58779 20.244 0.956379L19.4198 2.94627C20.6828 3.46944 21.8304 4.23626 22.797 5.20295L24.3201 3.67995ZM20.244 0.956379C18.7197 0.324987 17.0859 0 15.4359 0V2.15385C16.803 2.15385 18.1566 2.42312 19.4198 2.94627L20.244 0.956379Z"
+                        fill="white" />
                 </svg>
                 <div class="flex flex-col text-white">
                     <span>Support</span>
@@ -63,8 +76,10 @@
                 </div>
                 <button id="wishlist-open" class="relative ml-8 md:mr-2">
                     <i class="heart-white-icon"></i>
-                    <span class="rounded-full bg-dark-green text-white absolute -top-1.5 -right-1.5 flex justify-center content-center align-middle w-3.5 h-3.5">
-                        <span class="text-sm absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">1</span>
+                    <span
+                        class="rounded-full bg-dark-green text-white absolute -top-1.5 -right-1.5 flex justify-center content-center align-middle w-3.5 h-3.5">
+                        <span
+                            class="text-sm absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">1</span>
                     </span>
                 </button>
             </div>
@@ -78,64 +93,78 @@
     <div class="container md:hidden">
         <nav class="py-4">
             <div class="container mx-auto flex justify-center items-center w-full flex-wrap text-h8">
-                <button class="inline-flex items-center py-2 px-14 transition-colors hover:text-primary" data-menu-target="menu1">All Categories <span class="check-icon ml-2"></span></button>
+                <button class="inline-flex items-center py-2 px-14 transition-colors hover:text-primary"
+                    data-menu-target="menu1">All Categories <span class="check-icon ml-2"></span></button>
                 <a href="about.html" class="py-2 px-14 transition-colors hover:text-primary">About Us</a>
                 <a href="contact-us.html" class="py-2 px-14 transition-colors hover:text-primary">Contact Us</a>
             </div>
         </nav>
-    
+
         <!-- Mega Menus -->
         <div class="relative">
-            <div id="menu1" class="mega-menu rounded-xl border border-primary border-solid hidden absolute w-full bg-white z-50 px-10 py-8">
+            <div id="menu1"
+                class="mega-menu rounded-xl border border-primary border-solid hidden absolute w-full bg-white z-50 px-10 py-8">
                 <div class="grid grid-cols-3 minxl:grid-cols-5 gap-x-[75px] gap-y-14">
                     <div class="flex flex-col gap-8">
-                        <a href="#" class="text-black-1 text-base leading-[130%] inline-flex items-center transition-colors hover:text-primary">
+                        <a href="#"
+                            class="text-black-1 text-base leading-[130%] inline-flex items-center transition-colors hover:text-primary">
                             <i class="botulinum-icon mr-2"></i>
                             Botulinum
                         </a>
-                        <a href="#" class="text-black-1 text-base leading-[130%] inline-flex items-center transition-colors hover:text-primary">
+                        <a href="#"
+                            class="text-black-1 text-base leading-[130%] inline-flex items-center transition-colors hover:text-primary">
                             <i class="mesotherapy-icon mr-2"></i>
                             Mesotherapy
                         </a>
-                        <a href="#" class="text-black-1 text-base leading-[130%] inline-flex items-center transition-colors hover:text-primary">
+                        <a href="#"
+                            class="text-black-1 text-base leading-[130%] inline-flex items-center transition-colors hover:text-primary">
                             <i class="dermal-fillers-icon mr-2"></i>
                             Dermal Fillers
                         </a>
                     </div>
                     <div class="flex flex-col gap-8">
-                        <a href="#" class="text-black-1 text-base leading-[130%] inline-flex items-center transition-colors hover:text-primary">
+                        <a href="#"
+                            class="text-black-1 text-base leading-[130%] inline-flex items-center transition-colors hover:text-primary">
                             <i class="lipolitics-icon mr-2"></i>
                             Lipolitics
                         </a>
-                        <a href="#" class="text-black-1 text-base leading-[130%] inline-flex items-center transition-colors hover:text-primary">
+                        <a href="#"
+                            class="text-black-1 text-base leading-[130%] inline-flex items-center transition-colors hover:text-primary">
                             <i class="placental-extract-icon mr-2"></i>
                             Placental Extract
                         </a>
-                        <a href="#" class="text-black-1 text-base leading-[130%] inline-flex items-center transition-colors hover:text-primary">
+                        <a href="#"
+                            class="text-black-1 text-base leading-[130%] inline-flex items-center transition-colors hover:text-primary">
                             <i class="creams-serum-icon mr-2"></i>
-                            Creams & Serum 
+                            Creams & Serum
                         </a>
                     </div>
                     <div class="flex flex-col gap-8">
-                        <a href="#" class="text-black-1 text-base leading-[130%] inline-flex items-center transition-colors hover:text-primary">
+                        <a href="#"
+                            class="text-black-1 text-base leading-[130%] inline-flex items-center transition-colors hover:text-primary">
                             <i class="Rheumatology-icon mr-2"></i>
                             Rheumatology
                         </a>
-                        <a href="#" class="text-black-1 text-base leading-[130%] inline-flex items-center transition-colors hover:text-primary">
+                        <a href="#"
+                            class="text-black-1 text-base leading-[130%] inline-flex items-center transition-colors hover:text-primary">
                             <i class="ortophedics-icon mr-2"></i>
                             Ortophedics
                         </a>
-                        <a href="#" class="text-black-1 text-base leading-[130%] inline-flex items-center transition-colors hover:text-primary">
+                        <a href="#"
+                            class="text-black-1 text-base leading-[130%] inline-flex items-center transition-colors hover:text-primary">
                             <i class="ginecology-icon mr-2"></i>
                             Ginecology
                         </a>
                     </div>
                 </div>
                 <a href="#" class="text-primary mt-12 flex items-center uppercase font-semibold">
-                    SEE ALL 
-                    <span class="button test2 ml-3 w-10 h-10 rounded-xl border transition group border-white hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-transparent text-white hover:text-primary">
-                        <svg class="fill-white group-hover:fill-primary" xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 22 10" fill="none">
-                            <path d="M21.4541 5.44982C21.5058 5.3908 21.5469 5.32069 21.5749 5.24351C21.603 5.16632 21.6174 5.08357 21.6174 5C21.6174 4.91644 21.603 4.83369 21.5749 4.7565C21.5469 4.67931 21.5058 4.6092 21.4541 4.55019L17.9166 0.506922C17.8122 0.387624 17.6707 0.320602 17.523 0.320602C17.3754 0.320602 17.2339 0.387624 17.1295 0.506922C17.0251 0.626221 16.9665 0.788025 16.9665 0.956739C16.9665 1.12545 17.0251 1.28726 17.1295 1.40656L20.2745 5L17.1295 8.59345C17.0251 8.71275 16.9665 8.87455 16.9665 9.04327C16.9665 9.21198 17.0251 9.37379 17.1295 9.49308C17.2339 9.61238 17.3754 9.67941 17.523 9.67941C17.6707 9.67941 17.8122 9.61238 17.9166 9.49308L21.4541 5.44982ZM0.382629 5.63534H21.0605V4.36467H0.382629V5.63534Z" />
+                    SEE ALL
+                    <span
+                        class="button test2 ml-3 w-10 h-10 rounded-xl border transition group border-white hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-transparent text-white hover:text-primary">
+                        <svg class="fill-white group-hover:fill-primary" xmlns="http://www.w3.org/2000/svg" width="22"
+                            height="10" viewBox="0 0 22 10" fill="none">
+                            <path
+                                d="M21.4541 5.44982C21.5058 5.3908 21.5469 5.32069 21.5749 5.24351C21.603 5.16632 21.6174 5.08357 21.6174 5C21.6174 4.91644 21.603 4.83369 21.5749 4.7565C21.5469 4.67931 21.5058 4.6092 21.4541 4.55019L17.9166 0.506922C17.8122 0.387624 17.6707 0.320602 17.523 0.320602C17.3754 0.320602 17.2339 0.387624 17.1295 0.506922C17.0251 0.626221 16.9665 0.788025 16.9665 0.956739C16.9665 1.12545 17.0251 1.28726 17.1295 1.40656L20.2745 5L17.1295 8.59345C17.0251 8.71275 16.9665 8.87455 16.9665 9.04327C16.9665 9.21198 17.0251 9.37379 17.1295 9.49308C17.2339 9.61238 17.3754 9.67941 17.523 9.67941C17.6707 9.67941 17.8122 9.61238 17.9166 9.49308L21.4541 5.44982ZM0.382629 5.63534H21.0605V4.36467H0.382629V5.63534Z" />
                         </svg>
                     </span>
                 </a>
@@ -148,22 +177,30 @@
                 <div class="relative flex w-full gap-2 md:w-max mx-auto">
                     <div class="searchContainer w-full max-w-md relative">
     <form class="searchForm flex items-center relative">
-      <input type="text" placeholder="Search..."
-        class="searchInput bg-white-2 relative w-full rounded-lg border-0 py-2 pl-14 pr-16 min-h-[56px] focus:outline-none focus:ring-inherit focus:border-transparent focus:shadow-none">
-        <svg class="absolute left-3 top-3 block" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M3 13.9072C3 7.88334 7.88334 3 13.9072 3C19.931 3 24.8144 7.88334 24.8144 13.9072C24.8144 19.931 19.931 24.8144 13.9072 24.8144C7.88334 24.8144 3 19.931 3 13.9072ZM13.9072 4.76873C8.86018 4.76873 4.76873 8.86018 4.76873 13.9072C4.76873 18.9542 8.86018 23.0456 13.9072 23.0456C18.9542 23.0456 23.0456 18.9542 23.0456 13.9072C23.0456 8.86018 18.9542 4.76873 13.9072 4.76873Z" fill="#333333"/>
-            <path d="M20.4875 20.4875C20.8329 20.1422 21.3929 20.1422 21.7382 20.4875L26.741 25.4903C27.0863 25.8357 27.0863 26.3956 26.741 26.741C26.3956 27.0863 25.8357 27.0863 25.4903 26.741L20.4875 21.7382C20.1422 21.3929 20.1422 20.8329 20.4875 20.4875Z" fill="#333333"/>
-        </svg>            
-        <button class="button absolute right-3 top-2 w-10 h-10 rounded-xl border border-primary transition group hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-white text-white hover:text-primary">
-            <svg class="fill-white group-hover:fill-primary" xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 22 10" fill="none">
-                <path d="M21.4541 5.44982C21.5058 5.3908 21.5469 5.32069 21.5749 5.24351C21.603 5.16632 21.6174 5.08357 21.6174 5C21.6174 4.91644 21.603 4.83369 21.5749 4.7565C21.5469 4.67931 21.5058 4.6092 21.4541 4.55019L17.9166 0.506922C17.8122 0.387624 17.6707 0.320602 17.523 0.320602C17.3754 0.320602 17.2339 0.387624 17.1295 0.506922C17.0251 0.626221 16.9665 0.788025 16.9665 0.956739C16.9665 1.12545 17.0251 1.28726 17.1295 1.40656L20.2745 5L17.1295 8.59345C17.0251 8.71275 16.9665 8.87455 16.9665 9.04327C16.9665 9.21198 17.0251 9.37379 17.1295 9.49308C17.2339 9.61238 17.3754 9.67941 17.523 9.67941C17.6707 9.67941 17.8122 9.61238 17.9166 9.49308L21.4541 5.44982ZM0.382629 5.63534H21.0605V4.36467H0.382629V5.63534Z" />
+        <input type="text" placeholder="Search..."
+            class="searchInput bg-white-2 relative w-full rounded-lg border-0 py-2 pl-14 pr-16 min-h-[56px] focus:outline-none focus:ring-inherit focus:border-transparent focus:shadow-none">
+        <svg class="absolute left-3 top-3 block" width="30" height="30" viewBox="0 0 30 30" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M3 13.9072C3 7.88334 7.88334 3 13.9072 3C19.931 3 24.8144 7.88334 24.8144 13.9072C24.8144 19.931 19.931 24.8144 13.9072 24.8144C7.88334 24.8144 3 19.931 3 13.9072ZM13.9072 4.76873C8.86018 4.76873 4.76873 8.86018 4.76873 13.9072C4.76873 18.9542 8.86018 23.0456 13.9072 23.0456C18.9542 23.0456 23.0456 18.9542 23.0456 13.9072C23.0456 8.86018 18.9542 4.76873 13.9072 4.76873Z"
+                fill="#333333" />
+            <path
+                d="M20.4875 20.4875C20.8329 20.1422 21.3929 20.1422 21.7382 20.4875L26.741 25.4903C27.0863 25.8357 27.0863 26.3956 26.741 26.741C26.3956 27.0863 25.8357 27.0863 25.4903 26.741L20.4875 21.7382C20.1422 21.3929 20.1422 20.8329 20.4875 20.4875Z"
+                fill="#333333" />
+        </svg>
+        <button
+            class="button absolute right-3 top-2 w-10 h-10 rounded-xl border border-primary transition group hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-white text-white hover:text-primary">
+            <svg class="fill-white group-hover:fill-primary" xmlns="http://www.w3.org/2000/svg" width="22" height="10"
+                viewBox="0 0 22 10" fill="none">
+                <path
+                    d="M21.4541 5.44982C21.5058 5.3908 21.5469 5.32069 21.5749 5.24351C21.603 5.16632 21.6174 5.08357 21.6174 5C21.6174 4.91644 21.603 4.83369 21.5749 4.7565C21.5469 4.67931 21.5058 4.6092 21.4541 4.55019L17.9166 0.506922C17.8122 0.387624 17.6707 0.320602 17.523 0.320602C17.3754 0.320602 17.2339 0.387624 17.1295 0.506922C17.0251 0.626221 16.9665 0.788025 16.9665 0.956739C16.9665 1.12545 17.0251 1.28726 17.1295 1.40656L20.2745 5L17.1295 8.59345C17.0251 8.71275 16.9665 8.87455 16.9665 9.04327C16.9665 9.21198 17.0251 9.37379 17.1295 9.49308C17.2339 9.61238 17.3754 9.67941 17.523 9.67941C17.6707 9.67941 17.8122 9.61238 17.9166 9.49308L21.4541 5.44982ZM0.382629 5.63534H21.0605V4.36467H0.382629V5.63534Z" />
             </svg>
         </button>
     </form>
     <div class="searchResultBlock bg-white rounded-lg border border-primary p-5 flex-col items-start">
         <p class="searchResultText text-gray-700"></p>
     </div>
-  </div>
+</div>
                 </div>
             </div>
             <nav class="bg-white shadow-md p-4 w-full">
@@ -186,13 +223,15 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="menu-btn block w-full text-left px-4 text-gray-700 hover:bg-gray-200 focus:outline-none">
+                        <a href="#"
+                            class="menu-btn block w-full text-left px-4 text-gray-700 hover:bg-gray-200 focus:outline-none">
                             About Us
                         </a>
-                        
+
                     </li>
                     <li>
-                        <a href="#" class="menu-btn block w-full text-left px-4 text-gray-700 hover:bg-gray-200 focus:outline-none">
+                        <a href="#"
+                            class="menu-btn block w-full text-left px-4 text-gray-700 hover:bg-gray-200 focus:outline-none">
                             Contact Us
                         </a>
                     </li>
@@ -201,243 +240,294 @@
         </div>
     </div>
 </header>
- 
-    <section class="py-10">
-        <div class="container">
-            <div class="grid grid-cols-12 gap-5">
-                <div class="col-span-6 lg:col-span-12">
-                    <div class="w-full relative overflow-hidden border border-primary rounded-lg flex justify-center items-center max-w-[600px] lg:max-w-full min-h-[100px]">
-                        <span class="absolute top-4 right-4 bg-primary text-center text-white px-3 py-2 rounded-lg">In Stock</span>
-                        <img class="" src="img/TestProduct.png" alt="Product">
+
+        <section class="py-10">
+            <div class="container">
+                <div class="grid grid-cols-12 gap-5">
+                    <div class="col-span-6 lg:col-span-12">
+                        <div
+                            class="w-full relative overflow-hidden border border-primary rounded-lg flex justify-center items-center max-w-[600px] lg:max-w-full min-h-[100px]">
+                            <span
+                                class="absolute top-4 right-4 bg-primary text-center text-white px-3 py-2 rounded-lg">In
+                                Stock</span>
+                            <img class="" src="img/TestProduct.png" alt="Product">
+                        </div>
                     </div>
-                </div>
-                <div class="col-span-6 lg:col-span-12">
-                    <div class="flex flex-col gap-y-8">
-                        <div class="flex flex-col gap-6">
-                            <nav class="flex" aria-label="Breadcrumb">
-                                <ol class="inline-flex items-center flex-wrap space-x-2 md:space-x-2 rtl:space-x-reverse">
-                                    <li class="inline-flex items-center">
-                                        <a href="index.html" class="inline-flex items-center text-h10 font-medium text-gray-3 hover:text-primary dark:text-gray-400 dark:hover:text-white">
-                                            Home
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <div class="flex items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                                <path d="M6 3.5L11 8.5L6 13.5" stroke="#333333" stroke-opacity="0.4" stroke-linecap="round"/>
-                                            </svg>
-                                            <a href="category.html" class="ms-2 text-h10 font-medium text-gray-3 hover:text-primary md:ms-2 dark:text-gray-400 dark:hover:text-white">Botulinum</a>
-                                        </div>
-                                    </li>
-                                    <li aria-current="page">
-                                        <div class="flex items-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                                <path d="M6 3.5L11 8.5L6 13.5" stroke="#1E3B41" stroke-width="1.5" stroke-linecap="round"/>
-                                            </svg>
-                                            <span class="ms-2 text-h10 font-medium text-dark-green md:ms-2 dark:text-gray-400">Product Name</span>
-                                        </div>
-                                    </li>
-                                </ol>
-                            </nav>
-                            <h3 class="text-h5 font-semibold text-dark-green">Hyacorp body Counturing MLF1</h3>
-                            <div class="inline-flex items-center gap-x-6">
-                                <span class="line-through">$ 80.30 USD</span>
-                                <span class="text-primary font-semibold">$ 50.00 USD</span>
-                            </div>
-                            <div class="inline-flex items-center gap-x-2">
-                                <p class="font-semibold text-dark-green">Manufacturer:</p>
-                                <span class="font-semibold text-primary">BIOSCIENCE</span>
-                            </div>
-                            <div class="flex flex-col">
-                                <h4 class="text-h8 font-semibold leading-[120%] mb-2 text-dark-green">Use for:</h4>
-                                <ul class="flex flex-col gap-2 pl-5 list-image-checkmark">
-                                    <li>
-                                        <p class="leading-[130%] text-black-1">Restore lost body volume</p>
-                                    </li>
-                                    <li>
-                                        <p class="leading-[130%] text-black-1">Contour body surfaces</p>
-                                    </li>
-                                    <li>
-                                        <p class="leading-[130%] text-black-1">Areas: Hands, calves, correction of concave deformities</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="inline-flex items-center gap-x-2">
-                                <h4 class="text-h8 font-semibold leading-[120%] text-dark-green">Format:</h4>
-                                <span class="text-primary font-semibold">1 x 10ml</span>
-                            </div>
-                            <div class="flex flex-col">
-                                <h4 class="text-h8 font-semibold leading-[120%] mb-2 text-dark-green">Note:</h4>
-                                <p class="leading-[130%] text-black-1">The results can last 6 to 8 months or longer</p>
-                            </div>
-                            <div class="flex items-center gap-4 sm:flex-col">
-                                <div class="px-3 py-4 border border-primary rounded-lg flex justify-between items-center w-[161px]">
-                                    <button class="w-[24px] h-[24px] bg-white flex rounded justify-center items-center border border-primary" control-id="ControlID-6">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="4" viewBox="0 0 11 4" fill="none">
-                                            <path d="M9.15145 0.861816C9.78769 0.861816 10.3035 1.37758 10.3035 2.01382C10.3035 2.65005 9.78769 3.16582 9.15145 3.16582H1.59145C0.95522 3.16582 0.439453 2.65005 0.439453 2.01382C0.439453 1.37758 0.955221 0.861816 1.59145 0.861816H9.15145Z" fill="#C19476"></path>
-                                        </svg>
-                                    </button>
-                                    <span class="text-h8 leading-[110%]">1</span>
-                                    <button class="w-[24px] h-[24px] bg-primary rounded flex justify-center items-center border border-primary" control-id="ControlID-7">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
-                                            <path d="M10.4715 6.01382C10.4715 6.54401 10.0417 6.97382 9.51149 6.97382H6.43149V10.0538C6.43149 10.6392 5.95691 11.1138 5.37148 11.1138C4.78606 11.1138 4.31148 10.6392 4.31148 10.0538V6.97382H1.23148C0.701291 6.97382 0.271484 6.54401 0.271484 6.01382C0.271484 5.48363 0.701291 5.05382 1.23148 5.05382H4.31148V1.97382C4.31148 1.3884 4.78606 0.913818 5.37148 0.913818C5.95691 0.913818 6.43149 1.3884 6.43149 1.97382V5.05382H9.51149C10.0417 5.05382 10.4715 5.48363 10.4715 6.01382Z" fill="white"></path>
-                                        </svg>
-                                    </button>
+                    <div class="col-span-6 lg:col-span-12">
+                        <div class="flex flex-col gap-y-8">
+                            <div class="flex flex-col gap-6">
+                                <nav class="flex" aria-label="Breadcrumb">
+                                    <ol
+                                        class="inline-flex items-center flex-wrap space-x-2 md:space-x-2 rtl:space-x-reverse">
+                                        <li class="inline-flex items-center">
+                                            <a href="index.html"
+                                                class="inline-flex items-center text-h10 font-medium text-gray-3 hover:text-primary dark:text-gray-400 dark:hover:text-white">
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <div class="flex items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                                                    viewBox="0 0 16 17" fill="none">
+                                                    <path d="M6 3.5L11 8.5L6 13.5" stroke="#333333" stroke-opacity="0.4"
+                                                        stroke-linecap="round" />
+                                                </svg>
+                                                <a href="category.html"
+                                                    class="ms-2 text-h10 font-medium text-gray-3 hover:text-primary md:ms-2 dark:text-gray-400 dark:hover:text-white">Botulinum</a>
+                                            </div>
+                                        </li>
+                                        <li aria-current="page">
+                                            <div class="flex items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                                                    viewBox="0 0 16 17" fill="none">
+                                                    <path d="M6 3.5L11 8.5L6 13.5" stroke="#1E3B41" stroke-width="1.5"
+                                                        stroke-linecap="round" />
+                                                </svg>
+                                                <span
+                                                    class="ms-2 text-h10 font-medium text-dark-green md:ms-2 dark:text-gray-400">Product
+                                                    Name</span>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </nav>
+                                <h3 class="text-h5 font-semibold text-dark-green">Hyacorp body Counturing MLF1</h3>
+                                <div class="inline-flex items-center gap-x-6">
+                                    <span class="line-through">$ 80.30 USD</span>
+                                    <span class="text-primary font-semibold">$ 50.00 USD</span>
                                 </div>
-                                <a class="button test2 px-6 py-3 rounded-xl border transition group border-white hover:border-primary bg-primary inline-flex items-center hover:bg-transparent text-white hover:text-primary flex-1 justify-center py-4" href="#">
-    <svg class="stroke-white group-hover:stroke-primary mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <g clip-path="url(#clip0_67_13532)">
-          <path d="M12 21.5C12 21.5 1 15.4545 1 8.32955C1 6.78345 1.60175 5.30069 2.67287 4.20743C3.74399 3.11418 5.19674 2.5 6.71154 2.5C9.10087 2.5 11.1475 3.82892 12 5.95455C12.8525 3.82892 14.8991 2.5 17.2885 2.5C18.8033 2.5 20.256 3.11418 21.3271 4.20743C22.3983 5.30069 23 6.78345 23 8.32955C23 15.4545 12 21.5 12 21.5Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </g>
-        <defs>
-          <clipPath id="clip0_67_13532">
-            <rect width="24" height="24" fill="white"/>
-          </clipPath>
-        </defs>
-      </svg>
-    <span class="font-medium">Add to Wishlist</span>
+                                <div class="inline-flex items-center gap-x-2">
+                                    <p class="font-semibold text-dark-green">Manufacturer:</p>
+                                    <span class="font-semibold text-primary">BIOSCIENCE</span>
+                                </div>
+                                <div class="flex flex-col">
+                                    <h4 class="text-h8 font-semibold leading-[120%] mb-2 text-dark-green">Use for:</h4>
+                                    <ul class="flex flex-col gap-2 pl-5 list-image-checkmark">
+                                        <li>
+                                            <p class="leading-[130%] text-black-1">Restore lost body volume</p>
+                                        </li>
+                                        <li>
+                                            <p class="leading-[130%] text-black-1">Contour body surfaces</p>
+                                        </li>
+                                        <li>
+                                            <p class="leading-[130%] text-black-1">Areas: Hands, calves, correction of
+                                                concave deformities</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="inline-flex items-center gap-x-2">
+                                    <h4 class="text-h8 font-semibold leading-[120%] text-dark-green">Format:</h4>
+                                    <span class="text-primary font-semibold">1 x 10ml</span>
+                                </div>
+                                <div class="flex flex-col">
+                                    <h4 class="text-h8 font-semibold leading-[120%] mb-2 text-dark-green">Note:</h4>
+                                    <p class="leading-[130%] text-black-1">The results can last 6 to 8 months or longer
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-4 sm:flex-col">
+                                    <div
+                                        class="px-3 py-4 border border-primary rounded-lg flex justify-between items-center w-[161px]">
+                                        <button
+                                            class="w-[24px] h-[24px] bg-white flex rounded justify-center items-center border border-primary"
+                                            control-id="ControlID-6">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="4"
+                                                viewBox="0 0 11 4" fill="none">
+                                                <path
+                                                    d="M9.15145 0.861816C9.78769 0.861816 10.3035 1.37758 10.3035 2.01382C10.3035 2.65005 9.78769 3.16582 9.15145 3.16582H1.59145C0.95522 3.16582 0.439453 2.65005 0.439453 2.01382C0.439453 1.37758 0.955221 0.861816 1.59145 0.861816H9.15145Z"
+                                                    fill="#C19476"></path>
+                                            </svg>
+                                        </button>
+                                        <span class="text-h8 leading-[110%]">1</span>
+                                        <button
+                                            class="w-[24px] h-[24px] bg-primary rounded flex justify-center items-center border border-primary"
+                                            control-id="ControlID-7">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12"
+                                                viewBox="0 0 11 12" fill="none">
+                                                <path
+                                                    d="M10.4715 6.01382C10.4715 6.54401 10.0417 6.97382 9.51149 6.97382H6.43149V10.0538C6.43149 10.6392 5.95691 11.1138 5.37148 11.1138C4.78606 11.1138 4.31148 10.6392 4.31148 10.0538V6.97382H1.23148C0.701291 6.97382 0.271484 6.54401 0.271484 6.01382C0.271484 5.48363 0.701291 5.05382 1.23148 5.05382H4.31148V1.97382C4.31148 1.3884 4.78606 0.913818 5.37148 0.913818C5.95691 0.913818 6.43149 1.3884 6.43149 1.97382V5.05382H9.51149C10.0417 5.05382 10.4715 5.48363 10.4715 6.01382Z"
+                                                    fill="white"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a class="button test2 px-6 py-3 rounded-xl border transition group border-white hover:border-primary bg-primary inline-flex items-center hover:bg-transparent text-white hover:text-primary flex-1 justify-center py-4"
+  href="#">
+  <svg class="stroke-white group-hover:stroke-primary mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+    viewBox="0 0 24 24" fill="none">
+    <g clip-path="url(#clip0_67_13532)">
+      <path
+        d="M12 21.5C12 21.5 1 15.4545 1 8.32955C1 6.78345 1.60175 5.30069 2.67287 4.20743C3.74399 3.11418 5.19674 2.5 6.71154 2.5C9.10087 2.5 11.1475 3.82892 12 5.95455C12.8525 3.82892 14.8991 2.5 17.2885 2.5C18.8033 2.5 20.256 3.11418 21.3271 4.20743C22.3983 5.30069 23 6.78345 23 8.32955C23 15.4545 12 21.5 12 21.5Z"
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+    <defs>
+      <clipPath id="clip0_67_13532">
+        <rect width="24" height="24" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+  <span class="font-medium">Add to Wishlist</span>
 </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="flex flex-col gap-6 pt-6 border-t border-primary">
-                            <div class="flex flex-col">
-                                <h5 class="text-h8 font-semibold leading-[120%] mb-2 text-dark-green">Description:</h5>
-                                <p class="leading-[130%] text-black-1"><span class="text-primary font-semibold">HYAcorp MLF1</span> is an absorbable skin implant specially designed for contouring and shaping the body. HYAcorp MLF1 is a medical device with a high level of purity intended for single use only. MLF1 is specially designed for contouring and re-shaping small areas of the body. The product is produced from a hyaluronic acid of non-animal origin.</p>
-                            </div>
-                            <div class="flex flex-col">
-                                <h5 class="text-h8 font-semibold leading-[120%] mb-2 text-dark-green">Use for:</h5>
-                                <ul class="flex flex-col gap-2 pl-5 list-image-checkmark">
-                                    <li>
-                                        <p class="leading-[130%] text-black-1">1 x 10ml syringe</p>
-                                    </li>
-                                    <li>
-                                        <p class="leading-[130%] text-black-1">2 mg hyaluronic acid</p>
-                                    </li>
-                                    <li>
-                                        <p class="leading-[130%] text-black-1">20 mg cross-linked hyaluronic acid</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="flex flex-col">
-                                <h5 class="text-h8 font-semibold leading-[120%] mb-2 text-dark-green">Benefits of <span class="text-primary">HYAcorp MLF1</span>:</h5>
-                                <p class="leading-[130%] text-black-1">Increase in volume and correction of the shape of the buttocks and hips;</p>
-                            </div>
-                            <div class="flex flex-col">
-                                <h5 class="text-h8 font-semibold leading-[120%] mb-2 text-dark-green">How long does the result last for?</h5>
-                                <p class="leading-[130%] text-black-1">Results are instant from the first treatment. In general, results can last 6 to 8 months or longer. The duration depends on the individual's lifestyle, age and skin type.</p>
+                            <div class="flex flex-col gap-6 pt-6 border-t border-primary">
+                                <div class="flex flex-col">
+                                    <h5 class="text-h8 font-semibold leading-[120%] mb-2 text-dark-green">Description:
+                                    </h5>
+                                    <p class="leading-[130%] text-black-1"><span
+                                            class="text-primary font-semibold">HYAcorp MLF1</span> is an absorbable skin
+                                        implant specially designed for contouring and shaping the body. HYAcorp MLF1 is
+                                        a medical device with a high level of purity intended for single use only. MLF1
+                                        is specially designed for contouring and re-shaping small areas of the body. The
+                                        product is produced from a hyaluronic acid of non-animal origin.</p>
+                                </div>
+                                <div class="flex flex-col">
+                                    <h5 class="text-h8 font-semibold leading-[120%] mb-2 text-dark-green">Use for:</h5>
+                                    <ul class="flex flex-col gap-2 pl-5 list-image-checkmark">
+                                        <li>
+                                            <p class="leading-[130%] text-black-1">1 x 10ml syringe</p>
+                                        </li>
+                                        <li>
+                                            <p class="leading-[130%] text-black-1">2 mg hyaluronic acid</p>
+                                        </li>
+                                        <li>
+                                            <p class="leading-[130%] text-black-1">20 mg cross-linked hyaluronic acid
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex flex-col">
+                                    <h5 class="text-h8 font-semibold leading-[120%] mb-2 text-dark-green">Benefits of
+                                        <span class="text-primary">HYAcorp MLF1</span>:</h5>
+                                    <p class="leading-[130%] text-black-1">Increase in volume and correction of the
+                                        shape of the buttocks and hips;</p>
+                                </div>
+                                <div class="flex flex-col">
+                                    <h5 class="text-h8 font-semibold leading-[120%] mb-2 text-dark-green">How long does
+                                        the result last for?</h5>
+                                    <p class="leading-[130%] text-black-1">Results are instant from the first treatment.
+                                        In general, results can last 6 to 8 months or longer. The duration depends on
+                                        the individual's lifestyle, age and skin type.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="py-10">
-        <div class="container">
-            <div class="grid grid-cols-12 gap-5">
-                <div class="col-span-12">
-                    <div>
+        </section>
+        <section class="py-10">
+            <div class="container">
+                <div class="grid grid-cols-12 gap-5">
+                    <div class="col-span-12">
+                        <div>
 
-                        <p>Explore our curated selection of top products.</p>
+                            <p>Explore our curated selection of top products.</p>
+                        </div>
+                    </div>
+                    <div class="col-span-3 lg:col-span-6 sm:col-span-12">
+                        <a href="#" id="test1"
+  class="product-card border border-border-color-2 block rounded-lg overflow-hidden hover:border-primary hover:shadow-3xl mb-2 bg-secondary">
+  <div class="block relative h-48 rounded overflow-hidden bg-white">
+    <div class="product-card--favorites" data-product-id="test1">
+      <i class="product-card--icon-heart heart-icon"></i>
+      <i class="product-card--icon-heart heart-filled-icon"></i>
+    </div>
+    <img alt="title img" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260">
+  </div>
+  <div class="py-6 px-4 border-t border-t-border-color-1">
+    <h3 class="text-dark-green text-h6 tracking-widest title-font mb-1">Product name</h3>
+    <div class="flex justify-between items-center">
+      <p class="mt-1 line-through">$ 80.30 USD</p>
+      <p class="text-primary font-semibold">$ 50.00 USD</p>
+    </div>
+  </div>
+</a>
+                    </div>
+                    <div class="col-span-3 lg:col-span-6 sm:col-span-12">
+                        <a href="#" id="test2"
+  class="product-card border border-border-color-2 block rounded-lg overflow-hidden hover:border-primary hover:shadow-3xl mb-2 bg-secondary">
+  <div class="block relative h-48 rounded overflow-hidden bg-white">
+    <div class="product-card--favorites" data-product-id="test2">
+      <i class="product-card--icon-heart heart-icon"></i>
+      <i class="product-card--icon-heart heart-filled-icon"></i>
+    </div>
+    <img alt="title img" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260">
+  </div>
+  <div class="py-6 px-4 border-t border-t-border-color-1">
+    <h3 class="text-dark-green text-h6 tracking-widest title-font mb-1">Product name</h3>
+    <div class="flex justify-between items-center">
+      <p class="mt-1 line-through">$ 80.30 USD</p>
+      <p class="text-primary font-semibold">$ 50.00 USD</p>
+    </div>
+  </div>
+</a>
+                    </div>
+                    <div class="col-span-3 lg:col-span-6 sm:col-span-12">
+                        <a href="#" id="test3"
+  class="product-card border border-border-color-2 block rounded-lg overflow-hidden hover:border-primary hover:shadow-3xl mb-2 bg-secondary">
+  <div class="block relative h-48 rounded overflow-hidden bg-white">
+    <div class="product-card--favorites" data-product-id="test3">
+      <i class="product-card--icon-heart heart-icon"></i>
+      <i class="product-card--icon-heart heart-filled-icon"></i>
+    </div>
+    <img alt="title img" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260">
+  </div>
+  <div class="py-6 px-4 border-t border-t-border-color-1">
+    <h3 class="text-dark-green text-h6 tracking-widest title-font mb-1">Product name</h3>
+    <div class="flex justify-between items-center">
+      <p class="mt-1 line-through">$ 80.30 USD</p>
+      <p class="text-primary font-semibold">$ 50.00 USD</p>
+    </div>
+  </div>
+</a>
+                    </div>
+                    <div class="col-span-3 lg:col-span-6 sm:col-span-12">
+                        <a href="#" id="test4"
+  class="product-card border border-border-color-2 block rounded-lg overflow-hidden hover:border-primary hover:shadow-3xl mb-2 bg-secondary">
+  <div class="block relative h-48 rounded overflow-hidden bg-white">
+    <div class="product-card--favorites" data-product-id="test4">
+      <i class="product-card--icon-heart heart-icon"></i>
+      <i class="product-card--icon-heart heart-filled-icon"></i>
+    </div>
+    <img alt="title img" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260">
+  </div>
+  <div class="py-6 px-4 border-t border-t-border-color-1">
+    <h3 class="text-dark-green text-h6 tracking-widest title-font mb-1">Product name</h3>
+    <div class="flex justify-between items-center">
+      <p class="mt-1 line-through">$ 80.30 USD</p>
+      <p class="text-primary font-semibold">$ 50.00 USD</p>
+    </div>
+  </div>
+</a>
                     </div>
                 </div>
-                <div class="col-span-3 lg:col-span-6 sm:col-span-12">
-                    <a href="#" id="test1" class="product-card border border-border-color-2 block rounded-lg overflow-hidden hover:border-primary hover:shadow-3xl mb-2 bg-secondary">
-    <div class="block relative h-48 rounded overflow-hidden bg-white">
-      <div class="product-card--favorites" data-product-id="test1">
-        <i class="product-card--icon-heart heart-icon"></i>
-        <i class="product-card--icon-heart heart-filled-icon"></i>
-      </div>
-      <img alt="title img" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260">
-    </div>
-    <div class="py-6 px-4 border-t border-t-border-color-1">
-      <h3 class="text-dark-green text-h6 tracking-widest title-font mb-1">Product name</h3>
-      <div class="flex justify-between items-center">
-        <p class="mt-1 line-through">$ 80.30 USD</p>
-        <p class="text-primary font-semibold">$ 50.00 USD</p>
-      </div>
-    </div>
-</a>
-                </div>
-                <div class="col-span-3 lg:col-span-6 sm:col-span-12">
-                    <a href="#" id="test2" class="product-card border border-border-color-2 block rounded-lg overflow-hidden hover:border-primary hover:shadow-3xl mb-2 bg-secondary">
-    <div class="block relative h-48 rounded overflow-hidden bg-white">
-      <div class="product-card--favorites" data-product-id="test2">
-        <i class="product-card--icon-heart heart-icon"></i>
-        <i class="product-card--icon-heart heart-filled-icon"></i>
-      </div>
-      <img alt="title img" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260">
-    </div>
-    <div class="py-6 px-4 border-t border-t-border-color-1">
-      <h3 class="text-dark-green text-h6 tracking-widest title-font mb-1">Product name</h3>
-      <div class="flex justify-between items-center">
-        <p class="mt-1 line-through">$ 80.30 USD</p>
-        <p class="text-primary font-semibold">$ 50.00 USD</p>
-      </div>
-    </div>
-</a>
-                </div>
-                <div class="col-span-3 lg:col-span-6 sm:col-span-12">
-                    <a href="#" id="test3" class="product-card border border-border-color-2 block rounded-lg overflow-hidden hover:border-primary hover:shadow-3xl mb-2 bg-secondary">
-    <div class="block relative h-48 rounded overflow-hidden bg-white">
-      <div class="product-card--favorites" data-product-id="test3">
-        <i class="product-card--icon-heart heart-icon"></i>
-        <i class="product-card--icon-heart heart-filled-icon"></i>
-      </div>
-      <img alt="title img" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260">
-    </div>
-    <div class="py-6 px-4 border-t border-t-border-color-1">
-      <h3 class="text-dark-green text-h6 tracking-widest title-font mb-1">Product name</h3>
-      <div class="flex justify-between items-center">
-        <p class="mt-1 line-through">$ 80.30 USD</p>
-        <p class="text-primary font-semibold">$ 50.00 USD</p>
-      </div>
-    </div>
-</a>
-                </div>
-                <div class="col-span-3 lg:col-span-6 sm:col-span-12">
-                    <a href="#" id="test4" class="product-card border border-border-color-2 block rounded-lg overflow-hidden hover:border-primary hover:shadow-3xl mb-2 bg-secondary">
-    <div class="block relative h-48 rounded overflow-hidden bg-white">
-      <div class="product-card--favorites" data-product-id="test4">
-        <i class="product-card--icon-heart heart-icon"></i>
-        <i class="product-card--icon-heart heart-filled-icon"></i>
-      </div>
-      <img alt="title img" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260">
-    </div>
-    <div class="py-6 px-4 border-t border-t-border-color-1">
-      <h3 class="text-dark-green text-h6 tracking-widest title-font mb-1">Product name</h3>
-      <div class="flex justify-between items-center">
-        <p class="mt-1 line-through">$ 80.30 USD</p>
-        <p class="text-primary font-semibold">$ 50.00 USD</p>
-      </div>
-    </div>
-</a>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="mt-auto bg-secondary pt-16 pb-10 overflow-hidden">
+        <footer class="mt-auto bg-secondary pt-16 pb-10 overflow-hidden">
     <div class="container">
         <div class="grid grid-cols-12 gap-5 lg:gap-y-10">
             <div class="col-span-12 minlg:col-span-6 minxl:col-span-5">
                 <div class="flex flex-col items-start max-w-[500px]">
                     <div class="flex flex-col items-start gap-6 mb-5">
                         <img class="" src="img/Main-Logo.svg" alt="Unboxed Fillers">
-                        <p class="text-dark-green leading-[150%]]">Join our newsletter to stay up to date on features and releases.</p>
+                        <p class="text-dark-green leading-[150%]]">Join our newsletter to stay up to date on features
+                            and releases.</p>
                         <div class="flex items-center">
                             <div class="form-group flex flex-col items-start flex-1 w-[345px] mr-4">
     <label class="text-base text-dark-green leading-[130%] mb-2 hidden" for="MailId">Email</label>
-    <input class="rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 " type="text" id="MailId" placeholder="Enter your email">
+    <input
+        class="rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 "
+        type="text" id="MailId" placeholder="Enter your email">
     <small class="self-end text-h11 text-danger mt-2 hidden">text error</small>
 </div>
-                            <button type="submit" class="button test2 px-6 py-3 rounded-xl border transition group border-white hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-transparent text-white hover:text-primary" href="">
+                            <button type="submit"
+                                class="button test2 px-6 py-3 rounded-xl border transition group border-white hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-transparent text-white hover:text-primary"
+                                href="">
                                 <span class="font-medium">Subscribe</span>
                             </button>
                         </div>
                     </div>
-                    <p class="text-h11 text-dark-green">By subscribing you agree to with our <a class="underline" href="#">Privacy Policy</a> and provide consent to receive updates from our company.</p>
-                
+                    <p class="text-h11 text-dark-green">By subscribing you agree to with our <a class="underline"
+                            href="#">Privacy Policy</a> and provide consent to receive updates from our company.</p>
+
                 </div>
             </div>
             <div class="col-span-1 hidden minxl:block"></div>
@@ -479,7 +569,7 @@
                     <li>
                         <a class="text-h10 hover:text-primary transition" href="#">Privacy</a>
                     </li>
-                    <li> 
+                    <li>
                         <a class="text-h10 hover:text-primary transition" href="TermsOfUse.html">Policy</a>
                     </li>
                     <li>
@@ -506,7 +596,8 @@
                         <div class="min-w-[24px] mr-3 flex justify-center items-center">
                             <i class="mail-icon"></i>
                         </div>
-                        <a class="text-h11 text-black-1 transition-colors hover:text-primary" href="mal:info@medfillersupply.com">info@medfillersupply.com</a>
+                        <a class="text-h11 text-black-1 transition-colors hover:text-primary"
+                            href="mal:info@medfillersupply.com">info@medfillersupply.com</a>
                     </li>
                 </ul>
             </div>
@@ -516,45 +607,57 @@
         <p class="text-black-1 text-h10">&copy; 2023 All rights reserved.</p>
     </div>
 </footer>
-  </main>
+    </main>
 
     <div id="modal" class="fixed inset-0 z-[10000] bg-gray-800 bg-opacity-50 flex items-center justify-center hidden">
     <div class="bg-white rounded-lg shadow-lg p-8 w-full max-w-[672px] max-h-screen md:overflow-y-scroll relative">
         <div class="flex justify-between items-center mb-5">
-            <h3 class="text-h3 not-italic leading-[120%] font-semibold text-h5">Make a <span class="text-primary italic font-normal">Request</span></h3>
+            <h3 class="text-h3 not-italic leading-[120%] font-semibold text-h5">Make a <span
+		class="text-primary italic font-normal">Request</span></h3>
             <button class="close-modal text-gray-500 hover:text-gray-700 focus:outline-none text-2xl transition">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <path d="M18.9089 1.44942C19.2994 1.83994 19.2994 2.47311 18.9089 2.86363L11.8595 9.91304L18.9784 17.032C19.369 17.4225 19.369 18.0557 18.9784 18.4462L18.1318 19.2929C17.7413 19.6834 17.1081 19.6834 16.7176 19.2929L9.59859 12.1739L2.58396 19.1885C2.19343 19.5791 1.56027 19.5791 1.16974 19.1885L0.497001 18.5158C0.106476 18.1253 0.106476 17.4921 0.497 17.1016L7.51163 10.087L0.392654 2.96798C0.00212985 2.57745 0.00212947 1.94429 0.392654 1.55376L1.23931 0.707107C1.62983 0.316583 2.263 0.316583 2.65352 0.707107L9.7725 7.82609L16.8219 0.776672C17.2124 0.386148 17.8456 0.386149 18.2361 0.776673L18.9089 1.44942Z" fill="#1E3B41"/>
-              </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path
+                        d="M18.9089 1.44942C19.2994 1.83994 19.2994 2.47311 18.9089 2.86363L11.8595 9.91304L18.9784 17.032C19.369 17.4225 19.369 18.0557 18.9784 18.4462L18.1318 19.2929C17.7413 19.6834 17.1081 19.6834 16.7176 19.2929L9.59859 12.1739L2.58396 19.1885C2.19343 19.5791 1.56027 19.5791 1.16974 19.1885L0.497001 18.5158C0.106476 18.1253 0.106476 17.4921 0.497 17.1016L7.51163 10.087L0.392654 2.96798C0.00212985 2.57745 0.00212947 1.94429 0.392654 1.55376L1.23931 0.707107C1.62983 0.316583 2.263 0.316583 2.65352 0.707107L9.7725 7.82609L16.8219 0.776672C17.2124 0.386148 17.8456 0.386149 18.2361 0.776673L18.9089 1.44942Z"
+                        fill="#1E3B41" />
+                </svg>
             </button>
         </div>
         <div class="flex flex-col">
-          <p class="mb-2 text-black-1 leading-[130%]">Should you have any other inquiries, please fill in the form and one of our managers will contact you within 24 hours.</p>
-          <p class="text-primary leading-[130%] font-semibold">PLEASE NOTE: we only sell to the certified doctors and companies.</p>
-          <form class="flex flex-col gap-6 mt-8">
-            <div class="flex gap-6 flex-row sm:flex-col">
-                <div class="form-group flex flex-col items-start flex-1">
+            <p class="mb-2 text-black-1 leading-[130%]">Should you have any other inquiries, please fill in the form and
+                one of our managers will contact you within 24 hours.</p>
+            <p class="text-primary leading-[130%] font-semibold">PLEASE NOTE: we only sell to the certified doctors and
+                companies.</p>
+            <form class="flex flex-col gap-6 mt-8">
+                <div class="flex gap-6 flex-row sm:flex-col">
+                    <div class="form-group flex flex-col items-start flex-1">
     <label class="text-base text-dark-green leading-[130%] mb-2 " for="NameId">Name</label>
-    <input class="rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 " type="text" id="NameId" placeholder="">
+    <input
+        class="rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 "
+        type="text" id="NameId" placeholder="">
     <small class="self-end text-h11 text-danger mt-2 hidden">text error</small>
 </div>
-                <div class="form-group flex flex-col items-start flex-1">
+                    <div class="form-group flex flex-col items-start flex-1">
     <label class="text-base text-dark-green leading-[130%] mb-2 " for="PhoneId">Phone</label>
-    <input class="rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 " type="text" id="PhoneId" placeholder="">
+    <input
+        class="rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 "
+        type="text" id="PhoneId" placeholder="">
     <small class="self-end text-h11 text-danger mt-2 hidden">text error</small>
 </div>
-            </div>
-            <div class="flex gap-6 flex-row sm:flex-col">
-                <div class="form-group flex flex-col items-start flex-1">
+                </div>
+                <div class="flex gap-6 flex-row sm:flex-col">
+                    <div class="form-group flex flex-col items-start flex-1">
     <label class="text-base text-dark-green leading-[130%] mb-2 " for="MailId">Email</label>
-    <input class="rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 " type="text" id="MailId" placeholder="">
+    <input
+        class="rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 "
+        type="text" id="MailId" placeholder="">
     <small class="self-end text-h11 text-danger mt-2 hidden">text error</small>
 </div>
 
-                <div class="relative inline-block w-64 flex-1">
+                    <div class="relative inline-block w-64 flex-1">
     <label class="text-base block text-dark-green mb-2 leading-[130%] " for="small-select">State</label>
     <!-- Сам элемент select без дефолтной стрелки -->
-    <select id="small-select" placeholder="123" class="small-select no-arrow rounded leading-[150%] text-black-1 border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3">
+    <select id="small-select" placeholder="123"
+        class="small-select no-arrow rounded leading-[150%] text-black-1 border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3">
         <option value="" disabled selected hidden>Choose your state</option>
         <option>Option 1</option>
         <option>Option 2</option>
@@ -565,24 +668,30 @@
         <path d="M7 10l5 5 5-5H7z"/>
     </svg> -->
 </div>
-            </div>
+                </div>
 
-            <div class="form-group flex flex-col items-start flex-1">
+                <div class="form-group flex flex-col items-start flex-1">
     <label class="text-base text-dark-green mb-2 " for="MessageId">Message</label>
-    <textarea class="rounded resize-none text-black-1 border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 max-h-[134px]" id="MessageId" placeholder="Type your message..." rows="5"></textarea>
+    <textarea
+        class="rounded resize-none text-black-1 border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 max-h-[134px]"
+        id="MessageId" placeholder="Type your message..." rows="5"></textarea>
 </div>
 
-            <div class="flex flex-col">
+                <div class="flex flex-col">
     <label class="custom-checkbox">
         <span class="custom-checkbox__block">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <path d="M18 1.25H6V2.75H18V1.25ZM1.25 6V18H2.75V6H1.25ZM6 22.75H18V21.25H6V22.75ZM22.75 18V6H21.25V18H22.75ZM18 22.75C20.6234 22.75 22.75 20.6234 22.75 18H21.25C21.25 19.7949 19.7949 21.25 18 21.25V22.75ZM1.25 18C1.25 20.6234 3.37665 22.75 6 22.75V21.25C4.20507 21.25 2.75 19.7949 2.75 18H1.25ZM6 1.25C3.37665 1.25 1.25 3.37665 1.25 6H2.75C2.75 4.20507 4.20507 2.75 6 2.75V1.25ZM18 2.75C19.7949 2.75 21.25 4.20507 21.25 6H22.75C22.75 3.37665 20.6234 1.25 18 1.25V2.75Z" fill="#C19476"/>
+                <path
+                    d="M18 1.25H6V2.75H18V1.25ZM1.25 6V18H2.75V6H1.25ZM6 22.75H18V21.25H6V22.75ZM22.75 18V6H21.25V18H22.75ZM18 22.75C20.6234 22.75 22.75 20.6234 22.75 18H21.25C21.25 19.7949 19.7949 21.25 18 21.25V22.75ZM1.25 18C1.25 20.6234 3.37665 22.75 6 22.75V21.25C4.20507 21.25 2.75 19.7949 2.75 18H1.25ZM6 1.25C3.37665 1.25 1.25 3.37665 1.25 6H2.75C2.75 4.20507 4.20507 2.75 6 2.75V1.25ZM18 2.75C19.7949 2.75 21.25 4.20507 21.25 6H22.75C22.75 3.37665 20.6234 1.25 18 1.25V2.75Z"
+                    fill="#C19476" />
             </svg>
         </span>
         <input type="checkbox">
         <span class="checkmark">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                <path d="M8.50172 11.9425C8.19384 11.6654 7.71962 11.6904 7.44253 11.9983C7.16544 12.3062 7.19039 12.7804 7.49828 13.0575L8.50172 11.9425ZM16.592 9.96046C16.8463 9.63349 16.7874 9.16229 16.4605 8.90799C16.1335 8.65368 15.6623 8.71258 15.408 9.03954L16.592 9.96046ZM18 1.75H6V3.25H18V1.75ZM1.25 6.5V18.5H2.75V6.5H1.25ZM6 23.25H18V21.75H6V23.25ZM22.75 18.5V6.5H21.25V18.5H22.75ZM18 23.25C20.6234 23.25 22.75 21.1234 22.75 18.5H21.25C21.25 20.2949 19.7949 21.75 18 21.75V23.25ZM1.25 18.5C1.25 21.1234 3.37665 23.25 6 23.25V21.75C4.20507 21.75 2.75 20.2949 2.75 18.5H1.25ZM6 1.75C3.37665 1.75 1.25 3.87665 1.25 6.5H2.75C2.75 4.70507 4.20507 3.25 6 3.25V1.75ZM18 3.25C19.7949 3.25 21.25 4.70507 21.25 6.5H22.75C22.75 3.87665 20.6234 1.75 18 1.75V3.25ZM7.49828 13.0575L10.033 15.3387L11.0364 14.2237L8.50172 11.9425L7.49828 13.0575ZM12.585 15.1123L16.592 9.96046L15.408 9.03954L11.401 14.1914L12.585 15.1123ZM10.033 15.3387C10.7881 16.0183 11.9613 15.9142 12.585 15.1123L11.401 14.1914C11.3119 14.306 11.1443 14.3208 11.0364 14.2237L10.033 15.3387Z" fill="#C19476"/>
+                <path
+                    d="M8.50172 11.9425C8.19384 11.6654 7.71962 11.6904 7.44253 11.9983C7.16544 12.3062 7.19039 12.7804 7.49828 13.0575L8.50172 11.9425ZM16.592 9.96046C16.8463 9.63349 16.7874 9.16229 16.4605 8.90799C16.1335 8.65368 15.6623 8.71258 15.408 9.03954L16.592 9.96046ZM18 1.75H6V3.25H18V1.75ZM1.25 6.5V18.5H2.75V6.5H1.25ZM6 23.25H18V21.75H6V23.25ZM22.75 18.5V6.5H21.25V18.5H22.75ZM18 23.25C20.6234 23.25 22.75 21.1234 22.75 18.5H21.25C21.25 20.2949 19.7949 21.75 18 21.75V23.25ZM1.25 18.5C1.25 21.1234 3.37665 23.25 6 23.25V21.75C4.20507 21.75 2.75 20.2949 2.75 18.5H1.25ZM6 1.75C3.37665 1.75 1.25 3.87665 1.25 6.5H2.75C2.75 4.70507 4.20507 3.25 6 3.25V1.75ZM18 3.25C19.7949 3.25 21.25 4.70507 21.25 6.5H22.75C22.75 3.87665 20.6234 1.75 18 1.75V3.25ZM7.49828 13.0575L10.033 15.3387L11.0364 14.2237L8.50172 11.9425L7.49828 13.0575ZM12.585 15.1123L16.592 9.96046L15.408 9.03954L11.401 14.1914L12.585 15.1123ZM10.033 15.3387C10.7881 16.0183 11.9613 15.9142 12.585 15.1123L11.401 14.1914C11.3119 14.306 11.1443 14.3208 11.0364 14.2237L10.033 15.3387Z"
+                    fill="#C19476" />
             </svg>
         </span>
         <span class="ml-3 text-black-1 text-h10 ">I have read and agree to the <a class="underline" href="#">Terms</a></span>
@@ -590,21 +699,28 @@
     <small class="text-h11 text-danger mt-3 hidden">Please confirm that you agree</small>
 </div>
 
-            <button type="submit" class="button px-6 py-3 text-h8 md:text-h10 rounded-xl border transition group border-white hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-transparent text-white hover:text-primary">
-              <span class="font-medium">Send</span>
-              <svg class="fill-white group-hover:fill-primary ml-3" xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 22 10" fill="none">
-                  <path d="M21.4541 5.44982C21.5058 5.3908 21.5469 5.32069 21.5749 5.24351C21.603 5.16632 21.6174 5.08357 21.6174 5C21.6174 4.91644 21.603 4.83369 21.5749 4.7565C21.5469 4.67931 21.5058 4.6092 21.4541 4.55019L17.9166 0.506922C17.8122 0.387624 17.6707 0.320602 17.523 0.320602C17.3754 0.320602 17.2339 0.387624 17.1295 0.506922C17.0251 0.626221 16.9665 0.788025 16.9665 0.956739C16.9665 1.12545 17.0251 1.28726 17.1295 1.40656L20.2745 5L17.1295 8.59345C17.0251 8.71275 16.9665 8.87455 16.9665 9.04327C16.9665 9.21198 17.0251 9.37379 17.1295 9.49308C17.2339 9.61238 17.3754 9.67941 17.523 9.67941C17.6707 9.67941 17.8122 9.61238 17.9166 9.49308L21.4541 5.44982ZM0.382629 5.63534H21.0605V4.36467H0.382629V5.63534Z" />
-              </svg>
-          </form>
+                <button type="submit"
+                    class="button px-6 py-3 text-h8 md:text-h10 rounded-xl border transition group border-white hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-transparent text-white hover:text-primary">
+                    <span class="font-medium">Send</span>
+                    <svg class="fill-white group-hover:fill-primary ml-3" xmlns="http://www.w3.org/2000/svg" width="22"
+                        height="10" viewBox="0 0 22 10" fill="none">
+                        <path
+                            d="M21.4541 5.44982C21.5058 5.3908 21.5469 5.32069 21.5749 5.24351C21.603 5.16632 21.6174 5.08357 21.6174 5C21.6174 4.91644 21.603 4.83369 21.5749 4.7565C21.5469 4.67931 21.5058 4.6092 21.4541 4.55019L17.9166 0.506922C17.8122 0.387624 17.6707 0.320602 17.523 0.320602C17.3754 0.320602 17.2339 0.387624 17.1295 0.506922C17.0251 0.626221 16.9665 0.788025 16.9665 0.956739C16.9665 1.12545 17.0251 1.28726 17.1295 1.40656L20.2745 5L17.1295 8.59345C17.0251 8.71275 16.9665 8.87455 16.9665 9.04327C16.9665 9.21198 17.0251 9.37379 17.1295 9.49308C17.2339 9.61238 17.3754 9.67941 17.523 9.67941C17.6707 9.67941 17.8122 9.61238 17.9166 9.49308L21.4541 5.44982ZM0.382629 5.63534H21.0605V4.36467H0.382629V5.63534Z" />
+                    </svg>
+            </form>
         </div>
     </div>
-  </div>
-    <div id="wishlist" class="wishlist w-full minsm:w-[400px] z-[99] overflow-y-scroll bg-white fixed top-0 -right-full minsm:-right-[400px] bottom-0 py-6 px-8">
+</div>
+    <div id="wishlist"
+    class="wishlist w-full minsm:w-[400px] z-[99] overflow-y-scroll bg-white fixed top-0 -right-full minsm:-right-[400px] bottom-0 py-6 px-8">
     <div class="flex justify-between">
         <span>Your Wishlist</span>
         <button id="wishlist-close" class="" aria-label="Button close wishlist container">
-            <svg class="cursor" xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
-                <path d="M19.2233 1.94942C19.6139 2.33994 19.6139 2.97311 19.2233 3.36363L12.1739 10.413L19.2929 17.532C19.6834 17.9225 19.6834 18.5557 19.2929 18.9462L18.4462 19.7929C18.0557 20.1834 17.4225 20.1834 17.032 19.7929L9.91304 12.6739L2.89841 19.6885C2.50788 20.0791 1.87472 20.0791 1.4842 19.6885L0.811454 19.0158C0.420929 18.6253 0.420929 17.9921 0.811453 17.6016L7.82609 10.587L0.707107 3.46798C0.316583 3.07745 0.316583 2.44429 0.707107 2.05376L1.55376 1.20711C1.94429 0.816583 2.57745 0.816583 2.96798 1.20711L10.087 8.32609L17.1364 1.27667C17.5269 0.886148 18.1601 0.886149 18.5506 1.27667L19.2233 1.94942Z" fill="#C19476"/>
+            <svg class="cursor" xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                fill="none">
+                <path
+                    d="M19.2233 1.94942C19.6139 2.33994 19.6139 2.97311 19.2233 3.36363L12.1739 10.413L19.2929 17.532C19.6834 17.9225 19.6834 18.5557 19.2929 18.9462L18.4462 19.7929C18.0557 20.1834 17.4225 20.1834 17.032 19.7929L9.91304 12.6739L2.89841 19.6885C2.50788 20.0791 1.87472 20.0791 1.4842 19.6885L0.811454 19.0158C0.420929 18.6253 0.420929 17.9921 0.811453 17.6016L7.82609 10.587L0.707107 3.46798C0.316583 3.07745 0.316583 2.44429 0.707107 2.05376L1.55376 1.20711C1.94429 0.816583 2.57745 0.816583 2.96798 1.20711L10.087 8.32609L17.1364 1.27667C17.5269 0.886148 18.1601 0.886149 18.5506 1.27667L19.2233 1.94942Z"
+                    fill="#C19476" />
             </svg>
         </button>
     </div>
@@ -615,11 +731,14 @@
         </div>
         <div class="flex flex-col gap-6">
             <div class="flex gap-6 md:flex-col">
-                <a href="#" class="overflow-hidden flex items-center justify-center rounded-xl border border-primary min-w-[120px] w-[120px] h-[120px]">
+                <a href="#"
+                    class="overflow-hidden flex items-center justify-center rounded-xl border border-primary min-w-[120px] w-[120px] h-[120px]">
                     <img class="max-w-full" src="img/Product-img-small.png" alt="Product Image">
                 </a>
                 <div class="flex flex-col">
-                    <a href="#" class="font-semibold block text-dark-green hover:text-primary leading-[130%] mb-2">Hyacorp body Counturing MLF1</a>
+                    <a href="#"
+                        class="font-semibold block text-dark-green hover:text-primary leading-[130%] mb-2">Hyacorp body
+                        Counturing MLF1</a>
                     <div class="flex flex-col mb-5">
                         <span class="text-h10 text-primary leading-[150%] font-semibold">FORMAT:</span>
                         <p class="text-h10 text-black-1 leading-[150%]">1 x 10ml</p>
@@ -628,16 +747,27 @@
                         <span class="text-h11 leading-7 line-through">$ 80.30 USD</span>
                         <span class="font-semibold text-primary leading-[130%]">$ 500.00 USD</span>
                     </div>
-                    <div class="px-3 py-[10px] border border-primary rounded-lg flex justify-between items-center w-[108px]">
-                        <button class="w-[20px] h-[20px] bg-white flex rounded justify-center items-center border border-primary" aria-label="Button minus">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="4" viewBox="0 0 11 4" fill="none">
-                                <path d="M9.15145 0.861816C9.78769 0.861816 10.3035 1.37758 10.3035 2.01382C10.3035 2.65005 9.78769 3.16582 9.15145 3.16582H1.59145C0.95522 3.16582 0.439453 2.65005 0.439453 2.01382C0.439453 1.37758 0.955221 0.861816 1.59145 0.861816H9.15145Z" fill="#C19476"/>
+                    <div
+                        class="px-3 py-[10px] border border-primary rounded-lg flex justify-between items-center w-[108px]">
+                        <button
+                            class="w-[20px] h-[20px] bg-white flex rounded justify-center items-center border border-primary"
+                            aria-label="Button minus">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="4" viewBox="0 0 11 4"
+                                fill="none">
+                                <path
+                                    d="M9.15145 0.861816C9.78769 0.861816 10.3035 1.37758 10.3035 2.01382C10.3035 2.65005 9.78769 3.16582 9.15145 3.16582H1.59145C0.95522 3.16582 0.439453 2.65005 0.439453 2.01382C0.439453 1.37758 0.955221 0.861816 1.59145 0.861816H9.15145Z"
+                                    fill="#C19476" />
                             </svg>
                         </button>
                         <span class="text-h8 leading-[100%]">1</span>
-                        <button class="w-[20px] h-[20px] bg-primary rounded flex justify-center items-center border border-primary" aria-label="Button plus">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
-                                <path d="M10.4715 6.01382C10.4715 6.54401 10.0417 6.97382 9.51149 6.97382H6.43149V10.0538C6.43149 10.6392 5.95691 11.1138 5.37148 11.1138C4.78606 11.1138 4.31148 10.6392 4.31148 10.0538V6.97382H1.23148C0.701291 6.97382 0.271484 6.54401 0.271484 6.01382C0.271484 5.48363 0.701291 5.05382 1.23148 5.05382H4.31148V1.97382C4.31148 1.3884 4.78606 0.913818 5.37148 0.913818C5.95691 0.913818 6.43149 1.3884 6.43149 1.97382V5.05382H9.51149C10.0417 5.05382 10.4715 5.48363 10.4715 6.01382Z" fill="white"/>
+                        <button
+                            class="w-[20px] h-[20px] bg-primary rounded flex justify-center items-center border border-primary"
+                            aria-label="Button plus">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12"
+                                fill="none">
+                                <path
+                                    d="M10.4715 6.01382C10.4715 6.54401 10.0417 6.97382 9.51149 6.97382H6.43149V10.0538C6.43149 10.6392 5.95691 11.1138 5.37148 11.1138C4.78606 11.1138 4.31148 10.6392 4.31148 10.0538V6.97382H1.23148C0.701291 6.97382 0.271484 6.54401 0.271484 6.01382C0.271484 5.48363 0.701291 5.05382 1.23148 5.05382H4.31148V1.97382C4.31148 1.3884 4.78606 0.913818 5.37148 0.913818C5.95691 0.913818 6.43149 1.3884 6.43149 1.97382V5.05382H9.51149C10.0417 5.05382 10.4715 5.48363 10.4715 6.01382Z"
+                                    fill="white" />
                             </svg>
                         </button>
                     </div>
@@ -646,10 +776,14 @@
         </div>
     </div>
     <div class="border-t border-primary flex justify-center pt-6 mt-auto">
-        <button type="button" id="openModal" class="button px-6 py-3 text-h8 md:text-h10 rounded-xl border transition group border-white hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-transparent text-white hover:text-primary">
+        <button type="button" id="openModal"
+            class="button px-6 py-3 text-h8 md:text-h10 rounded-xl border transition group border-white hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-transparent text-white hover:text-primary">
             <span class="font-medium">Make a Request</span>
-            <svg class="fill-white group-hover:fill-primary ml-3" xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 22 10" fill="none">
-                <path d="M21.4541 5.44982C21.5058 5.3908 21.5469 5.32069 21.5749 5.24351C21.603 5.16632 21.6174 5.08357 21.6174 5C21.6174 4.91644 21.603 4.83369 21.5749 4.7565C21.5469 4.67931 21.5058 4.6092 21.4541 4.55019L17.9166 0.506922C17.8122 0.387624 17.6707 0.320602 17.523 0.320602C17.3754 0.320602 17.2339 0.387624 17.1295 0.506922C17.0251 0.626221 16.9665 0.788025 16.9665 0.956739C16.9665 1.12545 17.0251 1.28726 17.1295 1.40656L20.2745 5L17.1295 8.59345C17.0251 8.71275 16.9665 8.87455 16.9665 9.04327C16.9665 9.21198 17.0251 9.37379 17.1295 9.49308C17.2339 9.61238 17.3754 9.67941 17.523 9.67941C17.6707 9.67941 17.8122 9.61238 17.9166 9.49308L21.4541 5.44982ZM0.382629 5.63534H21.0605V4.36467H0.382629V5.63534Z"></path>
+            <svg class="fill-white group-hover:fill-primary ml-3" xmlns="http://www.w3.org/2000/svg" width="22"
+                height="10" viewBox="0 0 22 10" fill="none">
+                <path
+                    d="M21.4541 5.44982C21.5058 5.3908 21.5469 5.32069 21.5749 5.24351C21.603 5.16632 21.6174 5.08357 21.6174 5C21.6174 4.91644 21.603 4.83369 21.5749 4.7565C21.5469 4.67931 21.5058 4.6092 21.4541 4.55019L17.9166 0.506922C17.8122 0.387624 17.6707 0.320602 17.523 0.320602C17.3754 0.320602 17.2339 0.387624 17.1295 0.506922C17.0251 0.626221 16.9665 0.788025 16.9665 0.956739C16.9665 1.12545 17.0251 1.28726 17.1295 1.40656L20.2745 5L17.1295 8.59345C17.0251 8.71275 16.9665 8.87455 16.9665 9.04327C16.9665 9.21198 17.0251 9.37379 17.1295 9.49308C17.2339 9.61238 17.3754 9.67941 17.523 9.67941C17.6707 9.67941 17.8122 9.61238 17.9166 9.49308L21.4541 5.44982ZM0.382629 5.63534H21.0605V4.36467H0.382629V5.63534Z">
+                </path>
             </svg>
         </button>
     </div>
@@ -657,49 +791,49 @@
 <div id="wishlist-bg" class="fixed w-screen h-screen top-0 left-0 z-[98] bg-bg-color-1 hidden"></div>
     <script>
 
-    // document.addEventListener("DOMContentLoaded", function () {
-    //   // Выбираем все формы поиска на странице
-    //   const searchForms = document.querySelectorAll('.searchForm');
+  // document.addEventListener("DOMContentLoaded", function () {
+  //   // Выбираем все формы поиска на странице
+  //   const searchForms = document.querySelectorAll('.searchForm');
 
-    //   searchForms.forEach((searchForm) => {
-    //     // Определяем элементы внутри текущей формы поиска
-    //     const searchInput = searchForm.querySelector('.searchInput');
-    //     const searchResultBlock = searchForm.querySelector('.searchResultBlock');
-    //     const searchResultText = searchForm.querySelector('.searchResultText');
-    //     const searchContainer = searchForm.querySelector('.searchContainer');
+  //   searchForms.forEach((searchForm) => {
+  //     // Определяем элементы внутри текущей формы поиска
+  //     const searchInput = searchForm.querySelector('.searchInput');
+  //     const searchResultBlock = searchForm.querySelector('.searchResultBlock');
+  //     const searchResultText = searchForm.querySelector('.searchResultText');
+  //     const searchContainer = searchForm.querySelector('.searchContainer');
 
-    //     // Проверяем, что хотя бы searchInput и searchResultBlock существуют, прежде чем привязывать события
-    //     if (searchInput && searchResultBlock && searchResultText) {
-    //       // Добавляем обработчик события 'submit' для текущей формы поиска
-    //       searchForm.addEventListener('submit', function (event) {
-    //         event.preventDefault();
+  //     // Проверяем, что хотя бы searchInput и searchResultBlock существуют, прежде чем привязывать события
+  //     if (searchInput && searchResultBlock && searchResultText) {
+  //       // Добавляем обработчик события 'submit' для текущей формы поиска
+  //       searchForm.addEventListener('submit', function (event) {
+  //         event.preventDefault();
 
-    //         const query = searchInput.value.trim();
+  //         const query = searchInput.value.trim();
 
-    //         if (query && query !== '') {
-    //           searchResultBlock.classList.add("show");
-    //           searchResultText.innerHTML = `Вы искали: <span class='text-primary font-semibold'>"${query}"</span>`;
-    //         } else {
-    //           searchResultBlock.classList.remove("show");
-    //           searchResultText.innerHTML = '';
-    //         }
-    //       });
+  //         if (query && query !== '') {
+  //           searchResultBlock.classList.add("show");
+  //           searchResultText.innerHTML = `Вы искали: <span class='text-primary font-semibold'>"${query}"</span>`;
+  //         } else {
+  //           searchResultBlock.classList.remove("show");
+  //           searchResultText.innerHTML = '';
+  //         }
+  //       });
 
-    //       // Добавляем обработчик события 'click' для скрытия результатов поиска, если searchContainer существует
-    //       if (searchContainer) {
-    //         document.addEventListener('click', function(event) {
-    //           if (!searchContainer.contains(event.target)) {
-    //             searchResultBlock.classList.remove("show");
-    //             searchResultBlock.classList.add('hidden');
-    //           }
-    //         });
-    //       }
-    //     } else {
-    //       console.warn('Some search components are missing in this form:', searchForm);
-    //     }
-    //   });
-    // });
-  </script>
+  //       // Добавляем обработчик события 'click' для скрытия результатов поиска, если searchContainer существует
+  //       if (searchContainer) {
+  //         document.addEventListener('click', function(event) {
+  //           if (!searchContainer.contains(event.target)) {
+  //             searchResultBlock.classList.remove("show");
+  //             searchResultBlock.classList.add('hidden');
+  //           }
+  //         });
+  //       }
+  //     } else {
+  //       console.warn('Some search components are missing in this form:', searchForm);
+  //     }
+  //   });
+  // });
+</script>
 
 <script type="text/html" src="./js/libs/splide.min.js"></script>
 <script type="module" src="./js/scripts.js"></script>

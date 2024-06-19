@@ -2,39 +2,46 @@
 <html lang="en">
 
 @@include('components/head.html', {
-  'title': 'Home'
+'title': 'Home'
 })
 
 <body class="">
   <main class="flex flex-col justify-between min-h-screen">
     @@include('components/Header.html', {
-      'commonStyle': 'bg-secondary'
+    'commonStyle': 'bg-secondary'
     })
 
     <section class="bg-secondary pt-10 overflow-hidden">
       <div class="container">
         <div class="grid grid-cols-12 gap-5">
           <div class="col-span-6 sm:col-span-12 pt-9 pb-5 min-h-[458px] sm:min-h-full relative z-30">
-            <h1 class="mb-4 text-h1 font-medium leading-[120%] md:text-h5">The <span class="italic text-primary font-normal">Supplier</span> <br> you can rally on</h1>
+            <h1 class="mb-4 text-h1 font-medium leading-[120%] md:text-h5">The <span
+                class="italic text-primary font-normal">Supplier</span> <br> you can rally on</h1>
             <p class="text-h8 mb-2">Get original products directly from the manufacturer.</p>
             <p class="text-primary font-semibold">*Available Only for Aesthetic Professionals</p>
             @@include('components/button.html', {
-              'title': 'View Catalog',
-              'url': '#',
-              'style': 'mt-10'
-              })
+            'title': 'View Catalog',
+            'url': '#',
+            'style': 'mt-10'
+            })
           </div>
           <div class="col-span-6 sm:col-span-12">
             <div class="relative w-full h-full">
               <div class="absolute top-[65px] -left-[735px] z-10 lg:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" width="874" height="369" viewBox="0 0 874 369" fill="none">
-                  <path d="M0.421996 260C51.05 250.062 119.078 318.769 103.862 352.805C88.6462 386.84 41.4167 353.277 81.2316 321.816C121.046 290.355 169.865 338.379 225.358 326.25C280.85 314.122 293.494 253.063 359.005 232.356C424.516 211.65 519.122 267.634 616.119 219.683C713.116 171.731 739.807 62.0838 739.807 62.0838C749.421 21.2691 788.078 -33.9327 872.5 34.1163" stroke="#C19476" stroke-opacity="0.8" stroke-width="3"/>
+                  <path
+                    d="M0.421996 260C51.05 250.062 119.078 318.769 103.862 352.805C88.6462 386.84 41.4167 353.277 81.2316 321.816C121.046 290.355 169.865 338.379 225.358 326.25C280.85 314.122 293.494 253.063 359.005 232.356C424.516 211.65 519.122 267.634 616.119 219.683C713.116 171.731 739.807 62.0838 739.807 62.0838C749.421 21.2691 788.078 -33.9327 872.5 34.1163"
+                    stroke="#C19476" stroke-opacity="0.8" stroke-width="3" />
                 </svg>
               </div>
-              <img class="absolute bottom-0 left-0 z-20 max-w-[510px] sm:hidden" src="img/green-eyed-young-female-model-without-makeup-sensually-looking-white-wall_197531-13799-1.png" alt="">
+              <img class="absolute bottom-0 left-0 z-20 max-w-[510px] sm:hidden"
+                src="img/green-eyed-young-female-model-without-makeup-sensually-looking-white-wall_197531-13799-1.png"
+                alt="">
               <div class="absolute top-0 -right-[25px] z-10 lg:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" width="437" height="358" viewBox="0 0 437 358" fill="none">
-                  <path d="M440.906 357.231C440.906 357.231 449.045 272.463 394.099 217.685C339.154 162.907 260.784 183.729 220.858 155.172C180.932 126.615 186.987 79.8709 151.861 59.5912C116.736 39.3116 71.6817 63.8831 51.9681 32.8874C32.2545 1.89176 72.0511 -9.88628 74.9579 15.1911C77.8647 40.2685 0.368047 57.1206 0.368047 57.1206" stroke="#C19476" stroke-opacity="0.8" stroke-width="3"/>
+                  <path
+                    d="M440.906 357.231C440.906 357.231 449.045 272.463 394.099 217.685C339.154 162.907 260.784 183.729 220.858 155.172C180.932 126.615 186.987 79.8709 151.861 59.5912C116.736 39.3116 71.6817 63.8831 51.9681 32.8874C32.2545 1.89176 72.0511 -9.88628 74.9579 15.1911C77.8647 40.2685 0.368047 57.1206 0.368047 57.1206"
+                    stroke="#C19476" stroke-opacity="0.8" stroke-width="3" />
                 </svg>
               </div>
             </div>
@@ -114,21 +121,29 @@
         <div class="flex items-center gap-20 lg:flex-col-reverse">
           <div class="flex-1 flex flex-col gap-6">
             <h3 class="text-h3 italic"><span class="text-primary not-italic font-semibold">Our</span> Product</h3>
-            <p class="text-h8">Our team purchase these products in bulk from respective pharmaceutical manufacturers through our Pharma license. We supply with authentic and brand name products. We do not sell generic products and guarantee high quality. Our professional team will help you take care of your orders, packages and will offer payment plan so you can concentrate more on your patients. 
+            <p class="text-h8">Our team purchase these products in bulk from respective pharmaceutical manufacturers
+              through our Pharma license. We supply with authentic and brand name products. We do not sell generic
+              products and guarantee high quality. Our professional team will help you take care of your orders,
+              packages and will offer payment plan so you can concentrate more on your patients.
               Our main goal is to make our customers happy, so we aim to find the best customer approach.</p>
           </div>
           <div class="flex-1">
             <img src="img/Img-6.jpg" alt="Our Product">
           </div>
-          
+
         </div>
         <div class="flex items-center gap-20 lg:flex-col">
           <div class="flex-1">
             <img src="img/Img-7.jpg" alt="Who we are?">
           </div>
           <div class="flex-1 flex flex-col gap-6">
-            <h3 class="text-h3 italic"><span class="text-primary not-italic font-semibold">Only</span> Original Products</h3>
-            <p class="text-h8">When you buy wholesale products in our company, your clinic saves thousands of dollars permonth. Taking into account the fast-growing popularity of fillers – a number of purchases will be increased.Our stock includes brand name dermal fillers, mesotherapy treatments, orthopedic solutions, and many other brand name products. We love to compete against other wholesale companies in the industry and make it our business that you are satisfied with your products.</p>
+            <h3 class="text-h3 italic"><span class="text-primary not-italic font-semibold">Only</span> Original Products
+            </h3>
+            <p class="text-h8">When you buy wholesale products in our company, your clinic saves thousands of dollars
+              permonth. Taking into account the fast-growing popularity of fillers – a number of purchases will be
+              increased.Our stock includes brand name dermal fillers, mesotherapy treatments, orthopedic solutions, and
+              many other brand name products. We love to compete against other wholesale companies in the industry and
+              make it our business that you are satisfied with your products.</p>
           </div>
         </div>
       </div>
@@ -138,107 +153,113 @@
       <div class="container">
         <div>
           @@include('components/title.html', {
-            'text': 'Best',
-            'colorText': 'Sellers!',
-            'styles': 'mb-4 leading-[100%]'
-        })
-        <p class="text-black-1 leading-[140%] text-h8">Explore our curated selection of top products.</p>
-        <div class="mt-10">
-          <div class="splide text-black pb-10" aria-label="Splide Basic HTML Example">
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide">
-                  @@include('components/product-card.html', {
+          'text': 'Best',
+          'colorText': 'Sellers!',
+          'styles': 'mb-4 leading-[100%]'
+          })
+          <p class="text-black-1 leading-[140%] text-h8">Explore our curated selection of top products.</p>
+          <div class="mt-10">
+            <div class="splide text-black pb-10" aria-label="Splide Basic HTML Example">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide">
+                    @@include('components/product-card.html', {
                     'style': 'mb-2',
                     'img': 'https://dummyimage.com/420x260',
                     'alt': 'title',
                     'name': 'Product name',
                     'link': 'Product-page.html',
-                })
-                </li>
-                <li class="splide__slide">
-                  @@include('components/product-card.html', {
+                    })
+                  </li>
+                  <li class="splide__slide">
+                    @@include('components/product-card.html', {
                     'style': 'mb-2',
                     'img': 'https://dummyimage.com/420x260',
                     'alt': 'title',
                     'name': 'Product name',
                     'link': 'Product-page.html',
-                })
-                </li>
-                <li class="splide__slide">
-                  @@include('components/product-card.html', {
+                    })
+                  </li>
+                  <li class="splide__slide">
+                    @@include('components/product-card.html', {
                     'style': 'mb-2',
                     'img': 'https://dummyimage.com/420x260',
                     'alt': 'title',
                     'name': 'Product name',
                     'link': 'Product-page.html',
-                })
-                </li>
-                <li class="splide__slide">
-                  @@include('components/product-card.html', {
+                    })
+                  </li>
+                  <li class="splide__slide">
+                    @@include('components/product-card.html', {
                     'style': 'mb-2',
                     'img': 'https://dummyimage.com/420x260',
                     'alt': 'title',
                     'name': 'Product name',
                     'link': 'Product-page.html',
-                })
-                </li>
-                <li class="splide__slide">
-                  @@include('components/product-card.html', {
+                    })
+                  </li>
+                  <li class="splide__slide">
+                    @@include('components/product-card.html', {
                     'style': 'mb-2',
                     'img': 'https://dummyimage.com/420x260',
                     'alt': 'title',
                     'name': 'Product name',
                     'link': 'Product-page.html',
-                })
-                </li>
-                <li class="splide__slide">
-                  @@include('components/product-card.html', {
+                    })
+                  </li>
+                  <li class="splide__slide">
+                    @@include('components/product-card.html', {
                     'style': 'mb-2',
                     'img': 'https://dummyimage.com/420x260',
                     'alt': 'title',
                     'name': 'Product name',
                     'link': 'Product-page.html',
-                })
-                </li>
-                <li class="splide__slide">
-                  @@include('components/product-card.html', {
+                    })
+                  </li>
+                  <li class="splide__slide">
+                    @@include('components/product-card.html', {
                     'style': 'mb-2',
                     'img': 'https://dummyimage.com/420x260',
                     'alt': 'title',
                     'name': 'Product name',
                     'link': 'Product-page.html',
-                })
-                </li>
-                <li class="splide__slide">
-                  @@include('components/product-card.html', {
+                    })
+                  </li>
+                  <li class="splide__slide">
+                    @@include('components/product-card.html', {
                     'style': 'mb-2',
                     'img': 'https://dummyimage.com/420x260',
                     'alt': 'title',
                     'name': 'Product name',
                     'link': 'Product-page.html',
-                })
-                </li>
-              </ul>
-            </div>
-            <div class="splide__arrows">
-              <button class="splide__arrow splide__arrow--prev text-white hover:bg-inherit opacity-100">
-                <div class="button slider-btn min-w-[56px] w-[56px] h-[56px] p-2 rounded-xl border transition group border-white hover:border-primary bg-primary flex justify-center items-center hover:bg-transparent text-white hover:text-primary">
-                  <svg class="fill-white group-hover:fill-primary" xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 22 10" fill="none">
-                      <path d="M21.4541 5.44982C21.5058 5.3908 21.5469 5.32069 21.5749 5.24351C21.603 5.16632 21.6174 5.08357 21.6174 5C21.6174 4.91644 21.603 4.83369 21.5749 4.7565C21.5469 4.67931 21.5058 4.6092 21.4541 4.55019L17.9166 0.506922C17.8122 0.387624 17.6707 0.320602 17.523 0.320602C17.3754 0.320602 17.2339 0.387624 17.1295 0.506922C17.0251 0.626221 16.9665 0.788025 16.9665 0.956739C16.9665 1.12545 17.0251 1.28726 17.1295 1.40656L20.2745 5L17.1295 8.59345C17.0251 8.71275 16.9665 8.87455 16.9665 9.04327C16.9665 9.21198 17.0251 9.37379 17.1295 9.49308C17.2339 9.61238 17.3754 9.67941 17.523 9.67941C17.6707 9.67941 17.8122 9.61238 17.9166 9.49308L21.4541 5.44982ZM0.382629 5.63534H21.0605V4.36467H0.382629V5.63534Z" />
-                  </svg>
+                    })
+                  </li>
+                </ul>
               </div>
-              </button>
-              <button class="splide__arrow splide__arrow--next text-white hover:bg-inherit opacity-100">
-                <div class="button slider-btn min-w-[56px] w-[56px] h-[56px] p-2 rounded-xl border transition group border-white hover:border-primary bg-primary flex justify-center items-center hover:bg-transparent text-white hover:text-primary">
-                  <svg class="fill-white group-hover:fill-primary" xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 22 10" fill="none">
-                      <path d="M21.4541 5.44982C21.5058 5.3908 21.5469 5.32069 21.5749 5.24351C21.603 5.16632 21.6174 5.08357 21.6174 5C21.6174 4.91644 21.603 4.83369 21.5749 4.7565C21.5469 4.67931 21.5058 4.6092 21.4541 4.55019L17.9166 0.506922C17.8122 0.387624 17.6707 0.320602 17.523 0.320602C17.3754 0.320602 17.2339 0.387624 17.1295 0.506922C17.0251 0.626221 16.9665 0.788025 16.9665 0.956739C16.9665 1.12545 17.0251 1.28726 17.1295 1.40656L20.2745 5L17.1295 8.59345C17.0251 8.71275 16.9665 8.87455 16.9665 9.04327C16.9665 9.21198 17.0251 9.37379 17.1295 9.49308C17.2339 9.61238 17.3754 9.67941 17.523 9.67941C17.6707 9.67941 17.8122 9.61238 17.9166 9.49308L21.4541 5.44982ZM0.382629 5.63534H21.0605V4.36467H0.382629V5.63534Z" />
-                  </svg>
+              <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev text-white hover:bg-inherit opacity-100">
+                  <div
+                    class="button slider-btn min-w-[56px] w-[56px] h-[56px] p-2 rounded-xl border transition group border-white hover:border-primary bg-primary flex justify-center items-center hover:bg-transparent text-white hover:text-primary">
+                    <svg class="fill-white group-hover:fill-primary" xmlns="http://www.w3.org/2000/svg" width="22"
+                      height="10" viewBox="0 0 22 10" fill="none">
+                      <path
+                        d="M21.4541 5.44982C21.5058 5.3908 21.5469 5.32069 21.5749 5.24351C21.603 5.16632 21.6174 5.08357 21.6174 5C21.6174 4.91644 21.603 4.83369 21.5749 4.7565C21.5469 4.67931 21.5058 4.6092 21.4541 4.55019L17.9166 0.506922C17.8122 0.387624 17.6707 0.320602 17.523 0.320602C17.3754 0.320602 17.2339 0.387624 17.1295 0.506922C17.0251 0.626221 16.9665 0.788025 16.9665 0.956739C16.9665 1.12545 17.0251 1.28726 17.1295 1.40656L20.2745 5L17.1295 8.59345C17.0251 8.71275 16.9665 8.87455 16.9665 9.04327C16.9665 9.21198 17.0251 9.37379 17.1295 9.49308C17.2339 9.61238 17.3754 9.67941 17.523 9.67941C17.6707 9.67941 17.8122 9.61238 17.9166 9.49308L21.4541 5.44982ZM0.382629 5.63534H21.0605V4.36467H0.382629V5.63534Z" />
+                    </svg>
+                  </div>
+                </button>
+                <button class="splide__arrow splide__arrow--next text-white hover:bg-inherit opacity-100">
+                  <div
+                    class="button slider-btn min-w-[56px] w-[56px] h-[56px] p-2 rounded-xl border transition group border-white hover:border-primary bg-primary flex justify-center items-center hover:bg-transparent text-white hover:text-primary">
+                    <svg class="fill-white group-hover:fill-primary" xmlns="http://www.w3.org/2000/svg" width="22"
+                      height="10" viewBox="0 0 22 10" fill="none">
+                      <path
+                        d="M21.4541 5.44982C21.5058 5.3908 21.5469 5.32069 21.5749 5.24351C21.603 5.16632 21.6174 5.08357 21.6174 5C21.6174 4.91644 21.603 4.83369 21.5749 4.7565C21.5469 4.67931 21.5058 4.6092 21.4541 4.55019L17.9166 0.506922C17.8122 0.387624 17.6707 0.320602 17.523 0.320602C17.3754 0.320602 17.2339 0.387624 17.1295 0.506922C17.0251 0.626221 16.9665 0.788025 16.9665 0.956739C16.9665 1.12545 17.0251 1.28726 17.1295 1.40656L20.2745 5L17.1295 8.59345C17.0251 8.71275 16.9665 8.87455 16.9665 9.04327C16.9665 9.21198 17.0251 9.37379 17.1295 9.49308C17.2339 9.61238 17.3754 9.67941 17.523 9.67941C17.6707 9.67941 17.8122 9.61238 17.9166 9.49308L21.4541 5.44982ZM0.382629 5.63534H21.0605V4.36467H0.382629V5.63534Z" />
+                    </svg>
+                  </div>
+                </button>
               </div>
-              </button>
             </div>
           </div>
-        </div>
         </div>
       </div>
     </section>
@@ -248,40 +269,51 @@
         <div class="grid grid-cols-12 minlg:gap-12 gap-y-12">
           <div class="col-span-3 lg:col-span-6 sm:col-span-12 test-arrow-block">
             <div class="flex flex-col items-center">
-              <div class="bg-primary overflow-hidden rounded-lg mb-5 flex justify-center items-center w-[96px] h-[96px]">
+              <div
+                class="bg-primary overflow-hidden rounded-lg mb-5 flex justify-center items-center w-[96px] h-[96px]">
                 <i class="i-percents"></i>
               </div>
-              <span class="text-center font-semibold text-h8 text-dark-green block mb-3 uppercase leading-5">100 % AUTHENTIC <br>
+              <span class="text-center font-semibold text-h8 text-dark-green block mb-3 uppercase leading-5">100 %
+                AUTHENTIC <br>
                 PRODUCTS</span>
-                <p class="text-center leading-5 text-black-1">Get original products directly from the manufacturer.</p>
+              <p class="text-center leading-5 text-black-1">Get original products directly from the manufacturer.</p>
             </div>
           </div>
           <div class="col-span-3 lg:col-span-6 sm:col-span-12 test-arrow-block">
             <div class="flex flex-col items-center">
-              <div class="bg-primary overflow-hidden rounded-lg mb-5 flex justify-center items-center w-[96px] h-[96px]">
+              <div
+                class="bg-primary overflow-hidden rounded-lg mb-5 flex justify-center items-center w-[96px] h-[96px]">
                 <i class="i-delivery"></i>
               </div>
-              <span class="text-center font-semibold text-h8 text-dark-green block mb-3 uppercase leading-5">FAST DELIVERY</span>
-                <p class="text-center leading-5 text-black-1">Receive your parcel fast and safe in just 5-7 business days.</p>
+              <span class="text-center font-semibold text-h8 text-dark-green block mb-3 uppercase leading-5">FAST
+                DELIVERY</span>
+              <p class="text-center leading-5 text-black-1">Receive your parcel fast and safe in just 5-7 business days.
+              </p>
             </div>
           </div>
           <div class="col-span-3 lg:col-span-6 sm:col-span-12 test-arrow-block">
             <div class="flex flex-col items-center">
-              <div class="bg-primary overflow-hidden rounded-lg mb-5 flex justify-center items-center w-[96px] h-[96px]">
+              <div
+                class="bg-primary overflow-hidden rounded-lg mb-5 flex justify-center items-center w-[96px] h-[96px]">
                 <i class="i-customer"></i>
               </div>
-              <span class="text-center font-semibold text-h8 text-dark-green block mb-3 uppercase leading-5">MULTILINGUAL CUSTOMER <br>
+              <span
+                class="text-center font-semibold text-h8 text-dark-green block mb-3 uppercase leading-5">MULTILINGUAL
+                CUSTOMER <br>
                 SERVICE</span>
-                <p class="text-center leading-5 text-black-1">English, Spanish, Russian </p>
+              <p class="text-center leading-5 text-black-1">English, Spanish, Russian </p>
             </div>
           </div>
           <div class="col-span-3 lg:col-span-6 sm:col-span-12 test-arrow-block">
             <div class="flex flex-col items-center">
-              <div class="bg-primary overflow-hidden rounded-lg mb-5 flex justify-center items-center w-[96px] h-[96px]">
+              <div
+                class="bg-primary overflow-hidden rounded-lg mb-5 flex justify-center items-center w-[96px] h-[96px]">
                 <i class="i-offer"></i>
               </div>
-              <span class="text-center font-semibold text-h8 text-dark-green block mb-3 uppercase leading-5">SPECIAL OFFERS</span>
-                <p class="text-center leading-5 text-black-1">We offer a 5% discount on your first order and run special promotions each month.</p>
+              <span class="text-center font-semibold text-h8 text-dark-green block mb-3 uppercase leading-5">SPECIAL
+                OFFERS</span>
+              <p class="text-center leading-5 text-black-1">We offer a 5% discount on your first order and run special
+                promotions each month.</p>
             </div>
           </div>
         </div>
@@ -293,78 +325,83 @@
         <div class="grid grid-cols-12 minlg:gap-12 gap-y-12">
           <div class="col-span-12 minlg:col-span-5">
             <div class="lg:flex justify-center">
-              <img class="rounded-xl" src="img/beauty-skin-care-close-up-portrait-beautiful-woman-looking-mirror-touching-her-clear-g.png" alt="">
+              <img class="rounded-xl"
+                src="img/beauty-skin-care-close-up-portrait-beautiful-woman-looking-mirror-touching-her-clear-g.png"
+                alt="">
             </div>
           </div>
           <div class="col-span-12 minlg:col-span-7">
             <div class="max-w-[716px] ml-auto flex flex-col">
               <div class="flex flex-col gap-4 mb-8">
                 <h3 class="text-h3 font-semibold">Contact us</h3>
-                <p class="text-black-1 text-h8 leading-[130%]">Should you have any other inquiries, please fill in the form and <br> one of our managers will contact you within 24 hours.</p>
-                <p class="text-primary text-base font-semibold leading-[120%]">PLEASE NOTE: we only sell to the certified doctors and companies.</p>
+                <p class="text-black-1 text-h8 leading-[130%]">Should you have any other inquiries, please fill in the
+                  form and <br> one of our managers will contact you within 24 hours.</p>
+                <p class="text-primary text-base font-semibold leading-[120%]">PLEASE NOTE: we only sell to the
+                  certified doctors and companies.</p>
               </div>
               <form class="flex flex-col gap-6">
                 <div class="flex gap-6 flex-row sm:flex-col">
-                    @@include('components/input.html', {
-                        'type': 'text',
-                        'common-style': 'flex-1',
-                        'idInput': 'NameId',
-                        'placeholder': '',
-                        'label': 'Name',
-                        'styleInput': '',
-                        'styleLabel': '',
-                        'errorStyle': 'hidden'
-                    })
-                    @@include('components/input.html', {
-                        'type': 'text',
-                        'common-style': 'flex-1',
-                        'idInput': 'PhoneId',
-                        'placeholder': '',
-                        'label': 'Phone',
-                        'styleInput': '',
-                        'styleLabel': '',
-                        'errorStyle': 'hidden'
-                    })
+                  @@include('components/input.html', {
+                  'type': 'text',
+                  'common-style': 'flex-1',
+                  'idInput': 'NameId',
+                  'placeholder': '',
+                  'label': 'Name',
+                  'styleInput': '',
+                  'styleLabel': '',
+                  'errorStyle': 'hidden'
+                  })
+                  @@include('components/input.html', {
+                  'type': 'text',
+                  'common-style': 'flex-1',
+                  'idInput': 'PhoneId',
+                  'placeholder': '',
+                  'label': 'Phone',
+                  'styleInput': '',
+                  'styleLabel': '',
+                  'errorStyle': 'hidden'
+                  })
                 </div>
                 <div class="flex gap-6 flex-row sm:flex-col">
-                    @@include('components/input.html', {
-                        'type': 'text',
-                        'common-style': 'flex-1',
-                        'idInput': 'MailId',
-                        'placeholder': '',
-                        'label': 'Email',
-                        'styleInput': '',
-                        'styleLabel': '',
-                        'errorStyle': 'hidden'
-                    })
+                  @@include('components/input.html', {
+                  'type': 'text',
+                  'common-style': 'flex-1',
+                  'idInput': 'MailId',
+                  'placeholder': '',
+                  'label': 'Email',
+                  'styleInput': '',
+                  'styleLabel': '',
+                  'errorStyle': 'hidden'
+                  })
 
-                    @@include('components/select-input.html', {
-                        'common-style': 'flex-1',
-                        'idSelect': 'small-select',
-                        'styleLabel': '',
-                        'label': 'State'
-                    })
+                  @@include('components/select-input.html', {
+                  'common-style': 'flex-1',
+                  'idSelect': 'small-select',
+                  'styleLabel': '',
+                  'label': 'State'
+                  })
                 </div>
 
                 @@include('components/textarea.html', {
-                    'idTextarea': 'MessageId',
-                    'common-style': 'flex-1',
-                    'placeholder': 'Type your message...',
-                    'label': 'Message',
-                    'styleTextarea': 'max-h-[134px]',
-                    'styleLabel': '',
-                    'rows': '5'
+                'idTextarea': 'MessageId',
+                'common-style': 'flex-1',
+                'placeholder': 'Type your message...',
+                'label': 'Message',
+                'styleTextarea': 'max-h-[134px]',
+                'styleLabel': '',
+                'rows': '5'
                 })
 
                 @@include('components/checkbox.html', {
-                    'text': 'I have read and agree to the <a class="underline" href="#">Terms</a>',
-                    'errorText': 'Please confirm that you agree',
-                    'styleText': '',
-                    'errorStyle': 'hidden',
+                'text': 'I have read and agree to the <a class="underline" href="#">Terms</a>',
+                'errorText': 'Please confirm that you agree',
+                'styleText': '',
+                'errorStyle': 'hidden',
                 })
 
-                <a class="button test2 px-6 py-3 w-full rounded-xl border transition group border-white hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-transparent text-white hover:text-primary" href="">
-                    <span class="font-medium">Submit</span>
+                <a class="button test2 px-6 py-3 w-full rounded-xl border transition group border-white hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-transparent text-white hover:text-primary"
+                  href="">
+                  <span class="font-medium">Submit</span>
                 </a>
               </form>
             </div>

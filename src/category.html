@@ -1,59 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include('components/head.html', {
-    'title': 'Category'
+'title': 'Category'
 })
 
 <body class="">
-  <main class="flex flex-col justify-between min-h-screen">
-    @@include('components/Header.html')
- 
-    <section class="py-16">
-        <div class="container">
-            <div class="grid grid-cols-12 gap-5">
-                <div class="col-span-3 lg:col-span-12">
-                    <div class="flex flex-col sticky top-2 bg-white border border-primary py-6 px-5 lg:p-4 rounded-lg ">
-                        <h3 class="text-h6 font-semibold leading-[120%] text-dark-green mb-8">Categories</h3>
-                        <ul class="flex flex-col gap-4 lg:flex-row flex-wrap lg:gap-x-0 sm:gap-y-2">
-                            <li class="lg:w-1/3 md:w-1/2 sm:w-full">
-                                <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary" href="#"><i class="botulinum-icon mr-2"></i> Botulinum</a>
-                            </li>
-                            <li class="lg:w-1/3 md:w-1/2 sm:w-full">
-                                <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary" href="#"><i class="mesotherapy-icon mr-2"></i> Mesotherapy</a>
-                            </li>
-                            <li class="lg:w-1/3 md:w-1/2 sm:w-full">
-                                <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary" href="#"><i class="dermal-fillers-icon mr-2"></i> Dermal Fillers</a>
-                            </li>
-                            <li class="lg:w-1/3 md:w-1/2 sm:w-full">
-                                <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary" href="#"><i class="lipolitics-icon mr-2"></i> Lipolitics</a>
-                            </li>
-                            <li class="lg:w-1/3 md:w-1/2 sm:w-full">
-                                <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary" href="#"><i class="placental-extract-icon mr-2"></i> Placental Extract</a>
-                            </li>
-                            <li class="lg:w-1/3 md:w-1/2 sm:w-full">
-                                <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary" href="#"><i class="creams-serum-icon mr-2"></i> Creams & Serum</a>
-                            </li>
-                            <li class="lg:w-1/3 md:w-1/2 sm:w-full">
-                                <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary" href="#"><i class="Rheumatology-icon mr-2"></i> RHEUMATOLOGY</a>
-                            </li>
-                            <li class="lg:w-1/3 md:w-1/2 sm:w-full">
-                                <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary" href="#"><i class="ortophedics-icon mr-2"></i> Ortophedics</a>
-                            </li>
-                            <li class="lg:w-1/3 md:w-1/2 sm:w-full">
-                                <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary" href="#"><i class="ginecology-icon mr-2"></i> Ginecology</a>
-                            </li>
-                        </ul>
+    <main class="flex flex-col justify-between min-h-screen">
+        @@include('components/Header.html')
+
+        <section class="py-16">
+            <div class="container">
+                <div class="grid grid-cols-12 gap-5">
+                    <div class="col-span-3 lg:col-span-12">
+                        <div
+                            class="flex flex-col sticky top-2 bg-white border border-primary py-6 px-5 lg:p-4 rounded-lg ">
+                            <h3 class="text-h6 font-semibold leading-[120%] text-dark-green mb-8">Categories</h3>
+                            <ul class="flex flex-col gap-4 lg:flex-row flex-wrap lg:gap-x-0 sm:gap-y-2">
+                                <li class="lg:w-1/3 md:w-1/2 sm:w-full">
+                                    <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary"
+                                        href="#"><i class="botulinum-icon mr-2"></i> Botulinum</a>
+                                </li>
+                                <li class="lg:w-1/3 md:w-1/2 sm:w-full">
+                                    <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary"
+                                        href="#"><i class="mesotherapy-icon mr-2"></i> Mesotherapy</a>
+                                </li>
+                                <li class="lg:w-1/3 md:w-1/2 sm:w-full">
+                                    <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary"
+                                        href="#"><i class="dermal-fillers-icon mr-2"></i> Dermal Fillers</a>
+                                </li>
+                                <li class="lg:w-1/3 md:w-1/2 sm:w-full">
+                                    <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary"
+                                        href="#"><i class="lipolitics-icon mr-2"></i> Lipolitics</a>
+                                </li>
+                                <li class="lg:w-1/3 md:w-1/2 sm:w-full">
+                                    <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary"
+                                        href="#"><i class="placental-extract-icon mr-2"></i> Placental Extract</a>
+                                </li>
+                                <li class="lg:w-1/3 md:w-1/2 sm:w-full">
+                                    <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary"
+                                        href="#"><i class="creams-serum-icon mr-2"></i> Creams & Serum</a>
+                                </li>
+                                <li class="lg:w-1/3 md:w-1/2 sm:w-full">
+                                    <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary"
+                                        href="#"><i class="Rheumatology-icon mr-2"></i> RHEUMATOLOGY</a>
+                                </li>
+                                <li class="lg:w-1/3 md:w-1/2 sm:w-full">
+                                    <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary"
+                                        href="#"><i class="ortophedics-icon mr-2"></i> Ortophedics</a>
+                                </li>
+                                <li class="lg:w-1/3 md:w-1/2 sm:w-full">
+                                    <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary"
+                                        href="#"><i class="ginecology-icon mr-2"></i> Ginecology</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="col-span-9 lg:col-span-12">
-                    <h2 class="text-h3 font-semibold text-dark-green mb-3">Botulinum</h2>
-                    <div class="flex justify-between items-center mb-8">
-                        <p class="text-gray-2">1-20 of 50 results </p>
-                        @@include('components/filter-1.html')
-                    </div>
-                    <div class="grid grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-6">
-                        @@include('components/product-card.html', {
+
+                    <div class="col-span-9 lg:col-span-12">
+                        <h2 class="text-h3 font-semibold text-dark-green mb-3">Botulinum</h2>
+                        <div class="flex justify-between items-center mb-8">
+                            <p class="text-gray-2">1-20 of 50 results </p>
+                            @@include('components/filter-1.html')
+                        </div>
+                        <div class="grid grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-6">
+                            @@include('components/product-card.html', {
                             'style': 'mb-2',
                             'img': 'https://dummyimage.com/420x260',
                             'alt': 'title',
@@ -61,8 +71,8 @@
                             'title': 'title img',
                             'link': 'Product-page.html',
                             'ID': 'test1'
-                        })
-                        @@include('components/product-card.html', {
+                            })
+                            @@include('components/product-card.html', {
                             'style': 'mb-2',
                             'img': 'https://dummyimage.com/420x260',
                             'alt': 'title',
@@ -70,20 +80,20 @@
                             'title': 'title img',
                             'link': 'Product-page.html',
                             'ID': 'test2'
-                        })
-                    </div>
-                    <div class="flex justify-between">
-                        <button></button>
-                        
-                        <button></button>
+                            })
+                        </div>
+                        <div class="flex justify-between">
+                            <button></button>
+
+                            <button></button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    @@include('components/Footer.html')
-  </main>
+        @@include('components/Footer.html')
+    </main>
 
     @@include('components/modal-window.html')
     @@include('components/wishlistBlock.html')

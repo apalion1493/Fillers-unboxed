@@ -1,83 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include('components/head.html', {
-    'title': 'Terms of Use'
+'title': 'Terms of Use'
 })
 
 <body class="">
-  <main class="flex flex-col justify-between min-h-screen">
-    @@include('components/Header.html')
- 
-    <section class="pt-10 pb-[72px]">
-        <div class="container gap-6 flex flex-col">
-            @@include('components/title.html', {
+    <main class="flex flex-col justify-between min-h-screen">
+        @@include('components/Header.html')
+
+        <section class="pt-10 pb-[72px]">
+            <div class="container gap-6 flex flex-col">
+                @@include('components/title.html', {
                 'text': 'Terms of ',
                 'colorText': 'Use'
-            })
-            <div class="flex flex-col">
-                <h4 class="text-primary text-md uppercase mb-3">ORDERS</h4>
-                <p class="text-h8 text-black-1">Customers may place orders via phone during our business hours or at any time via email and we will process the order as quickly as possible and usually within 24 working hours from receipt of the order. Concerning products which are in back order the dispatch will be 3-6 working days later unless otherwise informed.</p>
-                <p class="text-h8 text-black-1">After an order has been placed, the customer will receive an invoice by e-mail. Please note, that the invoice is not a shipment or payment notification. The products are shipped out on the following working day after the order is placed.
-                    All orders for products are subject to availability, and we reserve the right to cancel any purchase order or agreement if supply is impossible.</p>
+                })
+                <div class="flex flex-col">
+                    <h4 class="text-primary text-md uppercase mb-3">ORDERS</h4>
+                    <p class="text-h8 text-black-1">Customers may place orders via phone during our business hours or at
+                        any time via email and we will process the order as quickly as possible and usually within 24
+                        working hours from receipt of the order. Concerning products which are in back order the
+                        dispatch will be 3-6 working days later unless otherwise informed.</p>
+                    <p class="text-h8 text-black-1">After an order has been placed, the customer will receive an invoice
+                        by e-mail. Please note, that the invoice is not a shipment or payment notification. The products
+                        are shipped out on the following working day after the order is placed.
+                        All orders for products are subject to availability, and we reserve the right to cancel any
+                        purchase order or agreement if supply is impossible.</p>
+                </div>
+                <div class="flex flex-col">
+                    <h4 class="text-primary text-md uppercase mb-3">CUSTOMER INFORMATION</h4>
+                    <p class="text-h8 text-black-1">Unboxed Fillers collects customer personal information such as name,
+                        address, email address, phone number and fax number to set up an account. In order to provide
+                        requested products and services and to fulfill customer orders and payment processing we will
+                        collect additional data such as billing information.</p>
+                    <p class="text-h8 text-black-1">Unboxed Fillers is responsible for protecting personal information
+                        under its control.</p>
+                </div>
+                <div class="flex flex-col">
+                    <h4 class="text-primary text-md uppercase mb-3">DELIVERY AND DELAY</h4>
+                    <p class="text-h8 text-black-1">Unboxed Fillers collects customer personal information such as name,
+                        address, email address, phone number and fax number to set up an account. In order to provide
+                        requested products and services and to fulfill customer orders and payment processing we will
+                        collect additional data such as billing information.</p>
+                    <p class="text-h8 text-black-1">Unboxed Fillers is responsible for protecting personal information
+                        under its control.</p>
+                </div>
+                <div class="flex flex-col">
+                    <h4 class="text-primary text-md uppercase mb-3">DELIVERY AND DELAY</h4>
+                    <p class="text-h8 text-black-1">Products in stock will be shipped the following working day; those
+                        which are not in stock will be ready for shipment normally within 2-6 working days. All orders
+                        will be shipped via Express Mail. The delivery time is between 3-7 working days and we provide
+                        our customers with a tracking number upon request.</p>
+                    <p class="text-h8 text-black-1">Unboxed Fillers is keeping track of the packages and the package is
+                        considered delivered only after customer's confirmation.</p>
+                    <p class="text-h8 text-black-1">Unboxed Fillers is not responsible for errors in delivery where the
+                        delivery address provided by the customer is wrong or where the customer has made changes during
+                        its transit.</p>
+                    <p class="text-h8 text-black-1">Please note, that shipping delays may occur due to any force majeure
+                        circumstances such as war, strike, riot, crime or weather conditions.</p>
+                </div>
+                <div class="flex flex-col">
+                    <h4 class="text-primary text-md uppercase mb-3">RETURN POLICY</h4>
+                    <p class="text-h8 text-black-1">Unboxed Fillers accepts any products returned within 8 working days
+                        notification from receipt of the product as long as the reason falls under one of the following
+                        conditions:</p>
+                    <ul class="list-disc pl-6">
+                        <li>
+                            <p class="text-h8 text-black-1">The product contains manufacturing defects</p>
+                        </li>
+                        <li>
+                            <p class="text-h8 text-black-1">The product was wrong received</p>
+                        </li>
+                        <li>
+                            <p class="text-h8 text-black-1">The product was damaged upon arrival</p>
+                        </li>
+                    </ul>
+                    <p class="text-h8 text-black-1">Your refund will be issued to the original credit card used to place
+                        the order. Shipping costs are not refunded.
+                        Please note that refunds can take up to 29 working days to show on your account due to varying
+                        processing times between payment providers. Contact your bank if you need to speed up the
+                        process.</p>
+                </div>
+                <div class="flex flex-col">
+                    <h4 class="text-primary text-md uppercase mb-3">DAMAGED PRODUCTS</h4>
+                    <p class="text-h8 text-black-1">Unboxed Fillers bears the risk of freight of the products to the
+                        customer, any claims for loss, shortage, breakage, leakage or other damage occurring in transit
+                        must be notified to Unboxed Fillers via phone or e-mail no later than 8 days after the customer
+                        has obtained or should have obtained knowledge thereof.</p>
+                    <p class="text-h8 text-black-1">Claims received after this time are not accepted.</p>
+                    <p class="text-h8 text-black-1">Claims submitted by the customer without relevant pictures or
+                        appropriate documentation will be rejected.</p>
+                    <p class="text-h8 text-black-1">Packages opened or in other ways damaged by the customs or other
+                        authority, is refunded by sending a replacement with the same amount of products.</p>
+                    <p class="text-h8 text-black-1">The customer will cooperate fully and loyally with Unboxed Fillers
+                        in its efforts to establish a claim against the carrier.</p>
+                    <p class="text-h8 text-black-1">In case of returned goods the customer will be offered either
+                        replacement of goods or a 100% refund of the products returned. Customers refund will be
+                        processed via the same method of payment originally used to for the purchase.
+                        No returns will be accepted after 8 days.</p>
+                </div>
+                <div class="flex flex-col">
+                    <h4 class="text-primary text-md uppercase mb-3">CANCELLATION AND POSTPONEMENT</h4>
+                    <p class="text-h8 text-black-1">The order can be canceled only before the products are shipped out.
+                        After an order has been placed and the products have been shipped the order is binding for the
+                        customer.</p>
+                    <p class="text-h8 text-black-1">The order can be placed in advance and shipped later at customer's
+                        request.</p>
+                </div>
             </div>
-            <div class="flex flex-col">
-                <h4 class="text-primary text-md uppercase mb-3">CUSTOMER INFORMATION</h4>
-                <p class="text-h8 text-black-1">Unboxed Fillers collects customer personal information such as name, address, email address, phone number and fax number to set up an account. In order to provide requested products and services and to fulfill customer orders and payment processing we will collect additional data such as billing information.</p>
-                <p class="text-h8 text-black-1">Unboxed Fillers is responsible for protecting personal information under its control.</p>
-            </div>
-            <div class="flex flex-col">
-                <h4 class="text-primary text-md uppercase mb-3">DELIVERY AND DELAY</h4>
-                <p class="text-h8 text-black-1">Unboxed Fillers collects customer personal information such as name, address, email address, phone number and fax number to set up an account. In order to provide requested products and services and to fulfill customer orders and payment processing we will collect additional data such as billing information.</p>
-                <p class="text-h8 text-black-1">Unboxed Fillers is responsible for protecting personal information under its control.</p>
-            </div>
-            <div class="flex flex-col">
-                <h4 class="text-primary text-md uppercase mb-3">DELIVERY AND DELAY</h4>
-                <p class="text-h8 text-black-1">Products in stock will be shipped the following working day; those which are not in stock will be ready for shipment normally within 2-6 working days. All orders will be shipped via Express Mail. The delivery time is between 3-7 working days and we provide our customers with a tracking number upon request.</p>
-                <p class="text-h8 text-black-1">Unboxed Fillers is keeping track of the packages and the package is considered delivered only after customer's confirmation.</p>
-                <p class="text-h8 text-black-1">Unboxed Fillers is not responsible for errors in delivery where the delivery address provided by the customer is wrong or where the customer has made changes during its transit.</p>
-                <p class="text-h8 text-black-1">Please note, that shipping delays may occur due to any force majeure circumstances such as war, strike, riot, crime or weather conditions.</p>
-            </div>
-            <div class="flex flex-col">
-                <h4 class="text-primary text-md uppercase mb-3">RETURN POLICY</h4>
-                <p class="text-h8 text-black-1">Unboxed Fillers accepts any products returned within 8 working days notification from receipt of the product as long as the reason falls under one of the following conditions:</p>
-                <ul class="list-disc pl-6">
-                    <li>
-                        <p class="text-h8 text-black-1">The product contains manufacturing defects</p>
-                    </li>
-                    <li>
-                        <p class="text-h8 text-black-1">The product was wrong received</p>
-                    </li>
-                    <li>
-                        <p class="text-h8 text-black-1">The product was damaged upon arrival</p>
-                    </li>
-                </ul>
-                <p class="text-h8 text-black-1">Your refund will be issued to the original credit card used to place the order. Shipping costs are not refunded.
-                    Please note that refunds can take up to 29 working days to show on your account due to varying processing times between payment providers. Contact your bank if you need to speed up the process.</p>
-            </div>
-            <div class="flex flex-col">
-                <h4 class="text-primary text-md uppercase mb-3">DAMAGED PRODUCTS</h4>
-                <p class="text-h8 text-black-1">Unboxed Fillers bears the risk of freight of the products to the customer, any claims for loss, shortage, breakage, leakage or other damage occurring in transit must be notified to Unboxed Fillers via phone or e-mail no later than 8 days after the customer has obtained or should have obtained knowledge thereof.</p>
-                <p class="text-h8 text-black-1">Claims received after this time are not accepted.</p>
-                <p class="text-h8 text-black-1">Claims submitted by the customer without relevant pictures or appropriate documentation will be rejected.</p>
-                <p class="text-h8 text-black-1">Packages opened or in other ways damaged by the customs or other authority, is refunded by sending a replacement with the same amount of products.</p>
-                <p class="text-h8 text-black-1">The customer will cooperate fully and loyally with Unboxed Fillers in its efforts to establish a claim against the carrier.</p>
-                <p class="text-h8 text-black-1">In case of returned goods the customer will be offered either replacement of goods or a 100% refund of the products returned. Customers refund will be processed via the same method of payment originally used to for the purchase.
-                    No returns will be accepted after 8 days.</p>
-            </div>
-            <div class="flex flex-col">
-                <h4 class="text-primary text-md uppercase mb-3">CANCELLATION AND POSTPONEMENT</h4>
-                <p class="text-h8 text-black-1">The order can be canceled only before the products are shipped out. After an order has been placed and the products have been shipped the order is binding for the customer.</p>
-                <p class="text-h8 text-black-1">The order can be placed in advance and shipped later at customer's request.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    @@include('components/Footer.html')
-  </main>
+        @@include('components/Footer.html')
+    </main>
 
-  @@include('components/modal-window.html')
-  @@include('components/wishlistBlock.html')
-  @@include('components/script.html')
+    @@include('components/modal-window.html')
+    @@include('components/wishlistBlock.html')
+    @@include('components/script.html')
 </body>
 
 </html>

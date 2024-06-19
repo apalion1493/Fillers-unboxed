@@ -1,99 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include('components/head.html', {
-    'title': 'Categories'
+'title': 'Categories'
 })
 
 <body class="">
-  <main class="flex flex-col justify-between min-h-screen">
-    @@include('components/Header.html')
- 
-    <section class="py-16">
-        <div class="container">
-            <div class="grid grid-cols-12 gap-5">
-                <div class="col-span-6 lg:col-span-12 mb-14">
-                    @@include('components/title.html', {
+    <main class="flex flex-col justify-between min-h-screen">
+        @@include('components/Header.html')
+
+        <section class="py-16">
+            <div class="container">
+                <div class="grid grid-cols-12 gap-5">
+                    <div class="col-span-6 lg:col-span-12 mb-14">
+                        @@include('components/title.html', {
                         'text': 'Explore Our ',
                         'colorText': 'Categories',
                         'styles': 'mb-4'
-                    })
-                    <p class="text-black-1 text-h8">Here you will find a wide selection of dermal fillers from the most reputed and well-known manufacturers as Allergan, Galderma, Ipsen, etc. </p>
+                        })
+                        <p class="text-black-1 text-h8">Here you will find a wide selection of dermal fillers from the
+                            most reputed and well-known manufacturers as Allergan, Galderma, Ipsen, etc. </p>
+                    </div>
                 </div>
-            </div>
-            <div class="grid grid-cols-12 gap-5">
-                @@include('components/category-card.html', {
+                <div class="grid grid-cols-12 gap-5">
+                    @@include('components/category-card.html', {
                     'img': 'img/Botulinum.jpg',
                     'title': 'Botulinum',
                     'icon': 'botulinum-icon',
                     'style': 'col-span-4 lg:col-span-6 sm:col-span-12',
                     'url': '#'
-                })
-                @@include('components/category-card.html', {
+                    })
+                    @@include('components/category-card.html', {
                     'img': 'img/Mesotherapy.jpg',
                     'title': 'Mesotherapy',
                     'icon': 'botulinum-icon',
                     'style': 'col-span-4 lg:col-span-6 sm:col-span-12',
                     'url': '#'
-                })
-                @@include('components/category-card.html', {
+                    })
+                    @@include('components/category-card.html', {
                     'img': 'img/CreamsSerum.jpg',
                     'title': 'Creams & Serum',
                     'icon': 'botulinum-icon',
                     'style': 'col-span-4 lg:col-span-6 sm:col-span-12',
                     'url': '#'
-                })
-                @@include('components/category-card.html', {
+                    })
+                    @@include('components/category-card.html', {
                     'img': 'img/Lipolitics.jpg',
                     'title': 'Lipolitics',
                     'icon': 'botulinum-icon',
                     'style': 'col-span-4 lg:col-span-6 sm:col-span-12',
                     'url': '#'
-                })
-                @@include('components/category-card.html', {
+                    })
+                    @@include('components/category-card.html', {
                     'img': 'img/PlacentalExtract.jpg',
                     'title': 'Placental Extract',
                     'icon': 'botulinum-icon',
                     'style': 'col-span-4 lg:col-span-6 sm:col-span-12',
                     'url': '#'
-                })
-                @@include('components/category-card.html', {
+                    })
+                    @@include('components/category-card.html', {
                     'img': 'img/DermalFillers.jpg',
                     'title': 'Dermal Fillers',
                     'icon': 'botulinum-icon',
                     'style': 'col-span-4 lg:col-span-6 sm:col-span-12',
                     'url': '#'
-                })
-                @@include('components/category-card.html', {
+                    })
+                    @@include('components/category-card.html', {
                     'img': 'img/RHEUMATOLOGY.jpg',
                     'title': 'Rheumatology',
                     'icon': 'botulinum-icon',
                     'style': 'col-span-4 lg:col-span-6 sm:col-span-12',
                     'url': '#'
-                })
-                @@include('components/category-card.html', {
+                    })
+                    @@include('components/category-card.html', {
                     'img': 'img/Ortophedics.jpg',
                     'title': 'Ortophedics',
                     'icon': 'botulinum-icon',
                     'style': 'col-span-4 lg:col-span-6 sm:col-span-12',
                     'url': '#'
-                })
-                @@include('components/category-card.html', {
+                    })
+                    @@include('components/category-card.html', {
                     'img': 'img/Ginecology.jpg',
                     'title': 'Ginecology',
                     'icon': 'botulinum-icon',
                     'style': 'col-span-4 lg:col-span-6 sm:col-span-12',
                     'url': '#'
-                })
+                    })
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    @@include('components/Footer.html')
-  </main>
+        @@include('components/Footer.html')
+    </main>
 
-  @@include('components/modal-window.html')
-  @@include('components/wishlistBlock.html')
-  @@include('components/script.html')
+    @@include('components/modal-window.html')
+    @@include('components/wishlistBlock.html')
+    @@include('components/script.html')
 </body>
 
 </html>

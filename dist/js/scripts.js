@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded", () => {
         perPage: 4,
         focus  : 0,
         omitEnd: true,
-        gap: 20, 
+        gap: 20,  
         perMove: 1,
         arrows: true,
         pagination: true,
