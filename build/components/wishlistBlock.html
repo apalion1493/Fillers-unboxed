@@ -1,9 +1,13 @@
-<div id="wishlist" class="wishlist w-full minsm:w-[400px] z-[99] overflow-y-scroll bg-white fixed top-0 -right-full minsm:-right-[400px] bottom-0 py-6 px-8">
+<div id="wishlist"
+    class="wishlist w-full minsm:w-[400px] z-[99] overflow-y-scroll bg-white fixed top-0 -right-full minsm:-right-[400px] bottom-0 py-6 px-8">
     <div class="flex justify-between">
         <span>Your Wishlist</span>
-        <button id="wishlist-close" class="">
-            <svg class="cursor" xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
-                <path d="M19.2233 1.94942C19.6139 2.33994 19.6139 2.97311 19.2233 3.36363L12.1739 10.413L19.2929 17.532C19.6834 17.9225 19.6834 18.5557 19.2929 18.9462L18.4462 19.7929C18.0557 20.1834 17.4225 20.1834 17.032 19.7929L9.91304 12.6739L2.89841 19.6885C2.50788 20.0791 1.87472 20.0791 1.4842 19.6885L0.811454 19.0158C0.420929 18.6253 0.420929 17.9921 0.811453 17.6016L7.82609 10.587L0.707107 3.46798C0.316583 3.07745 0.316583 2.44429 0.707107 2.05376L1.55376 1.20711C1.94429 0.816583 2.57745 0.816583 2.96798 1.20711L10.087 8.32609L17.1364 1.27667C17.5269 0.886148 18.1601 0.886149 18.5506 1.27667L19.2233 1.94942Z" fill="#C19476"/>
+        <button id="wishlist-close" class="" aria-label="Button close wishlist container">
+            <svg class="cursor" xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
+                fill="none">
+                <path
+                    d="M19.2233 1.94942C19.6139 2.33994 19.6139 2.97311 19.2233 3.36363L12.1739 10.413L19.2929 17.532C19.6834 17.9225 19.6834 18.5557 19.2929 18.9462L18.4462 19.7929C18.0557 20.1834 17.4225 20.1834 17.032 19.7929L9.91304 12.6739L2.89841 19.6885C2.50788 20.0791 1.87472 20.0791 1.4842 19.6885L0.811454 19.0158C0.420929 18.6253 0.420929 17.9921 0.811453 17.6016L7.82609 10.587L0.707107 3.46798C0.316583 3.07745 0.316583 2.44429 0.707107 2.05376L1.55376 1.20711C1.94429 0.816583 2.57745 0.816583 2.96798 1.20711L10.087 8.32609L17.1364 1.27667C17.5269 0.886148 18.1601 0.886149 18.5506 1.27667L19.2233 1.94942Z"
+                    fill="#C19476" />
             </svg>
         </button>
     </div>
@@ -13,30 +17,44 @@
             <a class="text-primary underline font-semibold" href="#">1 ITEMS</a>
         </div>
         <div class="flex flex-col gap-6">
-            <div class="flex gap-8 md:flex-col">
-                <div class="overflow-hidden flex items-center justify-center rounded-xl border border-primary min-w-[120px] w-[120px] h-[120px]">
-                    <img class="max-w-full" src="" alt="">
-                </div>
+            <div class="flex gap-6 md:flex-col">
+                <a href="#"
+                    class="overflow-hidden flex items-center justify-center rounded-xl border border-primary min-w-[120px] w-[120px] h-[120px]">
+                    <img class="max-w-full" src="img/Product-img-small.png" alt="Product Image">
+                </a>
                 <div class="flex flex-col">
-                    <span class="font-semibold block text-dark-green leading-[130%] mb-2">Hyacorp body Counturing MLF1</span>
+                    <a href="#"
+                        class="font-semibold block text-dark-green hover:text-primary leading-[130%] mb-2">Hyacorp body
+                        Counturing MLF1</a>
                     <div class="flex flex-col mb-5">
                         <span class="text-h10 text-primary leading-[150%] font-semibold">FORMAT:</span>
                         <p class="text-h10 text-black-1 leading-[150%]">1 x 10ml</p>
                     </div>
-                    <div class="flex items-center gap-2 mb-4">
+                    <div class="flex items-center gap-2 mb-4 flex-wrap">
                         <span class="text-h11 leading-7 line-through">$ 80.30 USD</span>
-                        <span class="font-semibold text-primary leading-[130%]">$ 50.00 USD</span>
+                        <span class="font-semibold text-primary leading-[130%]">$ 500.00 USD</span>
                     </div>
-                    <div class="px-4 py-3 border border-primary rounded-lg flex justify-between items-center w-[108px]">
-                        <button class="w-[20px] h-[20px] bg-white flex rounded justify-center items-center border border-primary">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="4" viewBox="0 0 11 4" fill="none">
-                                <path d="M9.15145 0.861816C9.78769 0.861816 10.3035 1.37758 10.3035 2.01382C10.3035 2.65005 9.78769 3.16582 9.15145 3.16582H1.59145C0.95522 3.16582 0.439453 2.65005 0.439453 2.01382C0.439453 1.37758 0.955221 0.861816 1.59145 0.861816H9.15145Z" fill="#C19476"/>
+                    <div
+                        class="px-3 py-[10px] border border-primary rounded-lg flex justify-between items-center w-[108px]">
+                        <button
+                            class="w-[20px] h-[20px] bg-white flex rounded justify-center items-center border border-primary"
+                            aria-label="Button minus">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="4" viewBox="0 0 11 4"
+                                fill="none">
+                                <path
+                                    d="M9.15145 0.861816C9.78769 0.861816 10.3035 1.37758 10.3035 2.01382C10.3035 2.65005 9.78769 3.16582 9.15145 3.16582H1.59145C0.95522 3.16582 0.439453 2.65005 0.439453 2.01382C0.439453 1.37758 0.955221 0.861816 1.59145 0.861816H9.15145Z"
+                                    fill="#C19476" />
                             </svg>
                         </button>
-                        <span class="text-h8">1</span>
-                        <button class="w-[20px] h-[20px] bg-primary rounded flex justify-center items-center border border-primary">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
-                                <path d="M10.4715 6.01382C10.4715 6.54401 10.0417 6.97382 9.51149 6.97382H6.43149V10.0538C6.43149 10.6392 5.95691 11.1138 5.37148 11.1138C4.78606 11.1138 4.31148 10.6392 4.31148 10.0538V6.97382H1.23148C0.701291 6.97382 0.271484 6.54401 0.271484 6.01382C0.271484 5.48363 0.701291 5.05382 1.23148 5.05382H4.31148V1.97382C4.31148 1.3884 4.78606 0.913818 5.37148 0.913818C5.95691 0.913818 6.43149 1.3884 6.43149 1.97382V5.05382H9.51149C10.0417 5.05382 10.4715 5.48363 10.4715 6.01382Z" fill="white"/>
+                        <span class="text-h8 leading-[100%]">1</span>
+                        <button
+                            class="w-[20px] h-[20px] bg-primary rounded flex justify-center items-center border border-primary"
+                            aria-label="Button plus">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12"
+                                fill="none">
+                                <path
+                                    d="M10.4715 6.01382C10.4715 6.54401 10.0417 6.97382 9.51149 6.97382H6.43149V10.0538C6.43149 10.6392 5.95691 11.1138 5.37148 11.1138C4.78606 11.1138 4.31148 10.6392 4.31148 10.0538V6.97382H1.23148C0.701291 6.97382 0.271484 6.54401 0.271484 6.01382C0.271484 5.48363 0.701291 5.05382 1.23148 5.05382H4.31148V1.97382C4.31148 1.3884 4.78606 0.913818 5.37148 0.913818C5.95691 0.913818 6.43149 1.3884 6.43149 1.97382V5.05382H9.51149C10.0417 5.05382 10.4715 5.48363 10.4715 6.01382Z"
+                                    fill="white" />
                             </svg>
                         </button>
                     </div>
@@ -45,12 +63,16 @@
         </div>
     </div>
     <div class="border-t border-primary flex justify-center pt-6 mt-auto">
-        <a class="button px-6 py-3 text-h8 md:text-h10 rounded-xl border transition group border-white hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-transparent text-white hover:text-primary @@style" href="@@url">
-    <span class="font-medium">Make a Request</span>
-    <svg class="fill-white group-hover:fill-primary ml-3" xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 22 10" fill="none">
-        <path d="M21.4541 5.44982C21.5058 5.3908 21.5469 5.32069 21.5749 5.24351C21.603 5.16632 21.6174 5.08357 21.6174 5C21.6174 4.91644 21.603 4.83369 21.5749 4.7565C21.5469 4.67931 21.5058 4.6092 21.4541 4.55019L17.9166 0.506922C17.8122 0.387624 17.6707 0.320602 17.523 0.320602C17.3754 0.320602 17.2339 0.387624 17.1295 0.506922C17.0251 0.626221 16.9665 0.788025 16.9665 0.956739C16.9665 1.12545 17.0251 1.28726 17.1295 1.40656L20.2745 5L17.1295 8.59345C17.0251 8.71275 16.9665 8.87455 16.9665 9.04327C16.9665 9.21198 17.0251 9.37379 17.1295 9.49308C17.2339 9.61238 17.3754 9.67941 17.523 9.67941C17.6707 9.67941 17.8122 9.61238 17.9166 9.49308L21.4541 5.44982ZM0.382629 5.63534H21.0605V4.36467H0.382629V5.63534Z" />
-    </svg>
-</a>
+        <button type="button" id="openModal"
+            class="button px-6 py-3 text-h8 md:text-h10 rounded-xl border transition group border-white hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-transparent text-white hover:text-primary">
+            <span class="font-medium">Make a Request</span>
+            <svg class="fill-white group-hover:fill-primary ml-3" xmlns="http://www.w3.org/2000/svg" width="22"
+                height="10" viewBox="0 0 22 10" fill="none">
+                <path
+                    d="M21.4541 5.44982C21.5058 5.3908 21.5469 5.32069 21.5749 5.24351C21.603 5.16632 21.6174 5.08357 21.6174 5C21.6174 4.91644 21.603 4.83369 21.5749 4.7565C21.5469 4.67931 21.5058 4.6092 21.4541 4.55019L17.9166 0.506922C17.8122 0.387624 17.6707 0.320602 17.523 0.320602C17.3754 0.320602 17.2339 0.387624 17.1295 0.506922C17.0251 0.626221 16.9665 0.788025 16.9665 0.956739C16.9665 1.12545 17.0251 1.28726 17.1295 1.40656L20.2745 5L17.1295 8.59345C17.0251 8.71275 16.9665 8.87455 16.9665 9.04327C16.9665 9.21198 17.0251 9.37379 17.1295 9.49308C17.2339 9.61238 17.3754 9.67941 17.523 9.67941C17.6707 9.67941 17.8122 9.61238 17.9166 9.49308L21.4541 5.44982ZM0.382629 5.63534H21.0605V4.36467H0.382629V5.63534Z">
+                </path>
+            </svg>
+        </button>
     </div>
 </div>
 <div id="wishlist-bg" class="fixed w-screen h-screen top-0 left-0 z-[98] bg-bg-color-1 hidden"></div>

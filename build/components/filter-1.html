@@ -1,20 +1,21 @@
-<div class="relative w-96 max-w-full custom-select">
+<div class="relative w-[201px] max-w-full custom-select">
     <button
-        class="w-full bg-white py-2 px-4 border border-gray-300 rounded-md cursor-pointer flex justify-between items-center select-button"
-        role="combobox"
-        aria-labelledby="select button"
-        aria-haspopup="listbox"
-        aria-expanded="false"
-        aria-controls="select-dropdown"
-    >
+        class="w-full bg-white py-2 px-4 border border-primary rounded-md cursor-pointer flex justify-between items-center select-button"
+        role="combobox" aria-labelledby="select button" aria-haspopup="listbox" aria-expanded="false"
+        aria-controls="select-dropdown">
         <span class="flex items-center gap-2">
-            <span class="text-gray-700">Sort by:</span>
+            <span class="text-black-1">Sort by:</span>
             <!-- Здесь будет отображаться выбранное значение -->
-            <span class="selected-value text-gray-500"></span>
+            <span class="selected-value text-black-1"></span>
         </span>
-        <span class="arrow transform transition-transform duration-300"></span>
+        <span class="arrow transform transition-transform duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                <path d="M18.9623 11.8052L14.096 16.6715L9.22974 11.8052" stroke="#C19476" stroke-linecap="round" />
+            </svg>
+        </span>
     </button>
-    <ul class="absolute z-50 w-full mt-2 max-h-52 overflow-y-auto bg-white border border-gray-300 rounded-md shadow-lg select-dropdown transform scale-y-0 opacity-0 transition-all duration-500 ease-in-out origin-top invisible">
+    <ul
+        class="absolute z-50 w-full mt-2 max-h-52 overflow-y-auto bg-white border border-primary rounded-md shadow-lg select-dropdown transform scale-y-0 opacity-0 transition-all duration-500 ease-in-out origin-top invisible">
         <li role="option" class="flex items-center gap-4 px-4 py-2 cursor-pointer hover:bg-gray-200">
             <input type="radio" id="latest" name="sort-option" class="absolute left-0 opacity-0" />
             <label for="latest" class="w-full flex items-center gap-4">
