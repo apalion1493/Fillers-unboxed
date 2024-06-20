@@ -309,13 +309,14 @@
 
 .mobile-menu {
 	width: 100%;
-	min-height: 100vh;
+	height: 100%;
 	transition: 0.3s;
 	@apply fixed -left-full top-[80px] z-[97] bg-secondary minmd:hidden;
 }
 
 .mobile-menu.active {
 	left: 0;
+	overflow-y: scroll;
 }
 
 .wishlist {
