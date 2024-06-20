@@ -36,7 +36,8 @@
                     <div class="relative flex w-full gap-2 md:w-max">
                         <div class="searchContainer w-full max-w-md relative">
     <form class="searchForm flex items-center relative">
-        <input type="text" placeholder="Search..."
+        <label class='absolute opacity-0 -z-10' for='search-dp'>Search</label>
+        <input id='search-dp' type="text" placeholder="Search..."
             class="searchInput bg-white-2 relative w-full rounded-lg border-0 py-2 pl-14 pr-16 min-h-[56px] focus:outline-none focus:ring-inherit focus:border-transparent focus:shadow-none">
         <svg class="absolute left-3 top-3 block" width="30" height="30" viewBox="0 0 30 30" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -191,7 +192,8 @@
                 <div class="relative flex w-full gap-2 md:w-max mx-auto">
                     <div class="searchContainer w-full max-w-md relative">
     <form class="searchForm flex items-center relative">
-        <input type="text" placeholder="Search..."
+        <label class='absolute opacity-0 -z-10' for='search-mb'>Search</label>
+        <input id='search-mb' type="text" placeholder="Search..."
             class="searchInput bg-white-2 relative w-full rounded-lg border-0 py-2 pl-14 pr-16 min-h-[56px] focus:outline-none focus:ring-inherit focus:border-transparent focus:shadow-none">
         <svg class="absolute left-3 top-3 block" width="30" height="30" viewBox="0 0 30 30" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -514,7 +516,7 @@
                             and releases.</p>
                         <div class="flex items-center flex-wrap w-full sm:flex-col sm:gap-2">
                             <div class="form-group flex flex-col items-start flex-1 w-[345px] mr-4 sm:mr-0 sm:w-full">
-    <label class="text-base text-dark-green leading-[130%] mb-2 hidden" for="MailId">Email</label>
+    <label class="text-base text-dark-green leading-[130%] mb-2 absolute -z-10 opacity-0" for="MailId">Email</label>
     <input
         class="rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 "
         type="text" id="MailId" placeholder="Enter your email">

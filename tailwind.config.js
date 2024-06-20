@@ -30,6 +30,7 @@ module.exports = {
 			sans: ['Poppins', 'sans-serif'],
 		},
 		fontSize: {
+			none: ['0px', '0px'],
 			sm: ['8px', '11px'], //8px
 			h11: '0.75rem', //12px
 			h10: '0.875rem', //14px
