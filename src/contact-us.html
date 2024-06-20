@@ -8,11 +8,11 @@
     <main class="flex flex-col justify-between min-h-screen">
         @@include('components/Header.html')
 
-        <section class="py-20">
+        <section class="py-20 md:py-10">
             <div class="container">
                 <div class="grid grid-cols-12 gap-5">
                     <div class="col-span-6 lg:col-span-12">
-                        <div class="p-8 bg-secondary rounded-xl flex flex-col">
+                        <div class="p-8 bg-secondary rounded-xl flex flex-col sm:p-4">
                             @@include('components/title.html', {
                             'text': 'Send us ',
                             'colorText': 'Message',
@@ -95,7 +95,8 @@
                                 'colorText': 'Information',
                                 'styles': ''
                                 })
-                                <p class="text-black-1 text-h8">Should you have any other inquiries, please fill in the
+                                <p class="text-black-1 text-h8 md:text-base">Should you have any other inquiries, please
+                                    fill in the
                                     form and one of our managers will contact you within 24 hours.</p>
                                 <p class="text-primary text-base font-semibold">PLEASE NOTE: we only sell to the
                                     certified doctors and companies.</p>

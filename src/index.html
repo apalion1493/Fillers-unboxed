@@ -11,21 +11,22 @@
     'commonStyle': 'bg-secondary'
     })
 
-    <section class="bg-secondary pt-10 overflow-hidden">
+    <section class="bg-secondary pt-10 overflow-hidden md:pt-5">
       <div class="container">
         <div class="grid grid-cols-12 gap-5">
-          <div class="col-span-6 sm:col-span-12 pt-9 pb-5 min-h-[458px] sm:min-h-full relative z-30">
-            <h1 class="mb-4 text-h1 font-medium leading-[120%] md:text-h5">The <span
+          <div
+            class="col-span-6 md:col-span-12 pt-9 pb-5 min-h-[458px] md:min-h-full relative z-30 md:flex md:flex-col md:items-center">
+            <h1 class="mb-4 text-h1 font-medium leading-[120%] md:text-h5 md:text-center">The <span
                 class="italic text-primary font-normal">Supplier</span> <br> you can rally on</h1>
-            <p class="text-h8 mb-2">Get original products directly from the manufacturer.</p>
-            <p class="text-primary font-semibold">*Available Only for Aesthetic Professionals</p>
+            <p class="text-h8 mb-2 md:text-center">Get original products directly from the manufacturer.</p>
+            <p class="text-primary font-semibold md:text-center">*Available Only for Aesthetic Professionals</p>
             @@include('components/button.html', {
             'title': 'View Catalog',
             'url': '#',
-            'style': 'mt-10'
+            'style': 'mt-10 md:mx-auto'
             })
           </div>
-          <div class="col-span-6 sm:col-span-12">
+          <div class="col-span-6 md:col-span-12">
             <div class="relative w-full h-full">
               <div class="absolute top-[65px] -left-[735px] z-10 lg:hidden">
                 <svg xmlns="http://www.w3.org/2000/svg" width="874" height="369" viewBox="0 0 874 369" fill="none">
@@ -34,7 +35,7 @@
                     stroke="#C19476" stroke-opacity="0.8" stroke-width="3" />
                 </svg>
               </div>
-              <img class="absolute bottom-0 left-0 z-20 max-w-[510px] sm:hidden"
+              <img class="absolute bottom-0 left-0 z-20 max-w-[510px] md:hidden"
                 src="img/green-eyed-young-female-model-without-makeup-sensually-looking-white-wall_197531-13799-1.png"
                 alt="">
               <div class="absolute top-0 -right-[25px] z-10 lg:hidden">
@@ -103,25 +104,30 @@
       </div>
     </section>
 
-    <section class="bg-secondary py-16">
+    <section class="bg-secondary py-16 md:py-7">
       <div class="container flex flex-col gap-20">
-        <div class="flex items-center gap-20 lg:flex-col">
+        <div class="flex items-center gap-20 md:gap-7 lg:flex-col">
           <div class="flex-1">
             <img src="img/Img-5.jpg" alt="Who we are?">
           </div>
-          <div class="flex-1 flex flex-col gap-6">
-            <h3 class="text-h3 italic"><span class="text-primary not-italic font-semibold">Who</span> we are?</h3>
-            <p class="text-h8">We are a licensed facility located in Europe and ship the products from countries with
+          <div class="flex-1 flex flex-col gap-6 md:gap-4">
+            <h3 class="text-h3 italic md:text-h6"><span class="text-primary not-italic font-semibold">Who</span> we are?
+            </h3>
+            <p class="text-h8 md:text-base">We are a licensed facility located in Europe and ship the products from
+              countries with
               government regulated prices, so we are able to offer more affordable prices both for small and large
               businesses.</p>
-            <p class="text-h8">With Unboxed Fillers you take advantage of 100% authentic products, fast delivery,
+            <p class="text-h8 md:text-base">With Unboxed Fillers you take advantage of 100% authentic products, fast
+              delivery,
               professional customer support and unbeatable prices.</p>
           </div>
         </div>
-        <div class="flex items-center gap-20 lg:flex-col-reverse">
-          <div class="flex-1 flex flex-col gap-6">
-            <h3 class="text-h3 italic"><span class="text-primary not-italic font-semibold">Our</span> Product</h3>
-            <p class="text-h8">Our team purchase these products in bulk from respective pharmaceutical manufacturers
+        <div class="flex items-center gap-20 md:gap-7 lg:flex-col-reverse">
+          <div class="flex-1 flex flex-col gap-6 md:gap-4">
+            <h3 class="text-h3 italic md:text-h6"><span class="text-primary not-italic font-semibold">Our</span> Product
+            </h3>
+            <p class="text-h8 md:text-base">Our team purchase these products in bulk from respective pharmaceutical
+              manufacturers
               through our Pharma license. We supply with authentic and brand name products. We do not sell generic
               products and guarantee high quality. Our professional team will help you take care of your orders,
               packages and will offer payment plan so you can concentrate more on your patients.
@@ -132,14 +138,16 @@
           </div>
 
         </div>
-        <div class="flex items-center gap-20 lg:flex-col">
+        <div class="flex items-center gap-20 md:gap-7 lg:flex-col">
           <div class="flex-1">
             <img src="img/Img-7.jpg" alt="Who we are?">
           </div>
-          <div class="flex-1 flex flex-col gap-6">
-            <h3 class="text-h3 italic"><span class="text-primary not-italic font-semibold">Only</span> Original Products
+          <div class="flex-1 flex flex-col gap-6 md:gap-4">
+            <h3 class="text-h3 italic md:text-h6"><span class="text-primary not-italic font-semibold">Only</span>
+              Original Products
             </h3>
-            <p class="text-h8">When you buy wholesale products in our company, your clinic saves thousands of dollars
+            <p class="text-h8 md:text-base">When you buy wholesale products in our company, your clinic saves thousands
+              of dollars
               permonth. Taking into account the fast-growing popularity of fillers – a number of purchases will be
               increased.Our stock includes brand name dermal fillers, mesotherapy treatments, orthopedic solutions, and
               many other brand name products. We love to compete against other wholesale companies in the industry and
@@ -149,11 +157,11 @@
       </div>
     </section>
 
-    <section class="py-10 pb-24">
+    <section class="py-10 pb-24 md:pb-20">
       <div class="container">
         <div>
           @@include('components/title.html', {
-          'text': 'Best',
+          'text': 'Best ',
           'colorText': 'Sellers!',
           'styles': 'mb-4 leading-[100%]'
           })
@@ -264,7 +272,7 @@
       </div>
     </section>
 
-    <section class="bg-secondary pt-24 pb-10 overflow-hidden">
+    <section class="bg-secondary pt-24 pb-10 overflow-hidden md:py-10">
       <div class="container">
         <div class="grid grid-cols-12 minlg:gap-12 gap-y-12">
           <div class="col-span-3 lg:col-span-6 sm:col-span-12 test-arrow-block">
@@ -320,7 +328,7 @@
       </div>
     </section>
 
-    <section class="py-20 overflow-hidden">
+    <section class="py-20 overflow-hidden md:py-8">
       <div class="container">
         <div class="grid grid-cols-12 minlg:gap-12 gap-y-12">
           <div class="col-span-12 minlg:col-span-5">
@@ -333,8 +341,9 @@
           <div class="col-span-12 minlg:col-span-7">
             <div class="max-w-[716px] ml-auto flex flex-col">
               <div class="flex flex-col gap-4 mb-8">
-                <h3 class="text-h3 font-semibold">Contact us</h3>
-                <p class="text-black-1 text-h8 leading-[130%]">Should you have any other inquiries, please fill in the
+                <h3 class="text-h3 font-semibold md:text-h6">Contact us</h3>
+                <p class="text-black-1 text-h8 leading-[130%] md:text-base">Should you have any other inquiries, please
+                  fill in the
                   form and <br> one of our managers will contact you within 24 hours.</p>
                 <p class="text-primary text-base font-semibold leading-[120%]">PLEASE NOTE: we only sell to the
                   certified doctors and companies.</p>

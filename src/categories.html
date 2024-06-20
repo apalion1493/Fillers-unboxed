@@ -8,16 +8,17 @@
     <main class="flex flex-col justify-between min-h-screen">
         @@include('components/Header.html')
 
-        <section class="py-16">
+        <section class="py-16 md:py-10">
             <div class="container">
                 <div class="grid grid-cols-12 gap-5">
-                    <div class="col-span-6 lg:col-span-12 mb-14">
+                    <div class="col-span-6 lg:col-span-12 mb-14 md:mb-8">
                         @@include('components/title.html', {
                         'text': 'Explore Our ',
                         'colorText': 'Categories',
                         'styles': 'mb-4'
                         })
-                        <p class="text-black-1 text-h8">Here you will find a wide selection of dermal fillers from the
+                        <p class="text-black-1 text-h8 md:text-base">Here you will find a wide selection of dermal
+                            fillers from the
                             most reputed and well-known manufacturers as Allergan, Galderma, Ipsen, etc. </p>
                     </div>
                 </div>
