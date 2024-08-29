@@ -311,7 +311,7 @@
 	width: 100%;
 	height: 100%;
 	transition: 0.3s;
-	@apply fixed -left-full top-[80px] z-[97] bg-secondary minmd:hidden;
+	@apply fixed -left-full top-[80px] z-[97] bg-secondary minlg:hidden;
 }
 
 .mobile-menu.active {
