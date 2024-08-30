@@ -811,11 +811,14 @@ html {
 .ml-5{
   margin-left: 1.25rem;
 }
-.ml-8{
-  margin-left: 2rem;
+.ml-6{
+  margin-left: 1.5rem;
 }
 .ml-auto{
   margin-left: auto;
+}
+.mr-10{
+  margin-right: 2.5rem;
 }
 .mr-2{
   margin-right: 0.5rem;
@@ -1052,9 +1055,6 @@ html {
 .max-w-full{
   max-width: 100%;
 }
-.max-w-md{
-  max-width: 28rem;
-}
 .flex-1{
   flex: 1 1 0%;
 }
@@ -1122,6 +1122,9 @@ html {
 }
 .items-center{
   align-items: center;
+}
+.justify-end{
+  justify-content: flex-end;
 }
 .justify-center{
   justify-content: center;
@@ -1199,6 +1202,9 @@ html {
 .overflow-y-scroll{
   overflow-y: scroll;
 }
+.whitespace-nowrap{
+  white-space: nowrap;
+}
 .rounded{
   border-radius: 0.25rem;
 }
@@ -1271,9 +1277,6 @@ html {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.bg-white-2{
-  background-color: rgba(255, 255, 255, 0.50);
 }
 .bg-opacity-50{
   --tw-bg-opacity: 0.5;
@@ -1797,7 +1800,7 @@ html {
   position: absolute;
   left: 0px;
   top: 4rem;
-  z-index: 10;
+  z-index: 31;
   display: none;
   width: 100%;
   overflow: hidden;
@@ -2164,6 +2167,17 @@ html {
   transform: rotate(180deg);
 }
 
+.searchContainer:not(.mob-version) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: none;
+}
+.searchContainer:not(.mob-version).active {
+  display: block;
+}
+
 @media (max-width: 1279.98px) {
   .test-arrow-block:not(:last-child)::before {
     right: -52%;
@@ -2210,6 +2224,22 @@ html {
   display: block;
   width: 8px;
   height: 4px;
+}
+
+.check-icon-white {
+  background: url(../img/Check-icon-white.svg) no-repeat center;
+  background-size: 100% auto;
+  display: block;
+  width: 8px;
+  height: 4px;
+}
+
+.Search-icon {
+  background: url(../img/Search-icon.svg) no-repeat center;
+  background-size: 100% auto;
+  display: block;
+  width: 30px;
+  height: 30px;
 }
 
 .active .check-icon {
@@ -2325,6 +2355,10 @@ html {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+  .xl\:px-5{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
 }
 
 @media (max-width: 1023px){
@@ -2334,18 +2368,17 @@ html {
   .lg\:col-span-6{
     grid-column: span 6 / span 6;
   }
-  .lg\:mx-auto{
-    margin-left: auto;
-    margin-right: auto;
-  }
   .lg\:ml-0{
     margin-left: 0px;
+  }
+  .lg\:ml-auto{
+    margin-left: auto;
   }
   .lg\:mt-4{
     margin-top: 1rem;
   }
-  .lg\:ml-auto{
-    margin-left: auto;
+  .lg\:ml-4{
+    margin-left: 1rem;
   }
   .lg\:flex{
     display: flex;
@@ -2564,6 +2597,12 @@ html {
   }
   .minlg\:hidden{
     display: none;
+  }
+  .minlg\:h-14{
+    height: 3.5rem;
+  }
+  .minlg\:min-w-\[200px\]{
+    min-width: 200px;
   }
   .minlg\:gap-12{
     gap: 3rem;

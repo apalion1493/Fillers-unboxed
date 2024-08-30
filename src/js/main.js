@@ -328,3 +328,20 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	})
 })
+
+
+document.addEventListener('DOMContentLoaded', () => {
+	const buttonSearch = document.querySelector('#search-button')
+	const searchContainer = document.querySelector('.searchContainer')
+
+	buttonSearch.addEventListener('click', (e) => {
+		e.stopPropagation(); // Остановить всплытие события, чтобы не сработал обработчик на document
+		searchContainer.classList.toggle('active');
+	});
+
+	document.addEventListener('click', (e) => {
+		if (!searchContainer.contains(e.target)) { // Если клик не внутри searchContainer
+			searchContainer.classList.remove('active'); // Убрать класс active
+		}
+	});
+})

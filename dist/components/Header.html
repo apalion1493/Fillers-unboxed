@@ -1,27 +1,27 @@
 <header class="flex flex-col @@commonStyle">
-    <div class="bg-primary py-4">
+    <div class="bg-primary py-6">
         <div class="container flex items-center w-full">
-            <a class="lg:max-w-[150px]" href="#">
+            <a class="lg:max-w-[150px] minlg:min-w-[200px] mr-10" href="#">
                 <img src="img/Logo-main.svg" alt="Logo">
             </a>
-            <nav class="py-4 mx-auto lg:hidden">
-                <div class="container mx-auto flex justify-center items-center w-full text-h8">
-                    <button class="inline-flex items-center py-2 px-14 xl:px-8 lg:px-5 lg:text-h10 text-white"
-                            data-menu-target="menu1">All Categories <span class="check-icon ml-2"></span></button>
-                    <span class="text-white font-light text-base">|</span>
-                    <a href="about.html" class="py-2 px-14 xl:px-8 lg:px-5 lg:text-h10 text-white">About Us</a>
-                    <span class="text-white font-light text-base">|</span>
-                    <a href="contact-us.html" class="py-2 px-14 xl:px-8 lg:px-5 lg:text-h10 text-white">Contact Us</a>
-                </div>
-            </nav>
-            <div class="ml-auto hidden">
-                <div class="items-center gap-x-2 lg:flex">
-                    <div class="relative flex w-full gap-2 md:w-max">
-                        <div class="searchContainer w-full max-w-md relative">
-    <form class="searchForm flex items-center relative">
+            <div class="ml-auto w-full lg:hidden">
+                <div class="items-center minlg:h-14 flex justify-end relative">
+                    <nav class="mx-auto lg:hidden">
+                        <div class="container mx-auto flex justify-center items-center w-full text-h8">
+                            <button class="inline-flex items-center py-2 px-14 xl:px-5 lg:text-h10 text-white"
+                                    data-menu-target="menu1">All Categories <span class="check-icon-white ml-2"></span></button>
+                            <span class="text-white font-light text-base">|</span>
+                            <a href="about.html" class="py-2 px-14 xl:px-5 lg:text-h10 text-white">About Us</a>
+                            <span class="text-white font-light text-base">|</span>
+                            <a href="contact-us.html" class="py-2 px-14 xl:px-5 lg:text-h10 text-white">Contact Us</a>
+                        </div>
+                    </nav>
+                    <div class="flex items-center gap-2 md:w-max">
+                        <div class="searchContainer ">
+    <form class="searchForm flex items-center relative overflow-hidden">
         <label class='absolute opacity-0 -z-10' for='search-dp'>Search</label>
         <input id='search-dp' type="text" placeholder="Search..."
-            class="searchInput bg-white-2 relative w-full rounded-lg border-0 py-2 pl-14 pr-16 min-h-[56px] focus:outline-none focus:ring-inherit focus:border-transparent focus:shadow-none">
+            class="searchInput bg-white relative w-full rounded-lg border-0 py-2 pl-14 pr-16 min-h-[56px] focus:outline-none focus:ring-inherit focus:border-transparent focus:shadow-none">
         <svg class="absolute left-3 top-3 block" width="30" height="30" viewBox="0 0 30 30" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -32,7 +32,7 @@
                 fill="#333333" />
         </svg>
     </form>
-    <div class="searchResultBlock bg-white rounded-lg border border-primary p-5 flex-col items-start">
+    <div class="searchResultBlock  bg-white rounded-lg border border-primary p-5 flex-col items-start"> <!--show-->
         <div class='flex flex-col gap-4'>
             <a href='#' class='flex items-center underline text-black-1 hover:text-primary'>
                 <div
@@ -58,11 +58,23 @@
         </div>
     </div>
 </div>
+
+                        <button id="search-button" type="button" class="ml-2">
+                            <i class="Search-icon"></i>
+                        </button>
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
+
+
             <div class="flex items-center ml-5 lg:ml-auto">
-                <button id="wishlist-open" class="relative  md:mr-2">
+                <button id="wishlist-open" class="relative md:mr-2">
                     <i class="heart-white-icon"></i>
                     <span
                         class="rounded-full bg-dark-green text-white absolute -top-1.5 -right-1.5 flex justify-center content-center align-middle w-3.5 h-3.5">
@@ -70,7 +82,7 @@
                             class="text-sm absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">1</span>
                     </span>
                 </button>
-                <div class="ml-8 flex items-center lg:hidden">
+                <div class="ml-6 flex items-center lg:hidden">
                     <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
                          fill="none">
                         <path
@@ -79,7 +91,7 @@
                     </svg>
                     <div class="flex flex-col text-white md:text-h10">
                         <span>Support</span>
-                        <a class="hover:underline font-semibold" href="tel:+19298104787">(929) 810 4787</a>
+                        <a class="hover:underline font-semibold whitespace-nowrap" href="tel:+19298104787">(929) 810 4787</a>
                     </div>
                 </div>
             </div>
@@ -168,12 +180,12 @@
         <div class="flex flex-col container py-6 gap-y-6">
 
             <div class="items-center gap-x-2 lg:flex">
-                <div class="relative flex w-full gap-2 md:w-max mx-auto">
-                    <div class="searchContainer w-full max-w-md relative">
-    <form class="searchForm flex items-center relative">
+                <div class="relative flex w-full">
+                    <div class="searchContainer mob-version w-full">
+    <form class="searchForm flex items-center relative overflow-hidden">
         <label class='absolute opacity-0 -z-10' for='search-mb'>Search</label>
         <input id='search-mb' type="text" placeholder="Search..."
-            class="searchInput bg-white-2 relative w-full rounded-lg border-0 py-2 pl-14 pr-16 min-h-[56px] focus:outline-none focus:ring-inherit focus:border-transparent focus:shadow-none">
+            class="searchInput bg-white relative w-full rounded-lg border-0 py-2 pl-14 pr-16 min-h-[56px] focus:outline-none focus:ring-inherit focus:border-transparent focus:shadow-none">
         <svg class="absolute left-3 top-3 block" width="30" height="30" viewBox="0 0 30 30" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -184,7 +196,7 @@
                 fill="#333333" />
         </svg>
     </form>
-    <div class="searchResultBlock bg-white rounded-lg border border-primary p-5 flex-col items-start">
+    <div class="searchResultBlock  bg-white rounded-lg border border-primary p-5 flex-col items-start"> <!--show-->
         <div class='flex flex-col gap-4'>
             <a href='#' class='flex items-center underline text-black-1 hover:text-primary'>
                 <div

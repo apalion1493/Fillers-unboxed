@@ -104,7 +104,7 @@
 }
 
 .searchResultBlock {
-	@apply absolute left-0 top-16 z-10 hidden w-full overflow-hidden;
+	@apply absolute left-0 top-16 z-[31] hidden w-full overflow-hidden;
 }
 
 .searchResultBlock.show {
@@ -355,6 +355,18 @@
 
 .menu-btn.open-menu .menu-btn--icon {
 	transform: rotate(180deg);
+}
+
+.searchContainer:not(.mob-version) {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	display: none;
+
+	&.active {
+		display: block;
+	}
 }
 
 @media (max-width: 1279.98px) {
