@@ -62,15 +62,27 @@
                     })
                 </div>
 
-                @@include('textarea.html', {
-                'idTextarea': 'MessageId',
-                'common-style': 'flex-1',
-                'placeholder': 'Type your message...',
-                'label': 'Message',
-                'styleTextarea': 'max-h-[134px]',
-                'styleLabel': '',
-                'rows': '5'
-                })
+              @@include('input.html', {
+              'type': 'text',
+              'common-style': 'flex-1',
+              'idInput': 'PromoCodeId',
+              'placeholder': '',
+              'label': 'Have a promocode?',
+              'styleInput': '',
+              'styleLabel': '',
+              'errorStyle': 'hidden'
+              })
+
+<!--                @@include('textarea.html', {-->
+<!--                'idTextarea': 'MessageId',-->
+<!--                'common-style': 'flex-1',-->
+<!--                'placeholder': 'Type your message...',-->
+<!--                'label': 'Message',-->
+<!--                'styleTextarea': 'max-h-[134px]',-->
+<!--                'styleLabel': '',-->
+<!--                'rows': '5'-->
+<!--                })-->
+
 
                 @@include('checkbox.html', {
                 'text': 'I have read and agree to the <a class="underline" href="#">Terms</a>',
