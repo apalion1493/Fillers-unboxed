@@ -621,12 +621,13 @@
 </div>
                 </div>
 
-                <div class="form-group flex flex-col items-start flex-1">
-    <label class="text-base text-dark-green mb-2 " for="MessageId">Message</label>
-    <textarea
-        class="rounded resize-none text-black-1 border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 max-h-[134px]"
-        id="MessageId" placeholder="Type your message..." rows="5"></textarea>
-</div>
+              <div class="form-group flex flex-col items-start flex-1">
+                <label class="text-base text-dark-green leading-[130%] mb-2" for="PromoCodeId">Have a promocode?</label>
+                <input
+                  class="rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3"
+                  type="text" id="PromoCodeId">
+                <small class="self-end text-h11 text-danger mt-2 hidden">Invalid code</small>
+              </div>
 
                 <div class="flex flex-col">
     <label class="custom-checkbox">
@@ -662,6 +663,7 @@
         </div>
     </div>
 </div>
+
     <div id="wishlist"
     class="wishlist w-full minsm:w-[400px] z-[99] overflow-y-scroll bg-white fixed top-0 -right-full minsm:-right-[400px] bottom-0 py-6 px-8">
     <div class="flex justify-between">

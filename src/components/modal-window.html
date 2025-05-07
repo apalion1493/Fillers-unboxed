@@ -62,27 +62,13 @@
                     })
                 </div>
 
-              @@include('input.html', {
-              'type': 'text',
-              'common-style': 'flex-1',
-              'idInput': 'PromoCodeId',
-              'placeholder': '',
-              'label': 'Have a promocode?',
-              'styleInput': '',
-              'styleLabel': '',
-              'errorStyle': 'hidden'
-              })
-
-<!--                @@include('textarea.html', {-->
-<!--                'idTextarea': 'MessageId',-->
-<!--                'common-style': 'flex-1',-->
-<!--                'placeholder': 'Type your message...',-->
-<!--                'label': 'Message',-->
-<!--                'styleTextarea': 'max-h-[134px]',-->
-<!--                'styleLabel': '',-->
-<!--                'rows': '5'-->
-<!--                })-->
-
+              <div class="form-group flex flex-col items-start flex-1">
+                <label class="text-base text-dark-green leading-[130%] mb-2" for="PromoCodeId">Have a promocode?</label>
+                <input
+                  class="rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3"
+                  type="text" id="PromoCodeId">
+                <small class="self-end text-h11 text-danger mt-2 hidden">Invalid code</small>
+              </div>
 
                 @@include('checkbox.html', {
                 'text': 'I have read and agree to the <a class="underline" href="#">Terms</a>',
