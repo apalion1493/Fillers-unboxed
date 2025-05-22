@@ -369,6 +369,10 @@
 	}
 }
 
+.product-card__img {
+  min-height: 192px;
+}
+
 @media (max-width: 1279.98px) {
 	.test-arrow-block:not(:last-child)::before {
 		right: -52%;

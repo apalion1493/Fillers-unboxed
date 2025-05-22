@@ -24,10 +24,10 @@ window.addEventListener('DOMContentLoaded', () => {
 			arrows: true,
 			pagination: true,
 			breakpoints: {
-				1024: {
+				1200: {
 					perPage: 3,
 				},
-				768: {
+				1023: {
 					perPage: 2,
 				},
 				640: {
@@ -42,6 +42,36 @@ window.addEventListener('DOMContentLoaded', () => {
 		}).mount()
 	}
 })
+
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".tab-button");
+  const contents = document.querySelectorAll(".tab-content");
+
+  function deactivateAllTabs() {
+    buttons.forEach(btn => {
+      btn.classList.remove("text-blue-500", "border-blue-500");
+      btn.classList.add("text-gray-600", "border-transparent");
+    });
+    contents.forEach(content => content.classList.add("hidden"));
+  }
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const tabId = button.getAttribute("data-tab");
+
+      deactivateAllTabs();
+
+      button.classList.remove("text-gray-600", "border-transparent");
+      button.classList.add("text-blue-500", "border-blue-500");
+
+      // Показываем соответствующий контент
+      document.getElementById(tabId).classList.remove("hidden");
+    });
+  });
+
+  buttons[0].click();
+});
+
 
 const modal = document.getElementById('modal')
 const openModalBtn = document.getElementById('openModal')
