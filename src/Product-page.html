@@ -14,9 +14,7 @@
         <div class="col-span-6 lg:col-span-12">
           <div
             class="w-full sticky top-5 overflow-hidden border border-primary rounded-lg flex justify-center items-center max-w-[600px] lg:max-w-full min-h-[100px]">
-                            <span
-                              class="absolute top-4 right-4 bg-primary text-center text-white px-3 py-2 rounded-lg">In
-                                Stock</span>
+            <span class="absolute top-4 right-4 bg-primary text-center text-white px-3 py-2 rounded-lg">In Stock</span>
             <img class="" src="img/TestProduct.png" alt="Product">
           </div>
         </div>
@@ -124,12 +122,16 @@
               </div>
             </div>
             <div class="flex flex-col">
-              <div class="flex border-b mb-4">
-                <button class="tab-button px-4 py-2 text-gray-600 hover:text-blue-500 border-b-2 border-transparent" data-tab="tab1">Description</button>
-                <button class="tab-button px-4 py-2 text-gray-600 hover:text-blue-500 border-b-2 border-transparent" data-tab="tab2">Information</button>
+              <div class="flex mb-6">
+                <button class="tab-button px-4 py-2 font-medium text-md md:text-base text-dark-green border-b-2 rounded-t-lg border-primary"
+                        data-tab="tab1">Description
+                </button>
+                <button class="tab-button px-4 py-2 font-medium text-md md:text-base text-dark-green border-b-2 rounded-t-lg border-primary"
+                        data-tab="tab2">Information
+                </button>
               </div>
               <div id="tab1" class="tab-content hidden">
-                <div class="flex flex-col gap-6 pt-6">
+                <div class="flex flex-col gap-6">
                   <div class="flex flex-col">
                     <h5 class="text-h8 font-semibold leading-[120%] mb-2 text-dark-green">Description:
                     </h5>
@@ -172,7 +174,58 @@
                 </div>
               </div>
               <div id="tab2" class="tab-content hidden">
-                Information
+                <div class="flex flex-col gap-y-3">
+                  <div class="accordion-product flex flex-col border border-primary rounded-lg bg-border-color-4 transition-all">
+                    <button class="accordion-header flex justify-between items-center text-left w-full py-5 px-4 text-dark-green text-h8 font-semibold focus:outline-none">
+                      <span>Hyacorp description</span>
+                      <div class="accordion-icon">
+                        <svg class="accordion-icon__elem accordion-icon__minus" xmlns="http://www.w3.org/2000/svg" width="14"
+                             height="4" viewBox="0 0 14 4" fill="none">
+                          <path
+                            d="M12.848 0.738037C13.4842 0.738037 14 1.25381 14 1.89004C14 2.52627 13.4842 3.04204 12.848 3.04204H1.152C0.515768 3.04204 0 2.52627 0 1.89004C0 1.25381 0.515768 0.738037 1.152 0.738037H12.848Z"
+                            fill="#C19476" />
+                        </svg>
+                        <svg class="accordion-icon__elem accordion-icon__plus" xmlns="http://www.w3.org/2000/svg" width="14"
+                             height="15" viewBox="0 0 14 15" fill="none">
+                          <path
+                            d="M14 7.89014C14 8.61785 13.4101 9.20779 12.6824 9.20779H8.4549V13.4352C8.4549 14.2388 7.80352 14.8901 7 14.8901C6.19648 14.8901 5.5451 14.2388 5.5451 13.4352V9.20779H1.31765C0.589929 9.20779 0 8.61785 0 7.89014C0 7.16242 0.589931 6.57249 1.31765 6.57249H5.5451V2.34504C5.5451 1.54152 6.19648 0.890137 7 0.890137C7.80352 0.890137 8.4549 1.54152 8.4549 2.34504V6.57249H12.6824C13.4101 6.57249 14 7.16242 14 7.89014Z"
+                            fill="white" />
+                        </svg>
+                      </div>
+                    </button>
+                    <div class="accordion-content px-4">
+                      <div class="py-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-product flex flex-col border border-primary rounded-lg bg-border-color-4 transition-all">
+                    <button class="accordion-header flex justify-between items-center text-left w-full py-5 px-4 text-dark-green text-h8 font-semibold focus:outline-none">
+                      <span>Hyacorp Dosage information</span>
+                      <div class="accordion-icon">
+                        <svg class="accordion-icon__elem accordion-icon__minus" xmlns="http://www.w3.org/2000/svg" width="14"
+                             height="4" viewBox="0 0 14 4" fill="none">
+                          <path
+                            d="M12.848 0.738037C13.4842 0.738037 14 1.25381 14 1.89004C14 2.52627 13.4842 3.04204 12.848 3.04204H1.152C0.515768 3.04204 0 2.52627 0 1.89004C0 1.25381 0.515768 0.738037 1.152 0.738037H12.848Z"
+                            fill="#C19476" />
+                        </svg>
+                        <svg class="accordion-icon__elem accordion-icon__plus" xmlns="http://www.w3.org/2000/svg" width="14"
+                             height="15" viewBox="0 0 14 15" fill="none">
+                          <path
+                            d="M14 7.89014C14 8.61785 13.4101 9.20779 12.6824 9.20779H8.4549V13.4352C8.4549 14.2388 7.80352 14.8901 7 14.8901C6.19648 14.8901 5.5451 14.2388 5.5451 13.4352V9.20779H1.31765C0.589929 9.20779 0 8.61785 0 7.89014C0 7.16242 0.589931 6.57249 1.31765 6.57249H5.5451V2.34504C5.5451 1.54152 6.19648 0.890137 7 0.890137C7.80352 0.890137 8.4549 1.54152 8.4549 2.34504V6.57249H12.6824C13.4101 6.57249 14 7.16242 14 7.89014Z"
+                            fill="white" />
+                        </svg>
+                      </div>
+                    </button>
+                    <div class="accordion-content px-4">
+                      <div class="py-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus non dicta accusamus est aliquid nostrum
+                        et cupiditate, consectetur similique nobis cumque ab maiores! Nulla rem tempore corrupti iusto, ullam
+                        iste.
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

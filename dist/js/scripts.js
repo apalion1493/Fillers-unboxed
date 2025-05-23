@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function deactivateAllTabs() {
     buttons.forEach(btn => {
-      btn.classList.remove("text-blue-500", "border-blue-500");
+      btn.classList.remove("text-dark-green", "font-semibold", "bg-border-color-4");
       btn.classList.add("text-gray-600", "border-transparent");
     });
     contents.forEach(content => content.classList.add("hidden"));
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
       deactivateAllTabs();
 
       button.classList.remove("text-gray-600", "border-transparent");
-      button.classList.add("text-blue-500", "border-blue-500");
+      button.classList.add("text-dark-green", "font-semibold", "bg-border-color-4");
 
       // Показываем соответствующий контент
       document.getElementById(tabId).classList.remove("hidden");
@@ -260,37 +260,43 @@ window.addEventListener('load', () => {
 })
 
 document.addEventListener('DOMContentLoaded', function () {
-	const headers = document.querySelectorAll('.accordion-header')
+  const headers = document.querySelectorAll('.accordion-header')
 
-	headers.forEach(header => {
-		header.addEventListener('click', function () {
-			const content = header.nextElementSibling
-			const icon = header.querySelector('.accordion-icon')
+  headers.forEach(header => {
+    header.addEventListener('click', function () {
+      const content = header.nextElementSibling
+      const icon = header.querySelector('.accordion-icon')
+      const container = header.closest('.accordion-product')
 
-			if (content.classList.contains('show')) {
-				content.style.maxHeight = content.scrollHeight + 'px'
-				setTimeout(() => {
-					content.style.maxHeight = '0'
-				}, 10)
-				content.classList.remove('show')
-				icon.classList.remove('active')
-			} else {
-				document.querySelectorAll('.accordion-content').forEach(item => {
-					if (item !== content) {
-						item.style.maxHeight = '0'
-						item.classList.remove('show')
-						item.previousElementSibling
-							.querySelector('.accordion-icon')
-							.classList.remove('active')
-					}
-				})
+      if (content.classList.contains('show')) {
+        content.style.maxHeight = content.scrollHeight + 'px'
+        setTimeout(() => {
+          content.style.maxHeight = '0'
+        }, 10)
+        content.classList.remove('show')
+        icon.classList.remove('active')
 
-				content.classList.add('show')
-				content.style.maxHeight = content.scrollHeight + 'px'
-				icon.classList.add('active')
-			}
-		})
-	})
+        container.classList.add('bg-border-color-4')
+      } else {
+        document.querySelectorAll('.accordion-content').forEach(item => {
+          if (item !== content) {
+            item.style.maxHeight = '0'
+            item.classList.remove('show')
+            item.previousElementSibling
+              .querySelector('.accordion-icon')
+              .classList.remove('active')
+            item.closest('.flex').classList.add('bg-border-color-4')
+          }
+        })
+
+        content.classList.add('show')
+        content.style.maxHeight = content.scrollHeight + 'px'
+        icon.classList.add('active')
+
+        container.classList.remove('bg-border-color-4')
+      }
+    })
+  })
 })
 
 document.addEventListener('DOMContentLoaded', () => {

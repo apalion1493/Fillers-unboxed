@@ -89,6 +89,7 @@ module.exports = {
 				'border-color-1': 'rgba(193, 148, 118, 0.30)',
 				'border-color-2': 'rgba(193, 148, 118, 0.80)',
 				'border-color-3': 'rgba(193, 148, 118, 0.50)',
+				'border-color-4': 'rgba(193, 148, 118, 0.10)',
 				'white-2': 'rgba(255, 255, 255, 0.50)',
 				'bg-color-1': 'rgba(51, 51, 51, 0.20)',
 				'gray-2': 'rgba(51, 51, 51, 0.30)',
