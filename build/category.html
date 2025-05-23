@@ -24,7 +24,7 @@
         <header class="flex flex-col @@commonStyle">
     <div class="bg-primary py-6">
         <div class="container flex items-center w-full">
-            <a class="lg:max-w-[150px] minlg:min-w-[200px] mr-10" href="#">
+            <a class="lg:max-w-[150px] minlg:min-w-[200px] mr-10" href="index.html">
                 <img src="img/Logo-main.svg" alt="Logo">
             </a>
             <div class="ml-auto w-full lg:hidden">
@@ -353,6 +353,7 @@
     </div>
 </header>
 
+
         <section class="py-16 md:py-10">
             <div class="container">
                 <div class="grid grid-cols-12 gap-5">
@@ -440,39 +441,51 @@
                         </div>
                         <div class="grid grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-6">
                             <a href="Product-page.html" id="test1"
-  class="product-card border border-border-color-2 block rounded-lg overflow-hidden hover:border-primary hover:shadow-3xl transition mb-2 bg-secondary">
-  <div class="block relative h-48 rounded overflow-hidden bg-white">
+  class="product-card border w-full h-full border-border-color-2 flex flex-col rounded-lg overflow-hidden hover:border-primary hover:shadow-3xl transition bg-secondary mb-2">
+  <div class="product-card__img flex relative h-48 rounded overflow-hidden bg-white">
     <div class="product-card--favorites" data-product-id="test1">
       <i class="product-card--icon-heart heart-icon"></i>
       <i class="product-card--icon-heart heart-filled-icon"></i>
     </div>
-    <img alt="title img" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260">
+    <img alt="title img" class="object-cover object-center w-full h-48 max-h-48 block" src="https://dummyimage.com/420x260">
   </div>
-  <div class="py-6 px-4 border-t border-t-border-color-1">
-    <h3 class="text-dark-green text-h6 title-font mb-1 md:text-h8">Product name</h3>
-    <div class="flex justify-between items-center">
-      <p class="mt-1 line-through">$ 80.30 USD</p>
-      <p class="text-primary font-semibold">$ 50.00 USD</p>
+  <div class="py-6 px-4 border-t border-t-border-color-1 h-full flex flex-col">
+    <h3 class="text-dark-green text-h6 title-font mb-3 md:text-h8">Product name</h3>
+    <div class="flex justify-between items-center mb-5">
+      <p class="text-primary font-semibold text-md">$ 50.00 USD</p>
     </div>
+    <button class="button w-full text-h8 md:text-h10 px-6 py-3 mt-auto rounded-xl border transition group border-white hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-transparent text-white hover:text-primary">
+      <span class="font-medium">View product</span>
+      <svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 22 10" fill="none">
+        <path d="M21.4543 5.44984C21.506 5.39082 21.5471 5.32071 21.5751 5.24352C21.6031 5.16633 21.6176 5.08359 21.6176 5.00002C21.6176 4.91645 21.6031 4.8337 21.5751 4.75652C21.5471 4.67933 21.506 4.60922 21.4543 4.5502L17.9168 0.506938C17.8124 0.387639 17.6708 0.320618 17.5232 0.320618C17.3756 0.320618 17.2341 0.387639 17.1297 0.506938C17.0253 0.626236 16.9667 0.78804 16.9667 0.956754C16.9667 1.12547 17.0253 1.28727 17.1297 1.40657L20.2747 5.00002L17.1297 8.59347C17.0253 8.71277 16.9667 8.87457 16.9667 9.04328C16.9667 9.212 17.0253 9.3738 17.1297 9.4931C17.2341 9.6124 17.3756 9.67942 17.5232 9.67942C17.6708 9.67942 17.8124 9.6124 17.9168 9.4931L21.4543 5.44984ZM0.382812 5.63535H21.0607V4.36469H0.382812V5.63535Z" fill="white"/>
+      </svg>
+    </button>
   </div>
 </a>
+
                             <a href="Product-page.html" id="test2"
-  class="product-card border border-border-color-2 block rounded-lg overflow-hidden hover:border-primary hover:shadow-3xl transition mb-2 bg-secondary">
-  <div class="block relative h-48 rounded overflow-hidden bg-white">
+  class="product-card border w-full h-full border-border-color-2 flex flex-col rounded-lg overflow-hidden hover:border-primary hover:shadow-3xl transition bg-secondary mb-2">
+  <div class="product-card__img flex relative h-48 rounded overflow-hidden bg-white">
     <div class="product-card--favorites" data-product-id="test2">
       <i class="product-card--icon-heart heart-icon"></i>
       <i class="product-card--icon-heart heart-filled-icon"></i>
     </div>
-    <img alt="title img" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260">
+    <img alt="title img" class="object-cover object-center w-full h-48 max-h-48 block" src="https://dummyimage.com/420x260">
   </div>
-  <div class="py-6 px-4 border-t border-t-border-color-1">
-    <h3 class="text-dark-green text-h6 title-font mb-1 md:text-h8">Product name</h3>
-    <div class="flex justify-between items-center">
-      <p class="mt-1 line-through">$ 80.30 USD</p>
-      <p class="text-primary font-semibold">$ 50.00 USD</p>
+  <div class="py-6 px-4 border-t border-t-border-color-1 h-full flex flex-col">
+    <h3 class="text-dark-green text-h6 title-font mb-3 md:text-h8">Product name</h3>
+    <div class="flex justify-between items-center mb-5">
+      <p class="text-primary font-semibold text-md">$ 50.00 USD</p>
     </div>
+    <button class="button w-full text-h8 md:text-h10 px-6 py-3 mt-auto rounded-xl border transition group border-white hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-transparent text-white hover:text-primary">
+      <span class="font-medium">View product</span>
+      <svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="22" height="10" viewBox="0 0 22 10" fill="none">
+        <path d="M21.4543 5.44984C21.506 5.39082 21.5471 5.32071 21.5751 5.24352C21.6031 5.16633 21.6176 5.08359 21.6176 5.00002C21.6176 4.91645 21.6031 4.8337 21.5751 4.75652C21.5471 4.67933 21.506 4.60922 21.4543 4.5502L17.9168 0.506938C17.8124 0.387639 17.6708 0.320618 17.5232 0.320618C17.3756 0.320618 17.2341 0.387639 17.1297 0.506938C17.0253 0.626236 16.9667 0.78804 16.9667 0.956754C16.9667 1.12547 17.0253 1.28727 17.1297 1.40657L20.2747 5.00002L17.1297 8.59347C17.0253 8.71277 16.9667 8.87457 16.9667 9.04328C16.9667 9.212 17.0253 9.3738 17.1297 9.4931C17.2341 9.6124 17.3756 9.67942 17.5232 9.67942C17.6708 9.67942 17.8124 9.6124 17.9168 9.4931L21.4543 5.44984ZM0.382812 5.63535H21.0607V4.36469H0.382812V5.63535Z" fill="white"/>
+      </svg>
+    </button>
   </div>
 </a>
+
                         </div>
                         <div class="flex justify-between mt-8">
                             <button type='button' aria-label='Button pagination prev'
